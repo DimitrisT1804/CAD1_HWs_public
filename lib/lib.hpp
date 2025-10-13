@@ -195,13 +195,16 @@ class LibPin {
 public:
   LibPin(LibCell *parent) {
     m_parent = parent;
+    m_type = NONE;
   }
 
   TimingInfo &initTimingInfo(DirectionType iotype) {
     assert(iotype != NONE && iotype != INOUT);
 
-    // clear if it exists
-    clearTimingInfo();
+    if (m_type != NONE) {
+      // clear if it exists
+      clearTimingInfo();
+    }
 
     // set direction
     m_type = iotype;

@@ -23,8 +23,9 @@
 #include <tcl.h>
 #include <string.h>
 #include <tclDecls.h>
+#include <iostream>
+#include <filesystem>
 #include "cadI_project.hpp"
-
 
 int load_liberty(ClientData clientdata, Tcl_Interp *interp, int objc, Tcl_Obj *const* objv) {
   char *libfilename = NULL;
@@ -78,6 +79,7 @@ int run_unit_test(ClientData clientdata, Tcl_Interp *interp, int objc, Tcl_Obj *
 
 int main(int argc, char *argv[]) {
 
+  char *arguments = NULL;
   std::cout << "Init TCL" << std::endl;
 
   // allocate tcl command names
@@ -97,7 +99,19 @@ int main(int argc, char *argv[]) {
   procs[3] = (Tcl_ObjCmdProc *) run_unit_test;
 
 
-  start_console();
+  if (argc > 1) {
+    arguments = argv[1];
+    if (!filesystem::exists(arguments)) {
+      cout << "File " << arguments << " does not exist!." << endl;
+      cout << "Starting interactive console." << endl;
+
+      arguments = NULL;
+    }
+  }
+  else {
+    arguments = NULL;
+  }
+  start_console(arguments);
   
   return 1;
 }
