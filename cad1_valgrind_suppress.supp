@@ -1,0 +1,38 @@
+{
+   ignore_unknown_inline_leaks
+   Memcheck:Leak
+   match-leak-kinds: possible
+   ...
+   fun:UnknownInlinedFun
+   ...
+}
+
+
+{
+   ignore_unknown_inline_leaks_2
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:TclThreadAllocObj
+   fun:Tcl_NewStringObj
+   fun:TclpFindExecutable.part.0
+   fun:start_console
+   fun:main
+}
+
+{
+   liberty_leaks
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_Z13parse_libertyNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPP3Lib
+   fun:_Z12load_libertyPvP10Tcl_InterpiPKP7Tcl_Obj
+   fun:TclNRRunCallbacks
+   fun:TclEvalEx
+   fun:Tcl_FSEvalFileEx
+   fun:Tcl_EvalFile
+   fun:tclfileeval
+   fun:tcleval
+   fun:start_console
+   fun:main
+}
