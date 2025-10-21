@@ -60,6 +60,17 @@ static auto sorted_items(const Assoc& m) {
     return v;
 }
 
+template <typename Assoc, typename Compare>
+static auto sorted_items(const Assoc& m, Compare comp) {
+    using Pair = std::pair<typename Assoc::key_type, typename Assoc::mapped_type>;
+    std::vector<Pair> v;
+    v.reserve(m.size());
+    for (const auto& kv : m)
+        v.emplace_back(kv.first, kv.second);
+    std::sort(v.begin(), v.end(), comp);
+    return v;
+}
+
 // all objects inherit from class Box. Given that the project is
 // for the physical design course, it is safe to assume that
 // all shapes are rectangles/boxes
@@ -671,7 +682,7 @@ public:
     if (this == topModule && !filename.empty()) {
       file.open(filename);
       coutbuf = cout.rdbuf(); // save old buffer //
-      cout.rdbuf(file.rdbuf());         // redirect std::cout to file //
+      cout.rdbuf(file.rdbuf());         // redirect cout to file //
 
       auto now = chrono::system_clock::now();
       time_t now_c = chrono::system_clock::to_time_t(now);
@@ -699,8 +710,8 @@ public:
 
       for (const auto& [pname, pptr] : sorted_items(mPorts)) {
         if (pptr->getType() == INPUT) {
-          if (i != 0) std::cout << ", ";
-          std::cout << pname;
+          if (i != 0) cout << ", ";
+          cout << pname;
           i++;
         }
       }
@@ -710,8 +721,8 @@ public:
       cout << "output "; 
       for (const auto& [pname, pptr] : sorted_items(mPorts)) {
         if (pptr->getType() == OUTPUT) {
-          if (i != 0) std::cout << ", ";
-          std::cout << pname;
+          if (i != 0) cout << ", ";
+          cout << pname;
           i++;
         }
       }
@@ -734,10 +745,14 @@ public:
 
     cout << "endmodule" << endl << endl;
 
-    for (auto entry : mModules) {
-      entry.second->write_netlist("");
-    }
 
+    for (const auto& [mname, mptr] :
+      sorted_items(mModules, [](const auto& a, const auto& b) {
+          return natural_sorting(a.second->mDefName, b.second->mDefName);
+      })) {
+     mptr->write_netlist("");
+    }
+    
     if (this == topModule && !filename.empty()) {
       cout.rdbuf(coutbuf); // reset to standard output again //
       file.close();

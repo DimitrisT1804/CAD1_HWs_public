@@ -113,7 +113,7 @@ int main(int argc, char *argv[]) {
   }
   start_console(arguments);
 
-  cout << "Exiting CAD I project." << endl;
+  cout << "Exiting CAD I Project." << endl;
   
   return 1;
 }

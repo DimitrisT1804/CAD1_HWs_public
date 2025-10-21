@@ -1,4 +1,4 @@
-// Generated netlist by CADI API on Date: 2025-10-16 18:53:39 //
+// Generated netlist by CADI API on Date: 2025-10-21 16:41:43 //
 
 module PID_1 (\i_wb_adr[0], \i_wb_adr[1], \i_wb_adr[2], \i_wb_adr[3], \i_wb_adr[4], \i_wb_adr[5], \i_wb_adr[6], \i_wb_adr[7], \i_wb_adr[8], \i_wb_adr[9], \i_wb_adr[10], \i_wb_adr[11], \i_wb_adr[12], \i_wb_adr[13], \i_wb_adr[14], \i_wb_adr[15], \i_wb_data[0], \i_wb_data[1], \i_wb_data[2], \i_wb_data[3], \i_wb_data[4], \i_wb_data[5], \i_wb_data[6], \i_wb_data[7], \i_wb_data[8], \i_wb_data[9], \i_wb_data[10], \i_wb_data[11], \i_wb_data[12], \i_wb_data[13], \i_wb_data[14], \i_wb_data[15], \i_wb_data[16], \i_wb_data[17], \i_wb_data[18], \i_wb_data[19], \i_wb_data[20], \i_wb_data[21], \i_wb_data[22], \i_wb_data[23], \i_wb_data[24], \i_wb_data[25], \i_wb_data[26], \i_wb_data[27], \i_wb_data[28], \i_wb_data[29], \i_wb_data[30], \i_wb_data[31], \o_un[0], \o_un[1], \o_un[2], \o_un[3], \o_un[4], \o_un[5], \o_un[6], \o_un[7], \o_un[8], \o_un[9], \o_un[10], \o_un[11], \o_un[12], \o_un[13], \o_un[14], \o_un[15], \o_un[16], \o_un[17], \o_un[18], \o_un[19], \o_un[20], \o_un[21], \o_un[22], \o_un[23], \o_un[24], \o_un[25], \o_un[26], \o_un[27], \o_un[28], \o_un[29], \o_un[30], \o_un[31], \o_wb_data[0], \o_wb_data[1], \o_wb_data[2], \o_wb_data[3], \o_wb_data[4], \o_wb_data[5], \o_wb_data[6], \o_wb_data[7], \o_wb_data[8], \o_wb_data[9], \o_wb_data[10], \o_wb_data[11], \o_wb_data[12], \o_wb_data[13], \o_wb_data[14], \o_wb_data[15], \o_wb_data[16], \o_wb_data[17], \o_wb_data[18], \o_wb_data[19], \o_wb_data[20], \o_wb_data[21], \o_wb_data[22], \o_wb_data[23], \o_wb_data[24], \o_wb_data[25], \o_wb_data[26], \o_wb_data[27], \o_wb_data[28], \o_wb_data[29], \o_wb_data[30], \o_wb_data[31], i_clk, i_rst, i_wb_cyc, i_wb_stb, i_wb_we, o_valid, o_wb_ack);
 input \i_wb_adr[0], \i_wb_adr[1], \i_wb_adr[2], \i_wb_adr[3], \i_wb_adr[4], \i_wb_adr[5], \i_wb_adr[6], \i_wb_adr[7], \i_wb_adr[8], \i_wb_adr[9], \i_wb_adr[10], \i_wb_adr[11], \i_wb_adr[12], \i_wb_adr[13], \i_wb_adr[14], \i_wb_adr[15], \i_wb_data[0], \i_wb_data[1], \i_wb_data[2], \i_wb_data[3], \i_wb_data[4], \i_wb_data[5], \i_wb_data[6], \i_wb_data[7], \i_wb_data[8], \i_wb_data[9], \i_wb_data[10], \i_wb_data[11], \i_wb_data[12], \i_wb_data[13], \i_wb_data[14], \i_wb_data[15], \i_wb_data[16], \i_wb_data[17], \i_wb_data[18], \i_wb_data[19], \i_wb_data[20], \i_wb_data[21], \i_wb_data[22], \i_wb_data[23], \i_wb_data[24], \i_wb_data[25], \i_wb_data[26], \i_wb_data[27], \i_wb_data[28], \i_wb_data[29], \i_wb_data[30], \i_wb_data[31], i_clk, i_rst, i_wb_cyc, i_wb_stb, i_wb_we;
@@ -1801,6 +1801,1272 @@ adder_32bit_0 adder_32bit_0(.\i_a[0](a_0), .\i_a[1](a_1), .\i_a[2](a_2), .\i_a[3
 multiplier_16x16bit_pipelined multiplier_16x16bit_pipelined(.\i_md[0](md_0), .\i_md[1](md_1), .\i_md[2](md_2), .\i_md[3](md_3), .\i_md[4](md_4), .\i_md[5](md_5), .\i_md[6](md_6), .\i_md[7](md_7), .\i_md[8](md_8), .\i_md[9](md_9), .\i_md[10](md_10), .\i_md[11](md_11), .\i_md[12](md_12), .\i_md[13](md_13), .\i_md[14](md_14), .\i_md[15](md_15), .\i_mr[0](mr_0), .\i_mr[1](mr_1), .\i_mr[2](mr_2), .\i_mr[3](mr_3), .\i_mr[4](mr_4), .\i_mr[5](mr_5), .\i_mr[6](mr_6), .\i_mr[7](mr_7), .\i_mr[8](mr_8), .\i_mr[9](mr_9), .\i_mr[10](mr_10), .\i_mr[11](mr_11), .\i_mr[12](mr_12), .\i_mr[13](mr_13), .\i_mr[14](mr_14), .\i_mr[15](mr_15), .\o_product[0](product_0), .\o_product[1](product_1), .\o_product[2](product_2), .\o_product[3](product_3), .\o_product[4](product_4), .\o_product[5](product_5), .\o_product[6](product_6), .\o_product[7](product_7), .\o_product[8](product_8), .\o_product[9](product_9), .\o_product[10](product_10), .\o_product[11](product_11), .\o_product[12](product_12), .\o_product[13](product_13), .\o_product[14](product_14), .\o_product[15](product_15), .\o_product[16](product_16), .\o_product[17](product_17), .\o_product[18](product_18), .\o_product[19](product_19), .\o_product[20](product_20), .\o_product[21](product_21), .\o_product[22](product_22), .\o_product[23](product_23), .\o_product[24](product_24), .\o_product[25](product_25), .\o_product[26](product_26), .\o_product[27](product_27), .\o_product[28](product_28), .\o_product[29](product_29), .\o_product[30](product_30), .\o_product[31](product_31), .i_clk(i_clk), .i_rst(n1340), .i_start(start), .o_ready());
 endmodule
 
+module adder_32bit_0 (\i_a[0], \i_a[1], \i_a[2], \i_a[3], \i_a[4], \i_a[5], \i_a[6], \i_a[7], \i_a[8], \i_a[9], \i_a[10], \i_a[11], \i_a[12], \i_a[13], \i_a[14], \i_a[15], \i_a[16], \i_a[17], \i_a[18], \i_a[19], \i_a[20], \i_a[21], \i_a[22], \i_a[23], \i_a[24], \i_a[25], \i_a[26], \i_a[27], \i_a[28], \i_a[29], \i_a[30], \i_a[31], \i_b[0], \i_b[1], \i_b[2], \i_b[3], \i_b[4], \i_b[5], \i_b[6], \i_b[7], \i_b[8], \i_b[9], \i_b[10], \i_b[11], \i_b[12], \i_b[13], \i_b[14], \i_b[15], \i_b[16], \i_b[17], \i_b[18], \i_b[19], \i_b[20], \i_b[21], \i_b[22], \i_b[23], \i_b[24], \i_b[25], \i_b[26], \i_b[27], \i_b[28], \i_b[29], \i_b[30], \i_b[31], \o_s[0], \o_s[1], \o_s[2], \o_s[3], \o_s[4], \o_s[5], \o_s[6], \o_s[7], \o_s[8], \o_s[9], \o_s[10], \o_s[11], \o_s[12], \o_s[13], \o_s[14], \o_s[15], \o_s[16], \o_s[17], \o_s[18], \o_s[19], \o_s[20], \o_s[21], \o_s[22], \o_s[23], \o_s[24], \o_s[25], \o_s[26], \o_s[27], \o_s[28], \o_s[29], \o_s[30], \o_s[31], i_c, o_c);
+input \i_a[0], \i_a[1], \i_a[2], \i_a[3], \i_a[4], \i_a[5], \i_a[6], \i_a[7], \i_a[8], \i_a[9], \i_a[10], \i_a[11], \i_a[12], \i_a[13], \i_a[14], \i_a[15], \i_a[16], \i_a[17], \i_a[18], \i_a[19], \i_a[20], \i_a[21], \i_a[22], \i_a[23], \i_a[24], \i_a[25], \i_a[26], \i_a[27], \i_a[28], \i_a[29], \i_a[30], \i_a[31], \i_b[0], \i_b[1], \i_b[2], \i_b[3], \i_b[4], \i_b[5], \i_b[6], \i_b[7], \i_b[8], \i_b[9], \i_b[10], \i_b[11], \i_b[12], \i_b[13], \i_b[14], \i_b[15], \i_b[16], \i_b[17], \i_b[18], \i_b[19], \i_b[20], \i_b[21], \i_b[22], \i_b[23], \i_b[24], \i_b[25], \i_b[26], \i_b[27], \i_b[28], \i_b[29], \i_b[30], \i_b[31], i_c;
+output \o_s[0], \o_s[1], \o_s[2], \o_s[3], \o_s[4], \o_s[5], \o_s[6], \o_s[7], \o_s[8], \o_s[9], \o_s[10], \o_s[11], \o_s[12], \o_s[13], \o_s[14], \o_s[15], \o_s[16], \o_s[17], \o_s[18], \o_s[19], \o_s[20], \o_s[21], \o_s[22], \o_s[23], \o_s[24], \o_s[25], \o_s[26], \o_s[27], \o_s[28], \o_s[29], \o_s[30], \o_s[31], o_c;
+
+sg13g2_inv_2 U1 (.A(n1), .Y(\o_s[9]));
+sg13g2_xnor2_1 U2 (.A(P0_9), .B(G4_4), .Y(n1));
+sg13g2_inv_2 U3 (.A(n14), .Y(\o_s[26]));
+sg13g2_xnor2_1 U4 (.A(P0_8), .B(G6_7), .Y(n2));
+sg13g2_inv_2 U5 (.A(n3), .Y(\o_s[7]));
+sg13g2_xnor2_1 U6 (.A(P0_7), .B(G3_3), .Y(n3));
+sg13g2_inv_2 U7 (.A(n13), .Y(\o_s[27]));
+sg13g2_xnor2_1 U8 (.A(P0_6), .B(G6_5), .Y(n4));
+sg13g2_inv_2 U9 (.A(n5), .Y(\o_s[5]));
+sg13g2_xnor2_1 U10 (.A(P0_5), .B(G3_2), .Y(n5));
+sg13g2_inv_2 U11 (.A(n6), .Y(\o_s[4]));
+sg13g2_xnor2_1 U12 (.A(P0_4), .B(G6_3), .Y(n6));
+sg13g2_inv_2 U13 (.A(n7), .Y(\o_s[3]));
+sg13g2_xnor2_1 U14 (.A(P0_3), .B(G2_1), .Y(n7));
+sg13g2_xnor2_1 U15 (.A(P0_27), .B(G5_13), .Y(n13));
+sg13g2_inv_2 U16 (.A(n27), .Y(\o_s[14]));
+sg13g2_xnor2_1 U17 (.A(P0_14), .B(G6_13), .Y(n27));
+sg13g2_xnor2_1 U18 (.A(P0_15), .B(G4_7), .Y(n26));
+sg13g2_inv_2 U19 (.A(n10), .Y(\o_s[2]));
+sg13g2_xnor2_1 U20 (.A(P0_2), .B(G6_1), .Y(n10));
+sg13g2_inv_2 U21 (.A(P0_31), .Y(n35));
+sg13g2_xnor2_1 U22 (.A(P0_20), .B(G6_19), .Y(n20));
+sg13g2_o21ai_1 U23 (.A1(G6_15), .A2(P0_16), .B1(n36), .Y(n25));
+sg13g2_xnor2_1 U24 (.A(n35), .B(G5_15), .Y(\o_s[31]));
+sg13g2_inv_2 U25 (.A(n12), .Y(\o_s[28]));
+sg13g2_xnor2_1 U26 (.A(P0_30), .B(\G6[29]), .Y(n9));
+sg13g2_xnor2_1 U27 (.A(P0_12), .B(G6_11), .Y(n29));
+sg13g2_inv_2 U28 (.A(n19), .Y(\o_s[21]));
+sg13g2_inv_2 U29 (.A(n15), .Y(\o_s[25]));
+sg13g2_xnor2_1 U30 (.A(P0_25), .B(G5_12), .Y(n15));
+sg13g2_xnor2_1 U31 (.A(P0_21), .B(G5_10), .Y(n19));
+sg13g2_xnor2_1 U32 (.A(P0_24), .B(G6_23), .Y(n16));
+sg13g2_inv_2 U33 (.A(n17), .Y(\o_s[23]));
+sg13g2_xnor2_1 U34 (.A(P0_23), .B(G5_11), .Y(n17));
+sg13g2_inv_2 U35 (.A(G1_0), .Y(n8));
+sg13g2_inv_2 U36 (.A(n8), .Y(n33));
+sg13g2_inv_2 U37 (.A(n11), .Y(\o_s[29]));
+sg13g2_xnor2_1 U38 (.A(G5_14), .B(P0_29), .Y(n11));
+sg13g2_inv_2 U39 (.A(n20), .Y(\o_s[20]));
+sg13g2_nand2_2 U40 (.A(G6_15), .B(P0_16), .Y(n36));
+sg13g2_inv_2 U41 (.A(n21), .Y(\o_s[1]));
+sg13g2_xnor2_1 U42 (.A(n38), .B(n33), .Y(n21));
+sg13g2_inv_2 U43 (.A(n22), .Y(\o_s[19]));
+sg13g2_xnor2_1 U44 (.A(P0_19), .B(G5_9), .Y(n22));
+sg13g2_inv_2 U45 (.A(n25), .Y(\o_s[16]));
+sg13g2_inv_2 U46 (.A(n23), .Y(\o_s[18]));
+sg13g2_inv_2 U47 (.A(n24), .Y(\o_s[17]));
+sg13g2_xnor2_1 U48 (.A(P0_17), .B(G5_8), .Y(n24));
+sg13g2_inv_2 U49 (.A(n2), .Y(\o_s[8]));
+sg13g2_inv_2 U50 (.A(n29), .Y(\o_s[12]));
+sg13g2_inv_2 U51 (.A(n26), .Y(\o_s[15]));
+sg13g2_xnor2_1 U52 (.A(P0_22), .B(G6_21), .Y(n18));
+sg13g2_xnor2_1 U53 (.A(P0_28), .B(G6_27), .Y(n12));
+sg13g2_inv_2 U54 (.A(n16), .Y(\o_s[24]));
+sg13g2_inv_2 U55 (.A(n28), .Y(\o_s[13]));
+sg13g2_xnor2_1 U56 (.A(P0_13), .B(G4_6), .Y(n28));
+sg13g2_xnor2_1 U57 (.A(P0_26), .B(G6_25), .Y(n14));
+sg13g2_inv_2 U58 (.A(n9), .Y(\o_s[30]));
+sg13g2_inv_2 U59 (.A(n30), .Y(\o_s[11]));
+sg13g2_xnor2_1 U60 (.A(P0_11), .B(G4_5), .Y(n30));
+sg13g2_xnor2_1 U61 (.A(P0_18), .B(G6_17), .Y(n23));
+sg13g2_inv_2 U62 (.A(n31), .Y(\o_s[10]));
+sg13g2_inv_2 U63 (.A(n32), .Y(\o_s[0]));
+sg13g2_xnor2_1 U64 (.A(i_c), .B(P0_0), .Y(n32));
+sg13g2_xnor2_1 U65 (.A(P0_10), .B(G6_9), .Y(n31));
+sg13g2_inv_2 U66 (.A(P0_1), .Y(n37));
+sg13g2_inv_2 U67 (.A(n37), .Y(n38));
+sg13g2_inv_2 U68 (.A(n4), .Y(\o_s[6]));
+sg13g2_inv_2 U69 (.A(n18), .Y(\o_s[22]));
+operator_A_0 operator_A_0(.A(\i_a[0]), .B(\i_b[0]), .G(G0_0), .P(P0_0));
+operator_A_63 operator_A_1(.A(\i_a[1]), .B(\i_b[1]), .G(G0_1), .P(P0_1));
+operator_A_62 operator_A_2(.A(\i_a[2]), .B(\i_b[2]), .G(G0_2), .P(P0_2));
+operator_A_61 operator_A_3(.A(\i_a[3]), .B(\i_b[3]), .G(G0_3), .P(P0_3));
+operator_A_60 operator_A_4(.A(\i_a[4]), .B(\i_b[4]), .G(G0_4), .P(P0_4));
+operator_A_59 operator_A_5(.A(\i_a[5]), .B(\i_b[5]), .G(G0_5), .P(P0_5));
+operator_A_58 operator_A_6(.A(\i_a[6]), .B(\i_b[6]), .G(G0_6), .P(P0_6));
+operator_A_57 operator_A_7(.A(\i_a[7]), .B(\i_b[7]), .G(G0_7), .P(P0_7));
+operator_A_56 operator_A_8(.A(\i_a[8]), .B(\i_b[8]), .G(G0_8), .P(P0_8));
+operator_A_55 operator_A_9(.A(\i_a[9]), .B(\i_b[9]), .G(G0_9), .P(P0_9));
+operator_A_54 operator_A_10(.A(\i_a[10]), .B(\i_b[10]), .G(G0_10), .P(P0_10));
+operator_A_53 operator_A_11(.A(\i_a[11]), .B(\i_b[11]), .G(G0_11), .P(P0_11));
+operator_A_52 operator_A_12(.A(\i_a[12]), .B(\i_b[12]), .G(G0_12), .P(P0_12));
+operator_A_51 operator_A_13(.A(\i_a[13]), .B(\i_b[13]), .G(G0_13), .P(P0_13));
+operator_A_50 operator_A_14(.A(\i_a[14]), .B(\i_b[14]), .G(G0_14), .P(P0_14));
+operator_A_49 operator_A_15(.A(\i_a[15]), .B(\i_b[15]), .G(G0_15), .P(P0_15));
+operator_A_48 operator_A_16(.A(\i_a[16]), .B(\i_b[16]), .G(G0_16), .P(P0_16));
+operator_A_47 operator_A_17(.A(\i_a[17]), .B(\i_b[17]), .G(G0_17), .P(P0_17));
+operator_A_46 operator_A_18(.A(\i_a[18]), .B(\i_b[18]), .G(G0_18), .P(P0_18));
+operator_A_45 operator_A_19(.A(\i_a[19]), .B(\i_b[19]), .G(G0_19), .P(P0_19));
+operator_A_44 operator_A_20(.A(\i_a[20]), .B(\i_b[20]), .G(G0_20), .P(P0_20));
+operator_A_43 operator_A_21(.A(\i_a[21]), .B(\i_b[21]), .G(G0_21), .P(P0_21));
+operator_A_42 operator_A_22(.A(\i_a[22]), .B(\i_b[22]), .G(G0_22), .P(P0_22));
+operator_A_41 operator_A_23(.A(\i_a[23]), .B(\i_b[23]), .G(G0_23), .P(P0_23));
+operator_A_40 operator_A_24(.A(\i_a[24]), .B(\i_b[24]), .G(G0_24), .P(P0_24));
+operator_A_39 operator_A_25(.A(\i_a[25]), .B(\i_b[25]), .G(G0_25), .P(P0_25));
+operator_A_38 operator_A_26(.A(\i_a[26]), .B(\i_b[26]), .G(G0_26), .P(P0_26));
+operator_A_37 operator_A_27(.A(\i_a[27]), .B(\i_b[27]), .G(G0_27), .P(P0_27));
+operator_A_36 operator_A_28(.A(\i_a[28]), .B(\i_b[28]), .G(G0_28), .P(P0_28));
+operator_A_35 operator_A_29(.A(\i_a[29]), .B(\i_b[29]), .G(G0_29), .P(P0_29));
+operator_A_34 operator_A_30(.A(\i_a[30]), .B(\i_b[30]), .G(G0_30), .P(P0_30));
+operator_A_33 operator_A_31(.A(\i_a[31]), .B(\i_b[31]), .G(G0_31), .P(P0_31));
+operator_B_0 operator_B_stage_1_1(.G(G0_2), .G1(G0_1), .Go(G1_1), .P(P0_2), .P1(P0_1), .Po(P1_1));
+operator_B_96 operator_B_stage_1_3(.G(G0_6), .G1(G0_5), .Go(G1_3), .P(P0_6), .P1(P0_5), .Po(P1_3));
+operator_B_85 operator_B_stage_1_14(.G(G0_28), .G1(G0_27), .Go(G1_14), .P(P0_28), .P1(P0_27), .Po(P1_14));
+operator_B_90 operator_B_stage_1_9(.G(G0_18), .G1(G0_17), .Go(G1_9), .P(P0_18), .P1(P0_17), .Po(P1_9));
+operator_B_89 operator_B_stage_1_10(.G(G0_20), .G1(G0_19), .Go(G1_10), .P(P0_20), .P1(P0_19), .Po(P1_10));
+operator_B_91 operator_B_stage_1_8(.G(G0_16), .G1(G0_15), .Go(G1_8), .P(P0_16), .P1(P0_15), .Po(P1_8));
+operator_B_87 operator_B_stage_1_12(.G(G0_24), .G1(G0_23), .Go(G1_12), .P(P0_24), .P1(P0_23), .Po(P1_12));
+operator_B_92 operator_B_stage_1_7(.G(G0_14), .G1(G0_13), .Go(G1_7), .P(P0_14), .P1(P0_13), .Po(P1_7));
+operator_B_93 operator_B_stage_1_6(.G(G0_12), .G1(G0_11), .Go(G1_6), .P(P0_12), .P1(P0_11), .Po(P1_6));
+operator_B_95 operator_B_stage_1_4(.G(G0_8), .G1(G0_7), .Go(G1_4), .P(P0_8), .P1(P0_7), .Po(P1_4));
+operator_B_97 operator_B_stage_1_2(.G(G0_4), .G1(G0_3), .Go(G1_2), .P(P0_4), .P1(P0_3), .Po(P1_2));
+operator_B_86 operator_B_stage_1_13(.G(G0_26), .G1(G0_25), .Go(G1_13), .P(P0_26), .P1(P0_25), .Po(P1_13));
+operator_B_94 operator_B_stage_1_5(.G(G0_10), .G1(G0_9), .Go(G1_5), .P(P0_10), .P1(P0_9), .Po(P1_5));
+operator_B_84 operator_B_stage_1_15(.G(G0_30), .G1(G0_29), .Go(G1_15), .P(P0_30), .P1(P0_29), .Po(P1_15));
+operator_B_88 operator_B_stage_1_11(.G(G0_22), .G1(G0_21), .Go(G1_11), .P(P0_22), .P1(P0_21), .Po(P1_11));
+operator_B_80 operator_B_stage_2_5(.G(G1_5), .G1(G1_4), .Go(G2_5), .P(P1_5), .P1(P1_4), .Po(P2_5));
+operator_B_79 operator_B_stage_2_6(.G(G1_6), .G1(G1_5), .Go(G2_6), .P(P1_6), .P1(P1_5), .Po(P2_6));
+operator_B_82 operator_B_stage_2_3(.G(G1_3), .G1(G1_2), .Go(G2_3), .P(P1_3), .P1(P1_2), .Po(P2_3));
+operator_B_75 operator_B_stage_2_10(.G(G1_10), .G1(G1_9), .Go(G2_10), .P(P1_10), .P1(P1_9), .Po(P2_10));
+operator_B_81 operator_B_stage_2_4(.G(G1_4), .G1(G1_3), .Go(G2_4), .P(P1_4), .P1(P1_3), .Po(P2_4));
+operator_B_72 operator_B_stage_2_13(.G(G1_13), .G1(G1_12), .Go(G2_13), .P(P1_13), .P1(P1_12), .Po(P2_13));
+operator_B_78 operator_B_stage_2_7(.G(G1_7), .G1(G1_6), .Go(G2_7), .P(P1_7), .P1(P1_6), .Po(P2_7));
+operator_B_76 operator_B_stage_2_9(.G(G1_9), .G1(G1_8), .Go(G2_9), .P(P1_9), .P1(P1_8), .Po(P2_9));
+operator_B_70 operator_B_stage_2_15(.G(G1_15), .G1(G1_14), .Go(G2_15), .P(P1_15), .P1(P1_14), .Po(P2_15));
+operator_B_73 operator_B_stage_2_12(.G(G1_12), .G1(G1_11), .Go(G2_12), .P(P1_12), .P1(P1_11), .Po(P2_12));
+operator_B_83 operator_B_stage_2_2(.G(G1_2), .G1(G1_1), .Go(G2_2), .P(P1_2), .P1(P1_1), .Po(P2_2));
+operator_B_74 operator_B_stage_2_11(.G(G1_11), .G1(G1_10), .Go(G2_11), .P(P1_11), .P1(P1_10), .Po(P2_11));
+operator_B_71 operator_B_stage_2_14(.G(G1_14), .G1(G1_13), .Go(G2_14), .P(P1_14), .P1(P1_13), .Po(P2_14));
+operator_B_77 operator_B_stage_2_8(.G(G1_8), .G1(G1_7), .Go(G2_8), .P(P1_8), .P1(P1_7), .Po(P2_8));
+operator_B_61 operator_B_stage_3_12(.G(G2_12), .G1(G2_10), .Go(G3_12), .P(P2_12), .P1(P2_10), .Po(P3_12));
+operator_B_62 operator_B_stage_3_11(.G(G2_11), .G1(G2_9), .Go(G3_11), .P(P2_11), .P1(P2_9), .Po(P3_11));
+operator_B_67 operator_B_stage_3_6(.G(G2_6), .G1(G2_4), .Go(G3_6), .P(P2_6), .P1(P2_4), .Po(P3_6));
+operator_B_63 operator_B_stage_3_10(.G(G2_10), .G1(G2_8), .Go(G3_10), .P(P2_10), .P1(P2_8), .Po(P3_10));
+operator_B_64 operator_B_stage_3_9(.G(G2_9), .G1(G2_7), .Go(G3_9), .P(P2_9), .P1(P2_7), .Po(P3_9));
+operator_B_65 operator_B_stage_3_8(.G(G2_8), .G1(G2_6), .Go(G3_8), .P(P2_8), .P1(P2_6), .Po(P3_8));
+operator_B_58 operator_B_stage_3_15(.G(G2_15), .G1(G2_13), .Go(G3_15), .P(P2_15), .P1(P2_13), .Po(P3_15));
+operator_B_66 operator_B_stage_3_7(.G(G2_7), .G1(G2_5), .Go(G3_7), .P(P2_7), .P1(P2_5), .Po(P3_7));
+operator_B_68 operator_B_stage_3_5(.G(G2_5), .G1(G2_3), .Go(G3_5), .P(P2_5), .P1(P2_3), .Po(P3_5));
+operator_B_59 operator_B_stage_3_14(.G(G2_14), .G1(G2_12), .Go(G3_14), .P(P2_14), .P1(P2_12), .Po(P3_14));
+operator_B_69 operator_B_stage_3_4(.G(G2_4), .G1(G2_2), .Go(G3_4), .P(P2_4), .P1(P2_2), .Po(P3_4));
+operator_B_60 operator_B_stage_3_13(.G(G2_13), .G1(G2_11), .Go(G3_13), .P(P2_13), .P1(P2_11), .Po(P3_13));
+operator_B_51 operator_B_stage_4_14(.G(G3_14), .G1(G3_10), .Go(G4_14), .P(P3_14), .P1(P3_10), .Po(P4_14));
+operator_B_54 operator_B_stage_4_11(.G(G3_11), .G1(G3_7), .Go(G4_11), .P(P3_11), .P1(P3_7), .Po(P4_11));
+operator_B_53 operator_B_stage_4_12(.G(G3_12), .G1(G3_8), .Go(G4_12), .P(P3_12), .P1(P3_8), .Po(P4_12));
+operator_B_55 operator_B_stage_4_10(.G(G3_10), .G1(G3_6), .Go(G4_10), .P(P3_10), .P1(P3_6), .Po(P4_10));
+operator_B_57 operator_B_stage_4_8(.G(G3_8), .G1(G3_4), .Go(G4_8), .P(P3_8), .P1(P3_4), .Po(P4_8));
+operator_B_50 operator_B_stage_4_15(.G(G3_15), .G1(G3_11), .Go(G4_15), .P(P3_15), .P1(P3_11), .Po(P4_15));
+operator_B_56 operator_B_stage_4_9(.G(G3_9), .G1(G3_5), .Go(G4_9), .P(P3_9), .P1(P3_5), .Po(P4_9));
+operator_B_52 operator_B_stage_4_13(.G(G3_13), .G1(G3_9), .Go(G4_13), .P(P3_13), .P1(P3_9), .Po(P4_13));
+operator_C_0 operator_C_stage_1_0(.G(G0_0), .G1(i_c), .Go(G1_0), .P(P0_0));
+operator_C_63 operator_C_stage_2_1(.G(G1_1), .G1(G1_0), .Go(G2_1), .P(P1_1));
+operator_C_61 operator_C_stage_3_3(.G(G2_3), .G1(G2_1), .Go(G3_3), .P(P2_3));
+operator_C_62 operator_C_stage_3_2(.G(G2_2), .G1(G1_0), .Go(G3_2), .P(P2_2));
+operator_C_58 operator_C_stage_4_6(.G(G3_6), .G1(G3_2), .Go(G4_6), .P(P3_6));
+operator_C_57 operator_C_stage_4_7(.G(G3_7), .G1(G3_3), .Go(G4_7), .P(P3_7));
+operator_C_59 operator_C_stage_4_5(.G(G3_5), .G1(G2_1), .Go(G4_5), .P(P3_5));
+operator_C_60 operator_C_stage_4_4(.G(G3_4), .G1(n33), .Go(G4_4), .P(P3_4));
+operator_C_50 operator_C_stage_5_14(.G(G4_14), .G1(G4_6), .Go(G5_14), .P(P4_14));
+operator_C_49 operator_C_stage_5_15(.G(G4_15), .G1(G4_7), .Go(G5_15), .P(P4_15));
+operator_C_55 operator_C_stage_5_9(.G(G4_9), .G1(G2_1), .Go(G5_9), .P(P4_9));
+operator_C_56 operator_C_stage_5_8(.G(G4_8), .G1(n33), .Go(G5_8), .P(P4_8));
+operator_C_51 operator_C_stage_5_13(.G(G4_13), .G1(G4_5), .Go(G5_13), .P(P4_13));
+operator_C_53 operator_C_stage_5_11(.G(G4_11), .G1(G3_3), .Go(G5_11), .P(P4_11));
+operator_C_52 operator_C_stage_5_12(.G(G4_12), .G1(G4_4), .Go(G5_12), .P(P4_12));
+operator_C_54 operator_C_stage_5_10(.G(G4_10), .G1(G3_2), .Go(G5_10), .P(P4_10));
+operator_C_34 operator_C_stage_6_14(.G(G0_29), .G1(G5_14), .Go(\G6[29]), .P(P0_29));
+operator_C_42 operator_C_stage_6_6(.G(G0_13), .G1(G4_6), .Go(G6_13), .P(P0_13));
+operator_C_40 operator_C_stage_6_8(.G(G0_17), .G1(G5_8), .Go(G6_17), .P(P0_17));
+operator_C_39 operator_C_stage_6_9(.G(G0_19), .G1(G5_9), .Go(G6_19), .P(P0_19));
+operator_C_35 operator_C_stage_6_13(.G(G0_27), .G1(G5_13), .Go(G6_27), .P(P0_27));
+operator_C_36 operator_C_stage_6_12(.G(G0_25), .G1(G5_12), .Go(G6_25), .P(P0_25));
+operator_C_37 operator_C_stage_6_11(.G(G0_23), .G1(G5_11), .Go(G6_23), .P(P0_23));
+operator_C_48 operator_C_stage_6_0(.G(G0_1), .G1(G1_0), .Go(G6_1), .P(n38));
+operator_C_47 operator_C_stage_6_1(.G(G0_3), .G1(G2_1), .Go(G6_3), .P(P0_3));
+operator_C_38 operator_C_stage_6_10(.G(G0_21), .G1(G5_10), .Go(G6_21), .P(P0_21));
+operator_C_45 operator_C_stage_6_3(.G(G0_7), .G1(G3_3), .Go(G6_7), .P(P0_7));
+operator_C_33 operator_C_stage_6_15(.G(G0_31), .G1(G5_15), .Go(o_c), .P(P0_31));
+operator_C_46 operator_C_stage_6_2(.G(G0_5), .G1(G3_2), .Go(G6_5), .P(P0_5));
+operator_C_44 operator_C_stage_6_4(.G(G0_9), .G1(G4_4), .Go(G6_9), .P(P0_9));
+operator_C_43 operator_C_stage_6_5(.G(G0_11), .G1(G4_5), .Go(G6_11), .P(P0_11));
+operator_C_41 operator_C_stage_6_7(.G(G0_15), .G1(G4_7), .Go(G6_15), .P(P0_15));
+endmodule
+
+module operator_A_0 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n1), .Y(P));
+sg13g2_inv_2 U2 (.A(n2), .Y(G));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n1));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n2));
+endmodule
+
+module operator_A_33 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_34 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(P));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_35 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_36 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_37 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_38 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_39 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_40 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_41 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_42 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_43 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
+endmodule
+
+module operator_A_44 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_45 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_46 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(A), .Y(n3));
+sg13g2_nand2_2 U2 (.A(n5), .B(n6), .Y(n8));
+sg13g2_inv_2 U3 (.A(n7), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n7));
+sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n5));
+sg13g2_nand2_2 U6 (.A(n3), .B(n4), .Y(n6));
+sg13g2_inv_2 U7 (.A(B), .Y(n4));
+sg13g2_inv_2 U8 (.A(n8), .Y(P));
+endmodule
+
+module operator_A_47 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(G));
+sg13g2_inv_2 U3 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
+endmodule
+
+module operator_A_48 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_49 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_50 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_51 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(G));
+sg13g2_inv_2 U3 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
+endmodule
+
+module operator_A_52 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_53 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_54 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_o21ai_1 U1 (.A1(A), .A2(B), .B1(n3), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(P));
+sg13g2_inv_2 U3 (.A(n4), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n4));
+sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n3));
+endmodule
+
+module operator_A_55 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(P));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_56 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_57 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_58 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_59 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_60 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_inv_2 U2 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_61 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_62 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_63 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_B_0 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(Po));
+sg13g2_inv_2 U3 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+endmodule
+
+module operator_B_50 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_51 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_52 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_53 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_54 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_55 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_56 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_57 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_58 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_59 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_60 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_61 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_62 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n5), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n5));
+sg13g2_inv_2 U3 (.A(n4), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+endmodule
+
+module operator_B_63 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Go));
+sg13g2_nor2_2 U2 (.A(n1), .B(n3), .Y(Po));
+sg13g2_inv_2 U3 (.A(P1), .Y(n1));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+sg13g2_inv_2 U5 (.A(P), .Y(n3));
+endmodule
+
+module operator_B_64 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_65 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_66 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_67 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_68 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_69 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_70 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_71 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_72 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_73 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_74 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_75 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+sg13g2_inv_2 U3 (.A(n5), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n5));
+endmodule
+
+module operator_B_76 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_77 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_78 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U3 (.A(n1), .Y(Po));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_79 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(Po));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_80 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_81 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_82 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_83 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_84 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_85 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_86 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_87 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_88 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_89 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_90 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P), .B(P1), .Y(n4));
+endmodule
+
+module operator_B_91 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_92 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_93 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n5));
+sg13g2_inv_2 U4 (.A(n5), .Y(Po));
+endmodule
+
+module operator_B_94 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_95 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_96 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_97 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_C_0 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(Go));
+endmodule
+
+module operator_C_33 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_34 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_35 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_36 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_37 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_38 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_39 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_40 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_41 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+endmodule
+
+module operator_C_42 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+endmodule
+
+module operator_C_43 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_44 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_45 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_46 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_47 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_48 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_49 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_50 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_51 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_52 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_53 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_54 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n5), .Y(Go));
+sg13g2_nor2_2 U2 (.A(n4), .B(G), .Y(n5));
+sg13g2_nor2_2 U3 (.A(n2), .B(n3), .Y(n4));
+sg13g2_inv_2 U4 (.A(P), .Y(n2));
+sg13g2_inv_2 U5 (.A(G1), .Y(n3));
+endmodule
+
+module operator_C_55 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_56 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_57 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_58 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_59 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(G1), .Y(n3));
+sg13g2_nor2_2 U2 (.A(n4), .B(G), .Y(n5));
+sg13g2_inv_2 U3 (.A(n5), .Y(Go));
+sg13g2_nor2_2 U4 (.A(n2), .B(n3), .Y(n4));
+sg13g2_inv_2 U5 (.A(P), .Y(n2));
+endmodule
+
+module operator_C_60 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_61 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_62 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_63 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
 module multiplier_16x16bit_pipelined (\i_md[0], \i_md[1], \i_md[2], \i_md[3], \i_md[4], \i_md[5], \i_md[6], \i_md[7], \i_md[8], \i_md[9], \i_md[10], \i_md[11], \i_md[12], \i_md[13], \i_md[14], \i_md[15], \i_mr[0], \i_mr[1], \i_mr[2], \i_mr[3], \i_mr[4], \i_mr[5], \i_mr[6], \i_mr[7], \i_mr[8], \i_mr[9], \i_mr[10], \i_mr[11], \i_mr[12], \i_mr[13], \i_mr[14], \i_mr[15], \o_product[0], \o_product[1], \o_product[2], \o_product[3], \o_product[4], \o_product[5], \o_product[6], \o_product[7], \o_product[8], \o_product[9], \o_product[10], \o_product[11], \o_product[12], \o_product[13], \o_product[14], \o_product[15], \o_product[16], \o_product[17], \o_product[18], \o_product[19], \o_product[20], \o_product[21], \o_product[22], \o_product[23], \o_product[24], \o_product[25], \o_product[26], \o_product[27], \o_product[28], \o_product[29], \o_product[30], \o_product[31], i_clk, i_rst, i_start, o_ready);
 input \i_md[0], \i_md[1], \i_md[2], \i_md[3], \i_md[4], \i_md[5], \i_md[6], \i_md[7], \i_md[8], \i_md[9], \i_md[10], \i_md[11], \i_md[12], \i_md[13], \i_md[14], \i_md[15], \i_mr[0], \i_mr[1], \i_mr[2], \i_mr[3], \i_mr[4], \i_mr[5], \i_mr[6], \i_mr[7], \i_mr[8], \i_mr[9], \i_mr[10], \i_mr[11], \i_mr[12], \i_mr[13], \i_mr[14], \i_mr[15], i_clk, i_rst, i_start;
 output \o_product[0], \o_product[1], \o_product[2], \o_product[3], \o_product[4], \o_product[5], \o_product[6], \o_product[7], \o_product[8], \o_product[9], \o_product[10], \o_product[11], \o_product[12], \o_product[13], \o_product[14], \o_product[15], \o_product[16], \o_product[17], \o_product[18], \o_product[19], \o_product[20], \o_product[21], \o_product[22], \o_product[23], \o_product[24], \o_product[25], \o_product[26], \o_product[27], \o_product[28], \o_product[29], \o_product[30], \o_product[31], o_ready;
@@ -2268,1049 +3534,6 @@ partial_product_gen_2 partial_product_gen_6(.\md[0](md_0), .\md[1](md_1), .\md[2
 partial_product_gen_1 partial_product_gen_7(.\md[0](md_0), .\md[1](md_1), .\md[2](md_2), .\md[3](md_3), .\md[4](md_4), .\md[5](md_5), .\md[6](md_6), .\md[7](md_7), .\md[8](md_8), .\md[9](md_9), .\md[10](md_10), .\md[11](md_11), .\md[12](md_12), .\md[13](md_13), .\md[14](md_14), .\md[15](md_15), .\pp[0](layer_0_w14_7), .\pp[1](layer_0_w15_7), .\pp[2](layer_0_w16_7), .\pp[3](layer_0_w17_6), .\pp[4](layer_1_w18_5), .\pp[5](layer_1_w19_3), .\pp[6](layer_1_w20_3), .\pp[7](layer_0_w21_4), .\pp[8](layer_0_w22_4), .\pp[9](layer_0_w23_3), .\pp[10](layer_1_w24_3), .\pp[11](layer_0_w25_2), .\pp[12](layer_0_w26_2), .\pp[13](layer_0_w27_1), .\pp[14](layer_1_w28_2), .\pp[15](\layer_1_w29[0]), .\pp[16](layer_1_w30), .double(double_7), .negation(negation_7), .zero(zero_7));
 endmodule
 
-module partial_product_gen_2 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_inv_2 U2 (.A(negation), .Y(n88));
-sg13g2_xnor2_1 U3 (.A(n88), .B(\md[4]), .Y(n81));
-sg13g2_xnor2_1 U4 (.A(negation), .B(\md[13]), .Y(n65));
-sg13g2_a21oi_2 U5 (.A1(n96), .A2(n76), .B1(n75), .Y(n77));
-sg13g2_nand2_2 U6 (.A(n97), .B(n89), .Y(n90));
-sg13g2_a21oi_2 U7 (.A1(n69), .A2(n96), .B1(n68), .Y(n30));
-sg13g2_inv_2 U8 (.A(n30), .Y(\pp[15]));
-sg13g2_a21oi_2 U9 (.A1(n86), .A2(n96), .B1(n85), .Y(n87));
-sg13g2_nor2_2 U10 (.A(n94), .B(n92), .Y(n85));
-sg13g2_xnor2_1 U11 (.A(negation), .B(\md[7]), .Y(n92));
-sg13g2_o21ai_1 U12 (.A1(n84), .A2(n47), .B1(n83), .Y(\pp[6]));
-sg13g2_nand2_2 U13 (.A(n89), .B(n86), .Y(n83));
-sg13g2_xnor2_1 U14 (.A(n88), .B(\md[6]), .Y(n86));
-sg13g2_o21ai_1 U15 (.A1(n94), .A2(n71), .B1(n54), .Y(\pp[0]));
-sg13g2_a21oi_2 U16 (.A1(n81), .A2(n96), .B1(n80), .Y(n82));
-sg13g2_nor2_2 U17 (.A(n94), .B(n84), .Y(n80));
-sg13g2_xnor2_1 U18 (.A(negation), .B(\md[5]), .Y(n84));
-sg13g2_nand2_2 U19 (.A(n67), .B(n66), .Y(\pp[16]));
-sg13g2_nand2_2 U20 (.A(n89), .B(n81), .Y(n78));
-sg13g2_o21ai_1 U21 (.A1(n60), .A2(n47), .B1(n59), .Y(\pp[12]));
-sg13g2_inv_2 U22 (.A(n77), .Y(\pp[3]));
-sg13g2_o21ai_1 U23 (.A1(n92), .A2(n47), .B1(n90), .Y(\pp[8]));
-sg13g2_nor2_2 U24 (.A(n60), .B(n94), .Y(n56));
-sg13g2_inv_2 U25 (.A(n47), .Y(n49));
-sg13g2_nand2_2 U26 (.A(n48), .B(n49), .Y(n50));
-sg13g2_nand2_2 U27 (.A(n89), .B(n76), .Y(n73));
-sg13g2_o21ai_1 U28 (.A1(n74), .A2(n47), .B1(n73), .Y(\pp[2]));
-sg13g2_inv_2 U29 (.A(n72), .Y(n74));
-sg13g2_o21ai_1 U30 (.A1(n71), .A2(n47), .B1(n70), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n89), .B(n72), .Y(n70));
-sg13g2_xnor2_1 U32 (.A(n88), .B(\md[1]), .Y(n72));
-sg13g2_inv_2 U33 (.A(n82), .Y(\pp[5]));
-sg13g2_xnor2_1 U34 (.A(n88), .B(\md[2]), .Y(n76));
-sg13g2_nor2_2 U35 (.A(n94), .B(n79), .Y(n75));
-sg13g2_inv_2 U36 (.A(n98), .Y(\pp[9]));
-sg13g2_xnor2_1 U37 (.A(n88), .B(\md[15]), .Y(n67));
-sg13g2_o21ai_1 U38 (.A1(n65), .A2(n47), .B1(n64), .Y(\pp[14]));
-sg13g2_nand2_2 U39 (.A(n89), .B(n69), .Y(n64));
-sg13g2_xnor2_1 U40 (.A(n88), .B(\md[14]), .Y(n69));
-sg13g2_inv_2 U41 (.A(n93), .Y(n48));
-sg13g2_a21oi_2 U42 (.A1(n62), .A2(n96), .B1(n61), .Y(n63));
-sg13g2_nor2_2 U43 (.A(n94), .B(n65), .Y(n61));
-sg13g2_xnor2_1 U44 (.A(negation), .B(\md[9]), .Y(n93));
-sg13g2_nor2_2 U45 (.A(\pp[16]), .B(double), .Y(n68));
-sg13g2_nand2_2 U46 (.A(n89), .B(n62), .Y(n59));
-sg13g2_xnor2_1 U47 (.A(n88), .B(\md[12]), .Y(n62));
-sg13g2_o21ai_1 U48 (.A1(n79), .A2(n47), .B1(n78), .Y(\pp[4]));
-sg13g2_a21oi_2 U49 (.A1(n97), .A2(n96), .B1(n95), .Y(n98));
-sg13g2_nor2_2 U50 (.A(n94), .B(n93), .Y(n95));
-sg13g2_inv_2 U51 (.A(n63), .Y(\pp[13]));
-sg13g2_inv_2 U52 (.A(n58), .Y(\pp[11]));
-sg13g2_a21oi_2 U53 (.A1(n57), .A2(n96), .B1(n56), .Y(n58));
-sg13g2_nand2_2 U54 (.A(n89), .B(n57), .Y(n55));
-sg13g2_xnor2_1 U55 (.A(negation), .B(\md[11]), .Y(n60));
-sg13g2_xnor2_1 U56 (.A(n88), .B(\md[8]), .Y(n97));
-sg13g2_nand2_2 U57 (.A(double), .B(n66), .Y(n47));
-sg13g2_nand2_2 U58 (.A(n50), .B(n55), .Y(\pp[10]));
-sg13g2_nand2_2 U59 (.A(n88), .B(\md[10]), .Y(n52));
-sg13g2_nand2_2 U60 (.A(negation), .B(n51), .Y(n53));
-sg13g2_nand2_2 U61 (.A(double), .B(negation), .Y(n54));
-sg13g2_nand2_2 U62 (.A(n52), .B(n53), .Y(n57));
-sg13g2_inv_2 U63 (.A(\md[10]), .Y(n51));
-sg13g2_xnor2_1 U64 (.A(negation), .B(\md[0]), .Y(n71));
-sg13g2_xnor2_1 U65 (.A(negation), .B(\md[3]), .Y(n79));
-sg13g2_inv_2 U66 (.A(n87), .Y(\pp[7]));
-sg13g2_nor2_2 U67 (.A(double), .B(zero), .Y(n89));
-sg13g2_inv_2 U68 (.A(zero), .Y(n66));
-sg13g2_inv_2 U69 (.A(n91), .Y(n96));
-sg13g2_nand2_2 U70 (.A(double), .B(n66), .Y(n91));
-sg13g2_inv_2 U71 (.A(n89), .Y(n94));
-endmodule
-
-module partial_product_gen_5 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_nand2_2 U2 (.A(n48), .B(n89), .Y(n87));
-sg13g2_inv_2 U3 (.A(n89), .Y(n51));
-sg13g2_inv_2 U4 (.A(n125), .Y(n3));
-sg13g2_inv_2 U5 (.A(n3), .Y(\pp[16]));
-sg13g2_inv_2 U6 (.A(n92), .Y(n39));
-sg13g2_inv_2 U7 (.A(n39), .Y(n47));
-sg13g2_inv_2 U8 (.A(zero), .Y(n92));
-sg13g2_inv_2 U9 (.A(n113), .Y(n63));
-sg13g2_nand2_2 U10 (.A(n116), .B(n113), .Y(n110));
-sg13g2_nor2_2 U11 (.A(double), .B(zero), .Y(n48));
-sg13g2_o21ai_1 U12 (.A1(n119), .A2(n66), .B1(n117), .Y(\pp[8]));
-sg13g2_a21oi_2 U13 (.A1(n108), .A2(n79), .B1(n107), .Y(n109));
-sg13g2_nor2_2 U14 (.A(n62), .B(n111), .Y(n107));
-sg13g2_inv_2 U15 (.A(\md[14]), .Y(n60));
-sg13g2_a21oi_2 U16 (.A1(n85), .A2(n79), .B1(n84), .Y(n86));
-sg13g2_inv_2 U17 (.A(\md[0]), .Y(n59));
-sg13g2_nor2_2 U18 (.A(n121), .B(n91), .Y(n49));
-sg13g2_nand2_2 U19 (.A(n79), .B(n65), .Y(n80));
-sg13g2_inv_2 U20 (.A(n49), .Y(n50));
-sg13g2_o21ai_1 U21 (.A1(n51), .A2(n52), .B1(n50), .Y(\pp[13]));
-sg13g2_inv_2 U22 (.A(n79), .Y(n52));
-sg13g2_nor2_2 U23 (.A(n62), .B(n106), .Y(n102));
-sg13g2_inv_2 U24 (.A(n65), .Y(n106));
-sg13g2_inv_2 U25 (.A(n79), .Y(n77));
-sg13g2_nand2_2 U26 (.A(n93), .B(n47), .Y(n125));
-sg13g2_nand2_2 U27 (.A(n61), .B(n103), .Y(n100));
-sg13g2_inv_2 U28 (.A(n114), .Y(\pp[7]));
-sg13g2_inv_2 U29 (.A(n99), .Y(n101));
-sg13g2_o21ai_1 U30 (.A1(n66), .A2(n98), .B1(n97), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n61), .B(n99), .Y(n97));
-sg13g2_xnor2_1 U32 (.A(n115), .B(\md[1]), .Y(n99));
-sg13g2_nor2_2 U33 (.A(n125), .B(n75), .Y(n94));
-sg13g2_nand2_2 U34 (.A(n61), .B(n123), .Y(n117));
-sg13g2_xnor2_1 U35 (.A(n115), .B(\md[12]), .Y(n89));
-sg13g2_nand2_2 U36 (.A(n55), .B(n56), .Y(n58));
-sg13g2_inv_2 U37 (.A(n55), .Y(n53));
-sg13g2_inv_2 U38 (.A(negation), .Y(n55));
-sg13g2_nand2_2 U39 (.A(n53), .B(\md[7]), .Y(n73));
-sg13g2_inv_2 U40 (.A(n53), .Y(n71));
-sg13g2_xnor2_1 U41 (.A(n81), .B(n60), .Y(n95));
-sg13g2_inv_2 U42 (.A(n115), .Y(n81));
-sg13g2_nor2_2 U43 (.A(n119), .B(n62), .Y(n112));
-sg13g2_o21ai_1 U44 (.A1(n98), .A2(n62), .B1(n82), .Y(\pp[0]));
-sg13g2_xnor2_1 U45 (.A(n115), .B(n59), .Y(n98));
-sg13g2_xnor2_1 U46 (.A(n115), .B(\md[4]), .Y(n108));
-sg13g2_inv_2 U47 (.A(n124), .Y(\pp[9]));
-sg13g2_a21oi_2 U48 (.A1(n123), .A2(n79), .B1(n122), .Y(n124));
-sg13g2_nor2_2 U49 (.A(n63), .B(n77), .Y(n64));
-sg13g2_inv_2 U50 (.A(\md[8]), .Y(n54));
-sg13g2_xnor2_1 U51 (.A(n53), .B(n54), .Y(n123));
-sg13g2_inv_2 U52 (.A(n62), .Y(n61));
-sg13g2_nor2_2 U53 (.A(n76), .B(n77), .Y(n78));
-sg13g2_nand2_2 U54 (.A(n116), .B(n85), .Y(n83));
-sg13g2_inv_2 U55 (.A(n104), .Y(\pp[3]));
-sg13g2_xnor2_1 U56 (.A(n115), .B(\md[6]), .Y(n113));
-sg13g2_nand2_2 U57 (.A(n61), .B(n95), .Y(n90));
-sg13g2_inv_2 U58 (.A(n86), .Y(\pp[11]));
-sg13g2_nand2_2 U59 (.A(negation), .B(\md[9]), .Y(n57));
-sg13g2_nand2_2 U60 (.A(n57), .B(n58), .Y(n120));
-sg13g2_nand2_2 U61 (.A(n75), .B(negation), .Y(n82));
-sg13g2_inv_2 U62 (.A(\md[9]), .Y(n56));
-sg13g2_o21ai_1 U63 (.A1(n120), .A2(n77), .B1(n83), .Y(\pp[10]));
-sg13g2_inv_2 U64 (.A(n118), .Y(n79));
-sg13g2_nor2_2 U65 (.A(n121), .B(n88), .Y(n84));
-sg13g2_nand2_2 U66 (.A(n61), .B(n108), .Y(n105));
-sg13g2_a21oi_2 U67 (.A1(n95), .A2(n79), .B1(n94), .Y(n96));
-sg13g2_nand2_2 U68 (.A(n105), .B(n80), .Y(\pp[4]));
-sg13g2_o21ai_1 U69 (.A1(n77), .A2(n88), .B1(n87), .Y(\pp[12]));
-sg13g2_o21ai_1 U70 (.A1(n91), .A2(n66), .B1(n90), .Y(\pp[14]));
-sg13g2_xnor2_1 U71 (.A(negation), .B(\md[13]), .Y(n91));
-sg13g2_inv_2 U72 (.A(n48), .Y(n62));
-sg13g2_nor2_2 U73 (.A(n102), .B(n78), .Y(n104));
-sg13g2_nor2_2 U74 (.A(n112), .B(n64), .Y(n114));
-sg13g2_xnor2_1 U75 (.A(n115), .B(\md[3]), .Y(n65));
-sg13g2_nor2_2 U76 (.A(n121), .B(n120), .Y(n122));
-sg13g2_buf_2 U77 (.A(n118), .X(n66));
-sg13g2_xnor2_1 U78 (.A(n115), .B(\md[15]), .Y(n93));
-sg13g2_inv_2 U79 (.A(n103), .Y(n76));
-sg13g2_nand2_2 U80 (.A(n115), .B(\md[10]), .Y(n69));
-sg13g2_nand2_2 U81 (.A(n81), .B(n68), .Y(n70));
-sg13g2_nand2_2 U82 (.A(n69), .B(n70), .Y(n85));
-sg13g2_inv_2 U83 (.A(\md[10]), .Y(n68));
-sg13g2_xnor2_1 U84 (.A(n115), .B(\md[2]), .Y(n103));
-sg13g2_nand2_2 U85 (.A(n71), .B(n72), .Y(n74));
-sg13g2_nand2_2 U86 (.A(n73), .B(n74), .Y(n119));
-sg13g2_inv_2 U87 (.A(\md[7]), .Y(n72));
-sg13g2_inv_2 U88 (.A(n109), .Y(\pp[5]));
-sg13g2_o21ai_1 U89 (.A1(n111), .A2(n66), .B1(n110), .Y(\pp[6]));
-sg13g2_buf_2 U90 (.A(double), .X(n75));
-sg13g2_inv_2 U91 (.A(n96), .Y(\pp[15]));
-sg13g2_xnor2_1 U92 (.A(negation), .B(\md[11]), .Y(n88));
-sg13g2_xnor2_1 U93 (.A(n81), .B(\md[5]), .Y(n111));
-sg13g2_o21ai_1 U94 (.A1(n101), .A2(n66), .B1(n100), .Y(\pp[2]));
-sg13g2_inv_2 U95 (.A(negation), .Y(n115));
-sg13g2_nand2_2 U96 (.A(n92), .B(double), .Y(n118));
-sg13g2_inv_2 U97 (.A(n116), .Y(n121));
-sg13g2_nor2_2 U98 (.A(double), .B(zero), .Y(n116));
-endmodule
-
-module partial_product_gen_6 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_inv_2 U2 (.A(n116), .Y(n25));
-sg13g2_nand2_2 U3 (.A(negation), .B(n50), .Y(n52));
-sg13g2_nand2_2 U4 (.A(negation), .B(n47), .Y(n49));
-sg13g2_nand2_2 U5 (.A(n73), .B(n101), .Y(n98));
-sg13g2_inv_2 U6 (.A(n72), .Y(n73));
-sg13g2_inv_2 U7 (.A(n89), .Y(n54));
-sg13g2_inv_2 U8 (.A(n77), .Y(n58));
-sg13g2_xnor2_1 U9 (.A(n108), .B(\md[10]), .Y(n77));
-sg13g2_o21ai_1 U10 (.A1(n104), .A2(n69), .B1(n103), .Y(\pp[6]));
-sg13g2_inv_2 U11 (.A(n60), .Y(n93));
-sg13g2_a21oi_2 U12 (.A1(n116), .A2(n101), .B1(n100), .Y(n102));
-sg13g2_nor2_2 U13 (.A(n71), .B(\pp[16]), .Y(n88));
-sg13g2_nand2_2 U14 (.A(n71), .B(n68), .Y(n74));
-sg13g2_inv_2 U15 (.A(n70), .Y(n71));
-sg13g2_nor2_2 U16 (.A(n114), .B(n113), .Y(n115));
-sg13g2_a21oi_2 U17 (.A1(n116), .A2(n96), .B1(n95), .Y(n97));
-sg13g2_nor2_2 U18 (.A(n114), .B(n99), .Y(n95));
-sg13g2_inv_2 U19 (.A(zero), .Y(n86));
-sg13g2_inv_2 U20 (.A(n111), .Y(n116));
-sg13g2_inv_2 U21 (.A(n116), .Y(n53));
-sg13g2_inv_2 U22 (.A(n97), .Y(\pp[3]));
-sg13g2_inv_2 U23 (.A(negation), .Y(n108));
-sg13g2_xnor2_1 U24 (.A(negation), .B(\md[5]), .Y(n104));
-sg13g2_nand2_2 U25 (.A(n108), .B(\md[15]), .Y(n48));
-sg13g2_nand2_2 U26 (.A(n48), .B(n49), .Y(n87));
-sg13g2_inv_2 U27 (.A(\md[15]), .Y(n47));
-sg13g2_xnor2_1 U28 (.A(n108), .B(\md[12]), .Y(n82));
-sg13g2_nor2_2 U29 (.A(n114), .B(n104), .Y(n100));
-sg13g2_o21ai_1 U30 (.A1(n92), .A2(n69), .B1(n91), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n73), .B(n93), .Y(n91));
-sg13g2_inv_2 U32 (.A(n73), .Y(n114));
-sg13g2_inv_2 U33 (.A(n85), .Y(n65));
-sg13g2_o21ai_1 U34 (.A1(n80), .A2(n53), .B1(n79), .Y(\pp[12]));
-sg13g2_nand2_2 U35 (.A(n108), .B(\md[8]), .Y(n51));
-sg13g2_nand2_2 U36 (.A(n51), .B(n52), .Y(n117));
-sg13g2_inv_2 U37 (.A(\md[8]), .Y(n50));
-sg13g2_nor2_2 U38 (.A(n114), .B(n112), .Y(n105));
-sg13g2_nand2_2 U39 (.A(n73), .B(n96), .Y(n94));
-sg13g2_inv_2 U40 (.A(n82), .Y(n56));
-sg13g2_a21oi_2 U41 (.A1(n106), .A2(n116), .B1(n105), .Y(n107));
-sg13g2_inv_2 U42 (.A(n102), .Y(\pp[5]));
-sg13g2_nor2_2 U43 (.A(n25), .B(n54), .Y(n55));
-sg13g2_nor2_2 U44 (.A(n55), .B(n88), .Y(n90));
-sg13g2_xnor2_1 U45 (.A(n108), .B(\md[2]), .Y(n96));
-sg13g2_nand2_2 U46 (.A(n73), .B(n82), .Y(n79));
-sg13g2_nor2_2 U47 (.A(n56), .B(n25), .Y(n57));
-sg13g2_nor2_2 U48 (.A(n81), .B(n57), .Y(n83));
-sg13g2_inv_2 U49 (.A(n83), .Y(\pp[13]));
-sg13g2_o21ai_1 U50 (.A1(n69), .A2(n113), .B1(n75), .Y(\pp[10]));
-sg13g2_nor2_2 U51 (.A(n58), .B(n53), .Y(n59));
-sg13g2_nor2_2 U52 (.A(n59), .B(n76), .Y(n78));
-sg13g2_nor2_2 U53 (.A(n114), .B(n80), .Y(n76));
-sg13g2_nand2_2 U54 (.A(n73), .B(n77), .Y(n75));
-sg13g2_inv_2 U55 (.A(n90), .Y(\pp[15]));
-sg13g2_inv_2 U56 (.A(n118), .Y(\pp[9]));
-sg13g2_xnor2_1 U57 (.A(negation), .B(\md[11]), .Y(n80));
-sg13g2_a21oi_2 U58 (.A1(n117), .A2(n116), .B1(n115), .Y(n118));
-sg13g2_xnor2_1 U59 (.A(n61), .B(\md[1]), .Y(n60));
-sg13g2_o21ai_1 U60 (.A1(n92), .A2(n114), .B1(n74), .Y(\pp[0]));
-sg13g2_inv_2 U61 (.A(n108), .Y(n61));
-sg13g2_nor2_2 U62 (.A(n114), .B(n85), .Y(n81));
-sg13g2_xnor2_1 U63 (.A(n108), .B(\md[4]), .Y(n101));
-sg13g2_xnor2_1 U64 (.A(n61), .B(\md[0]), .Y(n92));
-sg13g2_xnor2_1 U65 (.A(n68), .B(\md[7]), .Y(n112));
-sg13g2_o21ai_1 U66 (.A1(n99), .A2(n69), .B1(n98), .Y(\pp[4]));
-sg13g2_xnor2_1 U67 (.A(n61), .B(\md[3]), .Y(n99));
-sg13g2_nand2_2 U68 (.A(n73), .B(n106), .Y(n103));
-sg13g2_inv_2 U69 (.A(n109), .Y(n72));
-sg13g2_o21ai_1 U70 (.A1(n60), .A2(n69), .B1(n94), .Y(\pp[2]));
-sg13g2_inv_2 U71 (.A(n78), .Y(\pp[11]));
-sg13g2_nand2_2 U72 (.A(n86), .B(n87), .Y(\pp[16]));
-sg13g2_nand2_2 U73 (.A(n68), .B(\md[13]), .Y(n63));
-sg13g2_nand2_2 U74 (.A(n108), .B(n62), .Y(n64));
-sg13g2_nand2_2 U75 (.A(n63), .B(n64), .Y(n85));
-sg13g2_inv_2 U76 (.A(\md[13]), .Y(n62));
-sg13g2_o21ai_1 U77 (.A1(n112), .A2(n69), .B1(n110), .Y(\pp[8]));
-sg13g2_nand2_2 U78 (.A(n73), .B(n117), .Y(n110));
-sg13g2_inv_2 U79 (.A(n107), .Y(\pp[7]));
-sg13g2_xnor2_1 U80 (.A(n108), .B(\md[14]), .Y(n89));
-sg13g2_nand2_2 U81 (.A(n65), .B(n66), .Y(n67));
-sg13g2_nand2_2 U82 (.A(n67), .B(n84), .Y(\pp[14]));
-sg13g2_inv_2 U83 (.A(n69), .Y(n66));
-sg13g2_nand2_2 U84 (.A(n73), .B(n89), .Y(n84));
-sg13g2_xnor2_1 U85 (.A(n108), .B(\md[6]), .Y(n106));
-sg13g2_buf_2 U86 (.A(negation), .X(n68));
-sg13g2_xnor2_1 U87 (.A(negation), .B(\md[9]), .Y(n113));
-sg13g2_buf_2 U88 (.A(n111), .X(n69));
-sg13g2_inv_2 U89 (.A(double), .Y(n70));
-sg13g2_nand2_2 U90 (.A(n86), .B(double), .Y(n111));
-sg13g2_nor2_2 U91 (.A(double), .B(zero), .Y(n109));
-endmodule
-
-module half_adder_9 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_xnor2_1 U1 (.A(B), .B(n3), .Y(S));
-sg13g2_inv_2 U2 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module partial_product_gen_1 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_xnor2_1 U2 (.A(negation), .B(\md[3]), .Y(n72));
-sg13g2_xnor2_1 U3 (.A(n81), .B(\md[2]), .Y(n69));
-sg13g2_inv_2 U4 (.A(n75), .Y(\pp[5]));
-sg13g2_o21ai_1 U5 (.A1(n85), .A2(n84), .B1(n83), .Y(\pp[8]));
-sg13g2_nand2_2 U6 (.A(n82), .B(n90), .Y(n83));
-sg13g2_a21oi_2 U7 (.A1(n55), .A2(n89), .B1(n54), .Y(n37));
-sg13g2_inv_2 U8 (.A(n80), .Y(\pp[7]));
-sg13g2_a21oi_2 U9 (.A1(n79), .A2(n89), .B1(n78), .Y(n80));
-sg13g2_nor2_2 U10 (.A(n87), .B(n85), .Y(n78));
-sg13g2_xnor2_1 U11 (.A(negation), .B(\md[7]), .Y(n85));
-sg13g2_o21ai_1 U12 (.A1(n77), .A2(n84), .B1(n76), .Y(\pp[6]));
-sg13g2_nand2_2 U13 (.A(n82), .B(n79), .Y(n76));
-sg13g2_xnor2_1 U14 (.A(n81), .B(\md[6]), .Y(n79));
-sg13g2_inv_2 U15 (.A(n37), .Y(\pp[13]));
-sg13g2_a21oi_2 U16 (.A1(n74), .A2(n89), .B1(n73), .Y(n75));
-sg13g2_nor2_2 U17 (.A(n87), .B(n77), .Y(n73));
-sg13g2_xnor2_1 U18 (.A(negation), .B(\md[5]), .Y(n77));
-sg13g2_o21ai_1 U19 (.A1(n72), .A2(n84), .B1(n71), .Y(\pp[4]));
-sg13g2_nand2_2 U20 (.A(n82), .B(n74), .Y(n71));
-sg13g2_xnor2_1 U21 (.A(n81), .B(\md[4]), .Y(n74));
-sg13g2_inv_2 U22 (.A(n70), .Y(\pp[3]));
-sg13g2_a21oi_2 U23 (.A1(n69), .A2(n89), .B1(n68), .Y(n70));
-sg13g2_inv_2 U24 (.A(n84), .Y(n89));
-sg13g2_nor2_2 U25 (.A(n87), .B(n72), .Y(n68));
-sg13g2_nor2_2 U26 (.A(n87), .B(n86), .Y(n88));
-sg13g2_nand2_2 U27 (.A(n82), .B(n69), .Y(n66));
-sg13g2_xnor2_1 U28 (.A(negation), .B(\md[9]), .Y(n86));
-sg13g2_inv_2 U29 (.A(n65), .Y(n67));
-sg13g2_o21ai_1 U30 (.A1(n64), .A2(n84), .B1(n63), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n82), .B(n65), .Y(n63));
-sg13g2_xnor2_1 U32 (.A(n81), .B(\md[1]), .Y(n65));
-sg13g2_inv_2 U33 (.A(n62), .Y(\pp[15]));
-sg13g2_a21oi_2 U34 (.A1(n61), .A2(n89), .B1(n60), .Y(n62));
-sg13g2_nor2_2 U35 (.A(\pp[16]), .B(double), .Y(n60));
-sg13g2_nand2_2 U36 (.A(n59), .B(n58), .Y(\pp[16]));
-sg13g2_xnor2_1 U37 (.A(n81), .B(\md[15]), .Y(n59));
-sg13g2_o21ai_1 U38 (.A1(n57), .A2(n84), .B1(n56), .Y(\pp[14]));
-sg13g2_nand2_2 U39 (.A(n82), .B(n61), .Y(n56));
-sg13g2_xnor2_1 U40 (.A(n81), .B(\md[14]), .Y(n61));
-sg13g2_inv_2 U41 (.A(negation), .Y(n81));
-sg13g2_o21ai_1 U42 (.A1(n67), .A2(n84), .B1(n66), .Y(\pp[2]));
-sg13g2_nor2_2 U43 (.A(n87), .B(n57), .Y(n54));
-sg13g2_xnor2_1 U44 (.A(negation), .B(\md[13]), .Y(n57));
-sg13g2_o21ai_1 U45 (.A1(n53), .A2(n84), .B1(n52), .Y(\pp[12]));
-sg13g2_nand2_2 U46 (.A(n82), .B(n55), .Y(n52));
-sg13g2_xnor2_1 U47 (.A(n81), .B(\md[12]), .Y(n55));
-sg13g2_inv_2 U48 (.A(n51), .Y(\pp[11]));
-sg13g2_a21oi_2 U49 (.A1(n50), .A2(n89), .B1(n49), .Y(n51));
-sg13g2_nor2_2 U50 (.A(n87), .B(n53), .Y(n49));
-sg13g2_xnor2_1 U51 (.A(negation), .B(\md[11]), .Y(n53));
-sg13g2_xnor2_1 U52 (.A(n81), .B(\md[8]), .Y(n90));
-sg13g2_o21ai_1 U53 (.A1(n86), .A2(n84), .B1(n48), .Y(\pp[10]));
-sg13g2_nand2_2 U54 (.A(n82), .B(n50), .Y(n48));
-sg13g2_xnor2_1 U55 (.A(n81), .B(\md[10]), .Y(n50));
-sg13g2_inv_2 U56 (.A(n91), .Y(\pp[9]));
-sg13g2_a21oi_2 U57 (.A1(n90), .A2(n89), .B1(n88), .Y(n91));
-sg13g2_nand2_2 U58 (.A(double), .B(n58), .Y(n84));
-sg13g2_inv_2 U59 (.A(zero), .Y(n58));
-sg13g2_o21ai_1 U60 (.A1(n64), .A2(n87), .B1(n47), .Y(\pp[0]));
-sg13g2_nand2_2 U61 (.A(double), .B(negation), .Y(n47));
-sg13g2_inv_2 U62 (.A(n82), .Y(n87));
-sg13g2_nor2_2 U63 (.A(double), .B(zero), .Y(n82));
-sg13g2_xnor2_1 U64 (.A(negation), .B(\md[0]), .Y(n64));
-endmodule
-
-module half_adder_10 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module half_adder_13 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module half_adder_14 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module half_adder_15 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module half_adder_3 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_xnor2_1 U1 (.A(n3), .B(B), .Y(S));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(A), .Y(n3));
-sg13g2_inv_2 U4 (.A(n4), .Y(carry));
-endmodule
-
-module half_adder_6 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(A), .Y(n6));
-sg13g2_nand2_2 U2 (.A(B), .B(n6), .Y(n4));
-sg13g2_nand2_2 U3 (.A(n3), .B(A), .Y(n5));
-sg13g2_nand2_2 U4 (.A(n4), .B(n5), .Y(S));
-sg13g2_inv_2 U5 (.A(B), .Y(n3));
-sg13g2_inv_2 U6 (.A(n7), .Y(carry));
-sg13g2_nand2_2 U7 (.A(B), .B(A), .Y(n7));
-endmodule
-
-module half_adder_16 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module half_adder_0 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n1), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n1));
-sg13g2_xnor2_1 U3 (.A(n2), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n2));
-endmodule
-
-module full_adder_1 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(B), .B(A), .Y(n6));
-sg13g2_xnor2_1 U5 (.A(cin), .B(n6), .Y(S));
-endmodule
-
-module partial_product_gen_4 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_inv_2 U2 (.A(n104), .Y(n109));
-sg13g2_xnor2_1 U3 (.A(n57), .B(\md[13]), .Y(n78));
-sg13g2_a21oi_2 U4 (.A1(n109), .A2(n70), .B1(n69), .Y(n71));
-sg13g2_nand2_2 U5 (.A(n80), .B(n79), .Y(\pp[16]));
-sg13g2_nand2_2 U6 (.A(n55), .B(n110), .Y(n103));
-sg13g2_nand2_2 U7 (.A(n47), .B(n48), .Y(n49));
-sg13g2_o21ai_1 U8 (.A1(n11), .A2(n105), .B1(n103), .Y(\pp[8]));
-sg13g2_a21oi_2 U9 (.A1(n109), .A2(n100), .B1(n99), .Y(n101));
-sg13g2_nor2_2 U10 (.A(n107), .B(n105), .Y(n99));
-sg13g2_xnor2_1 U11 (.A(n57), .B(\md[7]), .Y(n105));
-sg13g2_o21ai_1 U12 (.A1(n98), .A2(n56), .B1(n97), .Y(\pp[6]));
-sg13g2_nand2_2 U13 (.A(n55), .B(n100), .Y(n97));
-sg13g2_xnor2_1 U14 (.A(n66), .B(\md[6]), .Y(n100));
-sg13g2_inv_2 U15 (.A(n96), .Y(\pp[5]));
-sg13g2_a21oi_2 U16 (.A1(n109), .A2(n95), .B1(n94), .Y(n96));
-sg13g2_nor2_2 U17 (.A(n107), .B(n98), .Y(n94));
-sg13g2_xnor2_1 U18 (.A(n57), .B(\md[5]), .Y(n98));
-sg13g2_o21ai_1 U19 (.A1(n93), .A2(n56), .B1(n92), .Y(\pp[4]));
-sg13g2_nand2_2 U20 (.A(n55), .B(n95), .Y(n92));
-sg13g2_xnor2_1 U21 (.A(n66), .B(\md[4]), .Y(n95));
-sg13g2_inv_2 U22 (.A(n91), .Y(\pp[3]));
-sg13g2_a21oi_2 U23 (.A1(n109), .A2(n90), .B1(n89), .Y(n91));
-sg13g2_nor2_2 U24 (.A(n107), .B(n93), .Y(n89));
-sg13g2_xnor2_1 U25 (.A(n57), .B(\md[3]), .Y(n93));
-sg13g2_o21ai_1 U26 (.A1(n88), .A2(n11), .B1(n87), .Y(\pp[2]));
-sg13g2_nand2_2 U27 (.A(n55), .B(n90), .Y(n87));
-sg13g2_xnor2_1 U28 (.A(n66), .B(\md[2]), .Y(n90));
-sg13g2_inv_2 U29 (.A(n86), .Y(n88));
-sg13g2_o21ai_1 U30 (.A1(n85), .A2(n56), .B1(n84), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n55), .B(n86), .Y(n84));
-sg13g2_nor2_2 U32 (.A(n107), .B(n106), .Y(n108));
-sg13g2_inv_2 U33 (.A(n58), .Y(n106));
-sg13g2_inv_2 U34 (.A(n56), .Y(n48));
-sg13g2_inv_2 U35 (.A(n76), .Y(\pp[13]));
-sg13g2_inv_2 U36 (.A(n101), .Y(\pp[7]));
-sg13g2_inv_2 U37 (.A(n109), .Y(n11));
-sg13g2_a21oi_2 U38 (.A1(n82), .A2(n109), .B1(n81), .Y(n83));
-sg13g2_xnor2_1 U39 (.A(n65), .B(\md[10]), .Y(n70));
-sg13g2_nand2_2 U40 (.A(n82), .B(n55), .Y(n77));
-sg13g2_a21oi_2 U41 (.A1(n75), .A2(n109), .B1(n74), .Y(n76));
-sg13g2_nor2_2 U42 (.A(n107), .B(n78), .Y(n74));
-sg13g2_inv_2 U43 (.A(n83), .Y(\pp[15]));
-sg13g2_nor2_2 U44 (.A(\pp[16]), .B(n54), .Y(n81));
-sg13g2_nand2_2 U45 (.A(n60), .B(n61), .Y(n80));
-sg13g2_nand2_2 U46 (.A(n66), .B(\md[15]), .Y(n60));
-sg13g2_nand2_2 U47 (.A(n49), .B(n72), .Y(\pp[12]));
-sg13g2_inv_2 U48 (.A(n73), .Y(n47));
-sg13g2_nand2_2 U49 (.A(double), .B(n79), .Y(n104));
-sg13g2_inv_2 U50 (.A(n111), .Y(\pp[9]));
-sg13g2_xnor2_1 U51 (.A(negation), .B(\md[11]), .Y(n73));
-sg13g2_xnor2_1 U52 (.A(n66), .B(\md[1]), .Y(n86));
-sg13g2_nand2_2 U53 (.A(n62), .B(\md[8]), .Y(n51));
-sg13g2_nand2_2 U54 (.A(n64), .B(n50), .Y(n52));
-sg13g2_nand2_2 U55 (.A(n51), .B(n52), .Y(n110));
-sg13g2_inv_2 U56 (.A(\md[8]), .Y(n50));
-sg13g2_a21oi_2 U57 (.A1(n110), .A2(n109), .B1(n108), .Y(n111));
-sg13g2_inv_2 U58 (.A(double), .Y(n53));
-sg13g2_inv_2 U59 (.A(n53), .Y(n54));
-sg13g2_o21ai_1 U60 (.A1(n85), .A2(n107), .B1(n67), .Y(\pp[0]));
-sg13g2_nand2_2 U61 (.A(n54), .B(n57), .Y(n67));
-sg13g2_nand2_2 U62 (.A(n58), .B(n48), .Y(n63));
-sg13g2_nand2_2 U63 (.A(n102), .B(n70), .Y(n68));
-sg13g2_xnor2_1 U64 (.A(n57), .B(\md[0]), .Y(n85));
-sg13g2_nand2_2 U65 (.A(double), .B(n79), .Y(n56));
-sg13g2_xnor2_1 U66 (.A(n65), .B(\md[12]), .Y(n75));
-sg13g2_inv_2 U67 (.A(n71), .Y(\pp[11]));
-sg13g2_inv_2 U68 (.A(n107), .Y(n55));
-sg13g2_inv_2 U69 (.A(negation), .Y(n62));
-sg13g2_o21ai_1 U70 (.A1(n78), .A2(n56), .B1(n77), .Y(\pp[14]));
-sg13g2_buf_2 U71 (.A(negation), .X(n57));
-sg13g2_nand2_2 U72 (.A(n75), .B(n102), .Y(n72));
-sg13g2_xnor2_1 U73 (.A(n66), .B(\md[14]), .Y(n82));
-sg13g2_inv_2 U74 (.A(n64), .Y(n66));
-sg13g2_nor2_2 U75 (.A(n73), .B(n107), .Y(n69));
-sg13g2_xnor2_1 U76 (.A(n62), .B(\md[9]), .Y(n58));
-sg13g2_nand2_2 U77 (.A(n57), .B(n59), .Y(n61));
-sg13g2_inv_2 U78 (.A(\md[15]), .Y(n59));
-sg13g2_nand2_2 U79 (.A(n63), .B(n68), .Y(\pp[10]));
-sg13g2_inv_2 U80 (.A(n62), .Y(n64));
-sg13g2_inv_2 U81 (.A(n64), .Y(n65));
-sg13g2_inv_2 U82 (.A(n102), .Y(n107));
-sg13g2_nor2_2 U83 (.A(double), .B(zero), .Y(n102));
-sg13g2_inv_2 U84 (.A(zero), .Y(n79));
-endmodule
-
-module full_adder_5 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(n6), .B(n7), .Y(n9));
-sg13g2_nand3_1 U2 (.A(n9), .B(n8), .C(n3), .Y(n5));
-sg13g2_nand2_2 U3 (.A(n6), .B(n7), .Y(n1));
-sg13g2_inv_2 U4 (.A(B), .Y(n6));
-sg13g2_nand2_2 U5 (.A(n2), .B(cin), .Y(n4));
-sg13g2_nand2_2 U6 (.A(n1), .B(n8), .Y(n2));
-sg13g2_o21ai_1 U7 (.A1(n2), .A2(n3), .B1(n8), .Y(cout));
-sg13g2_inv_2 U8 (.A(A), .Y(n7));
-sg13g2_nand2_2 U9 (.A(B), .B(A), .Y(n8));
-sg13g2_nand2_2 U10 (.A(n5), .B(n4), .Y(S));
-sg13g2_inv_2 U11 (.A(cin), .Y(n3));
-endmodule
-
-module full_adder_6 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(n2), .B(n4), .Y(net11964));
-sg13g2_nand2_2 U2 (.A(n5), .B(A), .Y(n3));
-sg13g2_nand2_2 U3 (.A(net11964), .B(net11963), .Y(net12006));
-sg13g2_nand2_2 U4 (.A(net11964), .B(net11963), .Y(n1));
-sg13g2_inv_2 U5 (.A(B), .Y(n4));
-sg13g2_inv_2 U6 (.A(n4), .Y(n5));
-sg13g2_inv_2 U7 (.A(A), .Y(n2));
-sg13g2_nand2_2 U8 (.A(A), .B(B), .Y(net11963));
-sg13g2_nand2_2 U9 (.A(n1), .B(cin), .Y(net10277));
-sg13g2_inv_2 U10 (.A(n1), .Y(net10275));
-sg13g2_nand2_2 U11 (.A(net10278), .B(net10277), .Y(S));
-sg13g2_inv_2 U12 (.A(cin), .Y(net10276));
-sg13g2_nand2_2 U13 (.A(net10275), .B(net10276), .Y(net10278));
-sg13g2_o21ai_1 U14 (.A1(net10276), .A2(net12006), .B1(n3), .Y(cout));
-endmodule
-
-module full_adder_15 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_inv_2 U1 (.A(n6), .Y(n4));
-sg13g2_xnor2_1 U2 (.A(cin), .B(n1), .Y(S));
-sg13g2_inv_2 U3 (.A(cin), .Y(n11));
-sg13g2_nand2_2 U4 (.A(n7), .B(n8), .Y(n1));
-sg13g2_inv_2 U5 (.A(B), .Y(n5));
-sg13g2_nand2_2 U6 (.A(n4), .B(B), .Y(n10));
-sg13g2_inv_2 U7 (.A(A), .Y(n6));
-sg13g2_nand2_2 U8 (.A(B), .B(A), .Y(n7));
-sg13g2_nand2_2 U9 (.A(n5), .B(n6), .Y(n8));
-sg13g2_nand2_2 U10 (.A(n8), .B(n7), .Y(n9));
-sg13g2_o21ai_1 U11 (.A1(n9), .A2(n11), .B1(n10), .Y(cout));
-endmodule
-
-module full_adder_16 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(net10545), .B(net10546), .Y(n6));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n5));
-sg13g2_inv_2 U3 (.A(cin), .Y(n2));
-sg13g2_nand2_2 U4 (.A(n6), .B(net10547), .Y(S));
-sg13g2_inv_2 U5 (.A(cin), .Y(net10546));
-sg13g2_inv_2 U6 (.A(n4), .Y(net10545));
-sg13g2_nand2_2 U7 (.A(n4), .B(cin), .Y(net10547));
-sg13g2_xnor2_1 U8 (.A(B), .B(A), .Y(n4));
-sg13g2_o21ai_1 U9 (.A1(n2), .A2(n4), .B1(n5), .Y(cout));
-endmodule
-
-module full_adder_38 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n7), .A2(n6), .B1(n5), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(n4), .Y(n5));
-sg13g2_inv_2 U3 (.A(cin), .Y(n6));
-sg13g2_xnor2_1 U4 (.A(n7), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(n4), .B(A), .Y(n7));
-sg13g2_buf_2 U6 (.A(B), .X(n4));
-endmodule
-
-module half_adder_12 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module full_adder_27 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_inv_2 U1 (.A(n8), .Y(n2));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n7));
-sg13g2_o21ai_1 U3 (.A1(n4), .A2(n8), .B1(n7), .Y(cout));
-sg13g2_nand2_2 U4 (.A(n8), .B(cin), .Y(n5));
-sg13g2_nand2_2 U5 (.A(n2), .B(n4), .Y(n6));
-sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(S));
-sg13g2_inv_2 U7 (.A(cin), .Y(n4));
-sg13g2_xnor2_1 U8 (.A(B), .B(A), .Y(n8));
-endmodule
-
-module full_adder_41 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module half_adder_11 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module compressor42_10 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n23), .B(n22), .Y(cout));
-sg13g2_nand3_1 U2 (.A(n19), .B(n10), .C(n16), .Y(carry));
-sg13g2_nand2_2 U3 (.A(n13), .B(n23), .Y(n20));
-sg13g2_nand2_2 U4 (.A(C), .B(D), .Y(n23));
-sg13g2_nand2_2 U5 (.A(n5), .B(n6), .Y(n10));
-sg13g2_inv_2 U6 (.A(n17), .Y(n18));
-sg13g2_xnor2_1 U7 (.A(n17), .B(cin), .Y(S));
-sg13g2_xnor2_1 U8 (.A(n21), .B(n20), .Y(n17));
-sg13g2_inv_2 U9 (.A(n23), .Y(n5));
-sg13g2_inv_2 U10 (.A(n22), .Y(n6));
-sg13g2_o21ai_1 U11 (.A1(B), .A2(A), .B1(n22), .Y(n21));
-sg13g2_nand2_2 U12 (.A(n18), .B(cin), .Y(n19));
-sg13g2_nand2_2 U13 (.A(n11), .B(n12), .Y(n13));
-sg13g2_inv_2 U14 (.A(D), .Y(n11));
-sg13g2_inv_2 U15 (.A(C), .Y(n12));
-sg13g2_nand2_2 U16 (.A(n14), .B(n15), .Y(n16));
-sg13g2_inv_2 U17 (.A(n21), .Y(n14));
-sg13g2_inv_2 U18 (.A(n20), .Y(n15));
-sg13g2_nand2_2 U19 (.A(B), .B(A), .Y(n22));
-endmodule
-
-module full_adder_28 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n7), .B1(n5), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n5));
-sg13g2_inv_2 U3 (.A(cin), .Y(n6));
-sg13g2_xnor2_1 U4 (.A(n7), .B(n4), .Y(S));
-sg13g2_xnor2_1 U5 (.A(A), .B(B), .Y(n7));
-sg13g2_inv_2 U6 (.A(n6), .Y(n4));
-endmodule
-
-module half_adder_8 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(A), .Y(n3));
-sg13g2_xnor2_1 U2 (.A(B), .B(n3), .Y(S));
-sg13g2_inv_2 U3 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U4 (.A(A), .B(B), .Y(n4));
-endmodule
-
-module full_adder_19 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
-sg13g2_inv_2 U3 (.A(cin), .Y(n9));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n7));
-sg13g2_nand2_2 U6 (.A(n6), .B(n7), .Y(n10));
-sg13g2_inv_2 U7 (.A(B), .Y(n4));
-sg13g2_inv_2 U8 (.A(A), .Y(n5));
-sg13g2_xnor2_1 U9 (.A(n10), .B(cin), .Y(S));
-endmodule
-
-module full_adder_40 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n8));
-sg13g2_inv_2 U3 (.A(cin), .Y(n9));
-sg13g2_xnor2_1 U4 (.A(n10), .B(cin), .Y(S));
-sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n7));
-sg13g2_nand2_2 U6 (.A(n6), .B(n7), .Y(n10));
-sg13g2_inv_2 U7 (.A(B), .Y(n4));
-sg13g2_inv_2 U8 (.A(A), .Y(n5));
-sg13g2_o21ai_1 U9 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
-endmodule
-
-module compressor42_11 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n18), .B(n17), .Y(cout));
-sg13g2_inv_2 U2 (.A(n13), .Y(n14));
-sg13g2_o21ai_1 U3 (.A1(n18), .A2(n17), .B1(n12), .Y(n13));
-sg13g2_nand2_2 U4 (.A(n11), .B(cin), .Y(n12));
-sg13g2_inv_2 U5 (.A(n10), .Y(n11));
-sg13g2_o21ai_1 U6 (.A1(D), .A2(C), .B1(n18), .Y(n15));
-sg13g2_xnor2_1 U7 (.A(n10), .B(cin), .Y(S));
-sg13g2_xnor2_1 U8 (.A(n15), .B(n16), .Y(n10));
-sg13g2_nand2_2 U9 (.A(A), .B(B), .Y(n17));
-sg13g2_o21ai_1 U10 (.A1(A), .A2(B), .B1(n17), .Y(n16));
-sg13g2_o21ai_1 U11 (.A1(n16), .A2(n15), .B1(n14), .Y(carry));
-sg13g2_nand2_2 U12 (.A(C), .B(D), .Y(n18));
-endmodule
-
-module full_adder_42 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module partial_product_gen_3 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_inv_2 U2 (.A(zero), .Y(n58));
-sg13g2_a21oi_2 U3 (.A1(n89), .A2(n61), .B1(n60), .Y(n62));
-sg13g2_nor2_2 U4 (.A(\pp[16]), .B(double), .Y(n60));
-sg13g2_nand2_2 U5 (.A(n82), .B(n50), .Y(n48));
-sg13g2_nand2_2 U6 (.A(n82), .B(n90), .Y(n83));
-sg13g2_inv_2 U7 (.A(n91), .Y(\pp[9]));
-sg13g2_a21oi_2 U8 (.A1(n89), .A2(n90), .B1(n88), .Y(n91));
-sg13g2_a21oi_2 U9 (.A1(n79), .A2(n89), .B1(n78), .Y(n80));
-sg13g2_nor2_2 U10 (.A(n87), .B(n85), .Y(n78));
-sg13g2_xnor2_1 U11 (.A(negation), .B(\md[7]), .Y(n85));
-sg13g2_o21ai_1 U12 (.A1(n77), .A2(n84), .B1(n76), .Y(\pp[6]));
-sg13g2_nand2_2 U13 (.A(n82), .B(n79), .Y(n76));
-sg13g2_xnor2_1 U14 (.A(n81), .B(\md[6]), .Y(n79));
-sg13g2_inv_2 U15 (.A(n75), .Y(\pp[5]));
-sg13g2_a21oi_2 U16 (.A1(n74), .A2(n89), .B1(n73), .Y(n75));
-sg13g2_inv_2 U17 (.A(n80), .Y(\pp[7]));
-sg13g2_inv_2 U18 (.A(n70), .Y(\pp[3]));
-sg13g2_o21ai_1 U19 (.A1(n72), .A2(n84), .B1(n71), .Y(\pp[4]));
-sg13g2_a21oi_2 U20 (.A1(n89), .A2(n55), .B1(n54), .Y(n37));
-sg13g2_inv_2 U21 (.A(n37), .Y(\pp[13]));
-sg13g2_nand2_2 U22 (.A(n82), .B(n74), .Y(n71));
-sg13g2_a21oi_2 U23 (.A1(n69), .A2(n89), .B1(n68), .Y(n70));
-sg13g2_nor2_2 U24 (.A(n87), .B(n72), .Y(n68));
-sg13g2_o21ai_1 U25 (.A1(n85), .A2(n84), .B1(n83), .Y(\pp[8]));
-sg13g2_inv_2 U26 (.A(negation), .Y(n81));
-sg13g2_nand2_2 U27 (.A(n82), .B(n69), .Y(n66));
-sg13g2_xnor2_1 U28 (.A(n81), .B(\md[2]), .Y(n69));
-sg13g2_inv_2 U29 (.A(n65), .Y(n67));
-sg13g2_o21ai_1 U30 (.A1(n64), .A2(n84), .B1(n63), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n82), .B(n65), .Y(n63));
-sg13g2_xnor2_1 U32 (.A(n81), .B(\md[1]), .Y(n65));
-sg13g2_nand2_2 U33 (.A(n55), .B(n82), .Y(n52));
-sg13g2_xnor2_1 U34 (.A(n81), .B(\md[4]), .Y(n74));
-sg13g2_xnor2_1 U35 (.A(negation), .B(\md[3]), .Y(n72));
-sg13g2_nand2_2 U36 (.A(n59), .B(n58), .Y(\pp[16]));
-sg13g2_xnor2_1 U37 (.A(n81), .B(\md[15]), .Y(n59));
-sg13g2_o21ai_1 U38 (.A1(n57), .A2(n84), .B1(n56), .Y(\pp[14]));
-sg13g2_nand2_2 U39 (.A(n82), .B(n61), .Y(n56));
-sg13g2_xnor2_1 U40 (.A(n81), .B(\md[14]), .Y(n61));
-sg13g2_inv_2 U41 (.A(n51), .Y(\pp[11]));
-sg13g2_o21ai_1 U42 (.A1(n53), .A2(n84), .B1(n52), .Y(\pp[12]));
-sg13g2_xnor2_1 U43 (.A(n81), .B(\md[8]), .Y(n90));
-sg13g2_nor2_2 U44 (.A(n87), .B(n86), .Y(n88));
-sg13g2_a21oi_2 U45 (.A1(n50), .A2(n89), .B1(n49), .Y(n51));
-sg13g2_xnor2_1 U46 (.A(n81), .B(\md[10]), .Y(n50));
-sg13g2_nor2_2 U47 (.A(n87), .B(n57), .Y(n54));
-sg13g2_xnor2_1 U48 (.A(negation), .B(\md[13]), .Y(n57));
-sg13g2_nor2_2 U49 (.A(n53), .B(n87), .Y(n49));
-sg13g2_xnor2_1 U50 (.A(negation), .B(\md[11]), .Y(n53));
-sg13g2_xnor2_1 U51 (.A(n81), .B(\md[12]), .Y(n55));
-sg13g2_inv_2 U52 (.A(n62), .Y(\pp[15]));
-sg13g2_nor2_2 U53 (.A(n87), .B(n77), .Y(n73));
-sg13g2_xnor2_1 U54 (.A(negation), .B(\md[5]), .Y(n77));
-sg13g2_o21ai_1 U55 (.A1(n86), .A2(n84), .B1(n48), .Y(\pp[10]));
-sg13g2_o21ai_1 U56 (.A1(n67), .A2(n84), .B1(n66), .Y(\pp[2]));
-sg13g2_inv_2 U57 (.A(n84), .Y(n89));
-sg13g2_xnor2_1 U58 (.A(negation), .B(\md[9]), .Y(n86));
-sg13g2_nor2_2 U59 (.A(double), .B(zero), .Y(n82));
-sg13g2_o21ai_1 U60 (.A1(n64), .A2(n87), .B1(n47), .Y(\pp[0]));
-sg13g2_nand2_2 U61 (.A(double), .B(negation), .Y(n47));
-sg13g2_nand2_2 U62 (.A(double), .B(n58), .Y(n84));
-sg13g2_inv_2 U63 (.A(n82), .Y(n87));
-sg13g2_xnor2_1 U64 (.A(negation), .B(\md[0]), .Y(n64));
-endmodule
-
-module full_adder_12 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand3_1 U1 (.A(n2), .B(net10321), .C(n5), .Y(n4));
-sg13g2_o21ai_1 U2 (.A1(n6), .A2(n2), .B1(n5), .Y(cout));
-sg13g2_nand2_2 U3 (.A(n1), .B(cin), .Y(n3));
-sg13g2_nand2_2 U4 (.A(n4), .B(n3), .Y(S));
-sg13g2_inv_2 U5 (.A(cin), .Y(n2));
-sg13g2_inv_2 U6 (.A(net10321), .Y(n6));
-sg13g2_inv_2 U7 (.A(B), .Y(net10318));
-sg13g2_nand2_2 U8 (.A(net10321), .B(n5), .Y(n1));
-sg13g2_nand2_2 U9 (.A(A), .B(B), .Y(n5));
-sg13g2_inv_2 U10 (.A(A), .Y(net10319));
-sg13g2_nand2_2 U11 (.A(net10318), .B(net10319), .Y(net10321));
-endmodule
-
-module compressor42_16 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n28), .B(n27), .Y(cout));
-sg13g2_nand3_1 U2 (.A(n24), .B(n10), .C(n14), .Y(carry));
-sg13g2_inv_2 U3 (.A(n25), .Y(n11));
-sg13g2_nand2_2 U4 (.A(n23), .B(cin), .Y(n24));
-sg13g2_inv_2 U5 (.A(C), .Y(n19));
-sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(n10));
-sg13g2_inv_2 U7 (.A(n28), .Y(n5));
-sg13g2_inv_2 U8 (.A(n27), .Y(n6));
-sg13g2_inv_2 U9 (.A(D), .Y(n20));
-sg13g2_inv_2 U10 (.A(n26), .Y(n15));
-sg13g2_xnor2_1 U11 (.A(n22), .B(cin), .Y(S));
-sg13g2_nand2_2 U12 (.A(B), .B(A), .Y(n27));
-sg13g2_nand2_2 U13 (.A(n25), .B(n26), .Y(n12));
-sg13g2_nand2_2 U14 (.A(n15), .B(n11), .Y(n13));
-sg13g2_nand2_2 U15 (.A(n13), .B(n12), .Y(n22));
-sg13g2_inv_2 U16 (.A(n22), .Y(n23));
-sg13g2_nand2_2 U17 (.A(n21), .B(n28), .Y(n25));
-sg13g2_nand2_2 U18 (.A(n15), .B(n11), .Y(n14));
-sg13g2_nand2_2 U19 (.A(n16), .B(n17), .Y(n18));
-sg13g2_nand2_2 U20 (.A(n18), .B(n27), .Y(n26));
-sg13g2_inv_2 U21 (.A(B), .Y(n16));
-sg13g2_inv_2 U22 (.A(A), .Y(n17));
-sg13g2_nand2_2 U23 (.A(n19), .B(n20), .Y(n21));
-sg13g2_nand2_2 U24 (.A(D), .B(C), .Y(n28));
-endmodule
-
-module full_adder_44 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module compressor42_24 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n24), .B(n6), .Y(cout));
-sg13g2_inv_2 U2 (.A(n18), .Y(n19));
-sg13g2_nand2_2 U3 (.A(n13), .B(n14), .Y(n15));
-sg13g2_nand3_1 U4 (.A(n10), .B(n15), .C(n24), .Y(n12));
-sg13g2_inv_2 U5 (.A(n22), .Y(n10));
-sg13g2_nand3_1 U6 (.A(n17), .B(n1), .C(n20), .Y(carry));
-sg13g2_xnor2_1 U7 (.A(n18), .B(cin), .Y(S));
-sg13g2_inv_2 U8 (.A(n23), .Y(n5));
-sg13g2_inv_2 U9 (.A(n5), .Y(n6));
-sg13g2_nand2_2 U10 (.A(B), .B(A), .Y(n23));
-sg13g2_nand2_2 U11 (.A(n19), .B(cin), .Y(n20));
-sg13g2_o21ai_1 U12 (.A1(A), .A2(B), .B1(n23), .Y(n22));
-sg13g2_nand2_2 U13 (.A(D), .B(C), .Y(n24));
-sg13g2_nand2_2 U14 (.A(n22), .B(n21), .Y(n11));
-sg13g2_nand2_2 U15 (.A(n11), .B(n12), .Y(n18));
-sg13g2_nand2_2 U16 (.A(n15), .B(n24), .Y(n21));
-sg13g2_inv_2 U17 (.A(D), .Y(n13));
-sg13g2_inv_2 U18 (.A(C), .Y(n14));
-sg13g2_nand2_2 U19 (.A(n10), .B(n16), .Y(n17));
-sg13g2_inv_2 U20 (.A(n21), .Y(n16));
-sg13g2_nand2b_1 U21 (.A_N(n24), .B(n5), .Y(n1));
-endmodule
-
-module full_adder_0 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n1), .A2(n2), .B1(n3), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n3));
-sg13g2_inv_2 U3 (.A(cin), .Y(n2));
-sg13g2_xnor2_1 U4 (.A(n1), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n1));
-endmodule
-
-module compressor42_15 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_inv_2 U1 (.A(D), .Y(n20));
-sg13g2_nand2_2 U2 (.A(n24), .B(n6), .Y(n11));
-sg13g2_nand2_2 U3 (.A(n22), .B(n29), .Y(n5));
-sg13g2_nand3_1 U4 (.A(n25), .B(n19), .C(n14), .Y(carry));
-sg13g2_nand2_2 U5 (.A(D), .B(C), .Y(n29));
-sg13g2_inv_2 U6 (.A(C), .Y(n21));
-sg13g2_nand2_2 U7 (.A(A), .B(B), .Y(n15));
-sg13g2_nand2_2 U8 (.A(n23), .B(cin), .Y(n10));
-sg13g2_nand2_2 U9 (.A(n10), .B(n11), .Y(S));
-sg13g2_inv_2 U10 (.A(cin), .Y(n6));
-sg13g2_o21ai_1 U11 (.A1(B), .A2(A), .B1(n15), .Y(n12));
-sg13g2_nand2_2 U12 (.A(n21), .B(n20), .Y(n22));
-sg13g2_nand2_2 U13 (.A(n29), .B(n15), .Y(cout));
-sg13g2_inv_2 U14 (.A(n29), .Y(n16));
-sg13g2_xnor2_1 U15 (.A(n27), .B(n26), .Y(n23));
-sg13g2_nand2_2 U16 (.A(n13), .B(n17), .Y(n14));
-sg13g2_inv_2 U17 (.A(n12), .Y(n13));
-sg13g2_nand2_2 U18 (.A(n24), .B(cin), .Y(n25));
-sg13g2_o21ai_1 U19 (.A1(B), .A2(A), .B1(n28), .Y(n27));
-sg13g2_inv_2 U20 (.A(n5), .Y(n17));
-sg13g2_inv_2 U21 (.A(n23), .Y(n24));
-sg13g2_nand2_2 U22 (.A(n16), .B(n18), .Y(n19));
-sg13g2_inv_2 U23 (.A(n15), .Y(n18));
-sg13g2_nand2_2 U24 (.A(n22), .B(n29), .Y(n26));
-sg13g2_nand2_2 U25 (.A(A), .B(B), .Y(n28));
-endmodule
-
-module full_adder_39 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module full_adder_4 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_inv_2 U1 (.A(n7), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(n3));
-sg13g2_inv_2 U3 (.A(cin), .Y(n4));
-sg13g2_xnor2_1 U4 (.A(cin), .B(n9), .Y(S));
-sg13g2_nand2_2 U5 (.A(n8), .B(n7), .Y(n9));
-sg13g2_nand2_2 U6 (.A(n6), .B(n5), .Y(n8));
-sg13g2_nand2_2 U7 (.A(n8), .B(n7), .Y(n10));
-sg13g2_inv_2 U8 (.A(A), .Y(n5));
-sg13g2_inv_2 U9 (.A(B), .Y(n6));
-sg13g2_nand2_2 U10 (.A(A), .B(B), .Y(n7));
-sg13g2_o21ai_1 U11 (.A1(n10), .A2(n4), .B1(n3), .Y(cout));
-endmodule
-
-module compressor42_20 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(D), .B(C), .Y(n30));
-sg13g2_buf_2 U2 (.A(n30), .X(n10));
-sg13g2_inv_2 U3 (.A(D), .Y(n15));
-sg13g2_inv_2 U4 (.A(B), .Y(n19));
-sg13g2_inv_2 U5 (.A(A), .Y(n20));
-sg13g2_xnor2_1 U6 (.A(n12), .B(cin), .Y(S));
-sg13g2_inv_2 U7 (.A(n23), .Y(n11));
-sg13g2_xnor2_1 U8 (.A(n27), .B(n28), .Y(n22));
-sg13g2_buf_2 U9 (.A(n11), .X(n12));
-sg13g2_nand2_2 U10 (.A(n29), .B(n10), .Y(cout));
-sg13g2_inv_2 U11 (.A(n27), .Y(n13));
-sg13g2_o21ai_1 U12 (.A1(n10), .A2(n29), .B1(n24), .Y(n25));
-sg13g2_nand2_2 U13 (.A(B), .B(A), .Y(n29));
-sg13g2_nand2_2 U14 (.A(n14), .B(n15), .Y(n16));
-sg13g2_nand2_2 U15 (.A(n16), .B(n30), .Y(n27));
-sg13g2_inv_2 U16 (.A(C), .Y(n14));
-sg13g2_nand2_2 U17 (.A(n17), .B(n13), .Y(n18));
-sg13g2_nand2_2 U18 (.A(n26), .B(n18), .Y(carry));
-sg13g2_inv_2 U19 (.A(n28), .Y(n17));
-sg13g2_inv_2 U20 (.A(n25), .Y(n26));
-sg13g2_nand2_2 U21 (.A(n23), .B(cin), .Y(n24));
-sg13g2_inv_2 U22 (.A(n22), .Y(n23));
-sg13g2_nand2_2 U23 (.A(n19), .B(n20), .Y(n21));
-sg13g2_nand2_2 U24 (.A(n21), .B(n29), .Y(n28));
-endmodule
-
-module compressor42_21 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n20), .B(n19), .Y(cout));
-sg13g2_inv_2 U2 (.A(n13), .Y(n10));
-sg13g2_o21ai_1 U3 (.A1(B), .A2(A), .B1(n19), .Y(n18));
-sg13g2_xnor2_1 U4 (.A(n18), .B(n17), .Y(n12));
-sg13g2_xnor2_1 U5 (.A(n10), .B(cin), .Y(S));
-sg13g2_nand2_2 U6 (.A(D), .B(C), .Y(n20));
-sg13g2_o21ai_1 U7 (.A1(D), .A2(C), .B1(n20), .Y(n17));
-sg13g2_o21ai_1 U8 (.A1(n11), .A2(n17), .B1(n16), .Y(carry));
-sg13g2_inv_2 U9 (.A(n12), .Y(n13));
-sg13g2_buf_2 U10 (.A(n18), .X(n11));
-sg13g2_nand2_2 U11 (.A(B), .B(A), .Y(n19));
-sg13g2_inv_2 U12 (.A(n15), .Y(n16));
-sg13g2_o21ai_1 U13 (.A1(n19), .A2(n20), .B1(n14), .Y(n15));
-sg13g2_nand2_2 U14 (.A(n13), .B(cin), .Y(n14));
-endmodule
-
 module adder_32bit_1 (\i_a[0], \i_a[1], \i_a[2], \i_a[3], \i_a[4], \i_a[5], \i_a[6], \i_a[7], \i_a[8], \i_a[9], \i_a[10], \i_a[11], \i_a[12], \i_a[13], \i_a[14], \i_a[15], \i_a[16], \i_a[17], \i_a[18], \i_a[19], \i_a[20], \i_a[21], \i_a[22], \i_a[23], \i_a[24], \i_a[25], \i_a[26], \i_a[27], \i_a[28], \i_a[29], \i_a[30], \i_a[31], \i_b[0], \i_b[1], \i_b[2], \i_b[3], \i_b[4], \i_b[5], \i_b[6], \i_b[7], \i_b[8], \i_b[9], \i_b[10], \i_b[11], \i_b[12], \i_b[13], \i_b[14], \i_b[15], \i_b[16], \i_b[17], \i_b[18], \i_b[19], \i_b[20], \i_b[21], \i_b[22], \i_b[23], \i_b[24], \i_b[25], \i_b[26], \i_b[27], \i_b[28], \i_b[29], \i_b[30], \i_b[31], \o_s[0], \o_s[1], \o_s[2], \o_s[3], \o_s[4], \o_s[5], \o_s[6], \o_s[7], \o_s[8], \o_s[9], \o_s[10], \o_s[11], \o_s[12], \o_s[13], \o_s[14], \o_s[15], \o_s[16], \o_s[17], \o_s[18], \o_s[19], \o_s[20], \o_s[21], \o_s[22], \o_s[23], \o_s[24], \o_s[25], \o_s[26], \o_s[27], \o_s[28], \o_s[29], \o_s[30], \o_s[31], i_c, o_c);
 input \i_a[0], \i_a[1], \i_a[2], \i_a[3], \i_a[4], \i_a[5], \i_a[6], \i_a[7], \i_a[8], \i_a[9], \i_a[10], \i_a[11], \i_a[12], \i_a[13], \i_a[14], \i_a[15], \i_a[16], \i_a[17], \i_a[18], \i_a[19], \i_a[20], \i_a[21], \i_a[22], \i_a[23], \i_a[24], \i_a[25], \i_a[26], \i_a[27], \i_a[28], \i_a[29], \i_a[30], \i_a[31], \i_b[0], \i_b[1], \i_b[2], \i_b[3], \i_b[4], \i_b[5], \i_b[6], \i_b[7], \i_b[8], \i_b[9], \i_b[10], \i_b[11], \i_b[12], \i_b[13], \i_b[14], \i_b[15], \i_b[16], \i_b[17], \i_b[18], \i_b[19], \i_b[20], \i_b[21], \i_b[22], \i_b[23], \i_b[24], \i_b[25], \i_b[26], \i_b[27], \i_b[28], \i_b[29], \i_b[30], \i_b[31], i_c;
 output \o_s[0], \o_s[1], \o_s[2], \o_s[3], \o_s[4], \o_s[5], \o_s[6], \o_s[7], \o_s[8], \o_s[9], \o_s[10], \o_s[11], \o_s[12], \o_s[13], \o_s[14], \o_s[15], \o_s[16], \o_s[17], \o_s[18], \o_s[19], \o_s[20], \o_s[21], \o_s[22], \o_s[23], \o_s[24], \o_s[25], \o_s[26], \o_s[27], \o_s[28], \o_s[29], \o_s[30], \o_s[31], o_c;
@@ -3525,182 +3748,338 @@ operator_C_11 operator_C_stage_6_5(.G(G0_11), .G1(G4_5), .Go(G6_11), .P(P0_11));
 operator_C_9 operator_C_stage_6_7(.G(G0_15), .G1(G4_7), .Go(G6_15), .P(n70));
 endmodule
 
-module operator_C_7 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_1 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_9 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_2 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_11 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_3 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_12 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_4 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(B), .Y(n6));
+sg13g2_nand2_2 U2 (.A(A), .B(n6), .Y(n3));
+sg13g2_inv_2 U3 (.A(n7), .Y(G));
+sg13g2_nand2_2 U4 (.A(n1), .B(B), .Y(n4));
+sg13g2_nand2_2 U5 (.A(n4), .B(n3), .Y(P));
+sg13g2_inv_2 U6 (.A(A), .Y(n1));
+sg13g2_nand2_2 U7 (.A(A), .B(B), .Y(n7));
 endmodule
 
-module operator_C_14 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_5 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_1 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_6 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n5), .Y(P));
+sg13g2_o21ai_1 U2 (.A1(A), .A2(B), .B1(n3), .Y(n5));
+sg13g2_inv_2 U3 (.A(n4), .Y(G));
+sg13g2_nand2_2 U4 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n3));
 endmodule
 
-module operator_C_13 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_7 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_6 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_8 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_15 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_9 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_nand2_2 U3 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(G));
 endmodule
 
-module operator_C_16 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_10 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(B), .Y(n3));
+sg13g2_xnor2_1 U2 (.A(A), .B(n3), .Y(P));
+sg13g2_inv_2 U3 (.A(n4), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n4));
 endmodule
 
-module operator_C_24 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_11 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n3));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
 endmodule
 
-module operator_C_18 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_12 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n2));
+sg13g2_inv_2 U2 (.A(A), .Y(n1));
+sg13g2_xnor2_1 U3 (.A(B), .B(n1), .Y(P));
+sg13g2_inv_2 U4 (.A(n2), .Y(G));
 endmodule
 
-module operator_C_5 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_13 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+sg13g2_inv_2 U1 (.A(n5), .Y(G));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n5));
+sg13g2_inv_2 U3 (.A(A), .Y(n3));
+sg13g2_inv_2 U4 (.A(B), .Y(n4));
+sg13g2_nand2_2 U5 (.A(n3), .B(n4), .Y(n6));
+sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(n7));
+sg13g2_inv_2 U7 (.A(n7), .Y(P));
 endmodule
 
-module operator_C_20 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_14 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
 endmodule
 
-module operator_C_22 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_15 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_nand2_2 U1 (.A(n3), .B(n4), .Y(n5));
+sg13g2_nand2_2 U2 (.A(n6), .B(n5), .Y(n7));
+sg13g2_inv_2 U3 (.A(A), .Y(n3));
+sg13g2_inv_2 U4 (.A(B), .Y(n4));
+sg13g2_inv_2 U5 (.A(n6), .Y(G));
+sg13g2_inv_2 U6 (.A(n7), .Y(P));
+sg13g2_nand2_2 U7 (.A(A), .B(B), .Y(n6));
 endmodule
 
-module operator_C_26 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_16 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+sg13g2_xnor2_1 U1 (.A(n1), .B(B), .Y(P));
+sg13g2_inv_2 U2 (.A(A), .Y(n1));
+sg13g2_nand2_2 U3 (.A(B), .B(A), .Y(n2));
+sg13g2_inv_2 U4 (.A(n2), .Y(G));
 endmodule
 
-module operator_C_29 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_17 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_xnor2_1 U1 (.A(B), .B(A), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(P));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_31 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_18 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n5));
+sg13g2_nand2_2 U2 (.A(n3), .B(n4), .Y(n6));
+sg13g2_nand2_2 U3 (.A(n5), .B(n6), .Y(n8));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n7));
+sg13g2_inv_2 U5 (.A(B), .Y(n3));
+sg13g2_inv_2 U6 (.A(A), .Y(n4));
+sg13g2_inv_2 U7 (.A(n7), .Y(G));
+sg13g2_inv_2 U8 (.A(n8), .Y(P));
 endmodule
 
-module operator_C_4 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_19 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U4 (.A(n4), .Y(P));
 endmodule
 
-module operator_C_21 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_20 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(P));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
-module operator_C_32 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_A_21 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U4 (.A(B), .B(A), .Y(n4));
 endmodule
 
-module operator_B_7 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_A_22 (A, B, G, P);
+input A, B;
+output G, P;
 
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_23 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_24 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(B), .B(A), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_25 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_26 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_27 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(G));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(P));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_28 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_xnor2_1 U1 (.A(A), .B(n3), .Y(P));
+sg13g2_inv_2 U2 (.A(B), .Y(n3));
+sg13g2_inv_2 U3 (.A(n4), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n4));
+endmodule
+
+module operator_A_29 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_30 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_31 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+endmodule
+
+module operator_A_32 (A, B, G, P);
+input A, B;
+output G, P;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(P));
+sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(G));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
 endmodule
 
 module operator_B_1 (G, G1, Go, P, P1, Po);
@@ -3713,12 +4092,24 @@ sg13g2_inv_2 U3 (.A(n3), .Y(Go));
 sg13g2_inv_2 U4 (.A(n4), .Y(Po));
 endmodule
 
-module operator_C_25 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_B_2 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U3 (.A(n1), .Y(Po));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_3 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
 module operator_B_4 (G, G1, Go, P, P1, Po);
@@ -3743,68 +4134,54 @@ sg13g2_nand2_2 U4 (.A(n2), .B(n3), .Y(Go));
 sg13g2_nand2_2 U5 (.A(G1), .B(P), .Y(n3));
 endmodule
 
-module operator_B_15 (G, G1, Go, P, P1, Po);
+module operator_B_6 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
 sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U3 (.A(P), .B(P1), .Y(n1));
-sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U3 (.A(n1), .Y(Po));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
 endmodule
 
-module operator_B_16 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_C_23 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_17 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_B_17 (G, G1, Go, P, P1, Po);
+module operator_B_7 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
 sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
 sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n1), .Y(Po));
 endmodule
 
-module operator_B_19 (G, G1, Go, P, P1, Po);
+module operator_B_8 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n5));
+sg13g2_inv_2 U2 (.A(n5), .Y(Po));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+sg13g2_inv_2 U4 (.A(n4), .Y(Go));
+endmodule
+
+module operator_B_9 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
 sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
-module operator_C_3 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_B_10 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_inv_2 U1 (.A(n4), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n5));
+sg13g2_inv_2 U4 (.A(n5), .Y(Po));
 endmodule
 
 module operator_B_11 (G, G1, Go, P, P1, Po);
@@ -3837,14 +4214,64 @@ sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n1));
 sg13g2_inv_2 U4 (.A(n1), .Y(Po));
 endmodule
 
-module operator_A_26 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_B_14 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U1 (.A(n1), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_15 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U3 (.A(P), .B(P1), .Y(n1));
+sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+endmodule
+
+module operator_B_16 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_17 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_18 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_19 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
 endmodule
 
 module operator_B_20 (G, G1, Go, P, P1, Po);
@@ -3857,116 +4284,24 @@ sg13g2_inv_2 U3 (.A(n4), .Y(Po));
 sg13g2_inv_2 U4 (.A(n3), .Y(Go));
 endmodule
 
-module operator_A_29 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_27 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(P));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_1 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_3 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_4 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(B), .Y(n6));
-sg13g2_nand2_2 U2 (.A(A), .B(n6), .Y(n3));
-sg13g2_inv_2 U3 (.A(n7), .Y(G));
-sg13g2_nand2_2 U4 (.A(n1), .B(B), .Y(n4));
-sg13g2_nand2_2 U5 (.A(n4), .B(n3), .Y(P));
-sg13g2_inv_2 U6 (.A(A), .Y(n1));
-sg13g2_nand2_2 U7 (.A(A), .B(B), .Y(n7));
-endmodule
-
-module operator_B_6 (G, G1, Go, P, P1, Po);
+module operator_B_21 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
 sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U3 (.A(n1), .Y(Po));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
 endmodule
 
-module operator_A_6 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n5), .Y(P));
-sg13g2_o21ai_1 U2 (.A1(A), .A2(B), .B1(n3), .Y(n5));
-sg13g2_inv_2 U3 (.A(n4), .Y(G));
-sg13g2_nand2_2 U4 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n3));
-endmodule
-
-module operator_C_28 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_A_9 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U3 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(G));
-endmodule
-
-module operator_B_27 (G, G1, Go, P, P1, Po);
+module operator_B_22 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(Po));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_A_11 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n3));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U1 (.A(n4), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
+sg13g2_inv_2 U3 (.A(n5), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n5));
 endmodule
 
 module operator_B_23 (G, G1, Go, P, P1, Po);
@@ -3979,14 +4314,124 @@ sg13g2_inv_2 U3 (.A(n3), .Y(Go));
 sg13g2_a21oi_2 U4 (.A1(P), .A2(G1), .B1(G), .Y(n3));
 endmodule
 
-module operator_A_28 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_B_24 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_xnor2_1 U1 (.A(A), .B(n3), .Y(P));
-sg13g2_inv_2 U2 (.A(B), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n4));
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_25 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_26 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+endmodule
+
+module operator_B_27 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(Po));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_28 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U3 (.A(P), .B(P1), .Y(n1));
+sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+endmodule
+
+module operator_B_29 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+endmodule
+
+module operator_B_30 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U3 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_31 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_32 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_33 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_34 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_35 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
 module operator_B_36 (G, G1, Go, P, P1, Po);
@@ -3999,75 +4444,97 @@ sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
 sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
-module operator_A_31 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_B_37 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
 endmodule
 
-module operator_A_24 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(B), .B(A), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_16 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(n1), .B(B), .Y(P));
-sg13g2_inv_2 U2 (.A(A), .Y(n1));
-sg13g2_nand2_2 U3 (.A(B), .B(A), .Y(n2));
-sg13g2_inv_2 U4 (.A(n2), .Y(G));
-endmodule
-
-module operator_A_19 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U4 (.A(n4), .Y(P));
-endmodule
-
-module operator_C_10 (G, G1, Go, P);
-input G, G1, P;
-output Go;
+module operator_B_38 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
 sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_39 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U2 (.A(P), .B(P1), .Y(n4));
+sg13g2_inv_2 U3 (.A(n4), .Y(Po));
+sg13g2_a21oi_2 U4 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+endmodule
+
+module operator_B_40 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n1), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
+sg13g2_a21oi_2 U3 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+endmodule
+
+module operator_B_41 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n5), .Y(Po));
+sg13g2_nand2_2 U2 (.A(P), .B(P1), .Y(n5));
+sg13g2_inv_2 U3 (.A(n4), .Y(Go));
+sg13g2_a21oi_2 U4 (.A1(P), .A2(G1), .B1(G), .Y(n4));
+endmodule
+
+module operator_B_42 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n1), .Y(Po));
 sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+sg13g2_inv_2 U3 (.A(n3), .Y(Go));
+sg13g2_nand2_2 U4 (.A(P), .B(P1), .Y(n1));
 endmodule
 
-module operator_A_20 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_B_43 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(P));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U1 (.A(n3), .Y(Go));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
 endmodule
 
-module operator_A_21 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_B_44 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
 
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U4 (.A(B), .B(A), .Y(n4));
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n3));
+sg13g2_inv_2 U2 (.A(n4), .Y(Po));
+sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
+sg13g2_inv_2 U4 (.A(n3), .Y(Go));
 endmodule
 
-module operator_B_49 (G, G1, Go, P, P1, Po);
+module operator_B_45 (G, G1, Go, P, P1, Po);
+input G, G1, P, P1;
+output Go, Po;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(Po));
+sg13g2_inv_2 U2 (.A(n3), .Y(Go));
+sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+endmodule
+
+module operator_B_46 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
@@ -4087,330 +4554,6 @@ sg13g2_inv_2 U3 (.A(n4), .Y(Po));
 sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
 endmodule
 
-module operator_A_17 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(B), .B(A), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_3 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_12 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n2));
-sg13g2_inv_2 U2 (.A(A), .Y(n1));
-sg13g2_xnor2_1 U3 (.A(B), .B(n1), .Y(P));
-sg13g2_inv_2 U4 (.A(n2), .Y(G));
-endmodule
-
-module operator_B_30 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U3 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_B_10 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n5));
-sg13g2_inv_2 U4 (.A(n5), .Y(Po));
-endmodule
-
-module operator_B_29 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_A_5 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_18 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n5));
-sg13g2_nand2_2 U2 (.A(n3), .B(n4), .Y(n6));
-sg13g2_nand2_2 U3 (.A(n5), .B(n6), .Y(n8));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n7));
-sg13g2_inv_2 U5 (.A(B), .Y(n3));
-sg13g2_inv_2 U6 (.A(A), .Y(n4));
-sg13g2_inv_2 U7 (.A(n7), .Y(G));
-sg13g2_inv_2 U8 (.A(n8), .Y(P));
-endmodule
-
-module operator_B_39 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U2 (.A(P), .B(P1), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_a21oi_2 U4 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_41 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n5), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P), .B(P1), .Y(n5));
-sg13g2_inv_2 U3 (.A(n4), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(P), .A2(G1), .B1(G), .Y(n4));
-endmodule
-
-module operator_A_7 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_15 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_nand2_2 U1 (.A(n3), .B(n4), .Y(n5));
-sg13g2_nand2_2 U2 (.A(n6), .B(n5), .Y(n7));
-sg13g2_inv_2 U3 (.A(A), .Y(n3));
-sg13g2_inv_2 U4 (.A(B), .Y(n4));
-sg13g2_inv_2 U5 (.A(n6), .Y(G));
-sg13g2_inv_2 U6 (.A(n7), .Y(P));
-sg13g2_nand2_2 U7 (.A(A), .B(B), .Y(n6));
-endmodule
-
-module operator_B_35 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_C_30 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_14 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n1), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_B_45 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_8 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n5));
-sg13g2_inv_2 U2 (.A(n5), .Y(Po));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-sg13g2_inv_2 U4 (.A(n4), .Y(Go));
-endmodule
-
-module operator_A_2 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_30 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_22 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_14 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
-endmodule
-
-module operator_A_13 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n5), .Y(G));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n5));
-sg13g2_inv_2 U3 (.A(A), .Y(n3));
-sg13g2_inv_2 U4 (.A(B), .Y(n4));
-sg13g2_nand2_2 U5 (.A(n3), .B(n4), .Y(n6));
-sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(n7));
-sg13g2_inv_2 U7 (.A(n7), .Y(P));
-endmodule
-
-module operator_C_8 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
-endmodule
-
-module operator_A_10 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(B), .Y(n3));
-sg13g2_xnor2_1 U2 (.A(A), .B(n3), .Y(P));
-sg13g2_inv_2 U3 (.A(n4), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n4));
-endmodule
-
-module operator_A_23 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_18 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_A_25 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_33 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_31 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_40 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n1), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
-sg13g2_a21oi_2 U3 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_C_19 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_37 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
 module operator_B_48 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
@@ -4421,7 +4564,7 @@ sg13g2_inv_2 U3 (.A(n3), .Y(Go));
 sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
-module operator_B_46 (G, G1, Go, P, P1, Po);
+module operator_B_49 (G, G1, Go, P, P1, Po);
 input G, G1, P, P1;
 output Go, Po;
 
@@ -4431,54 +4574,12 @@ sg13g2_inv_2 U3 (.A(n3), .Y(Go));
 sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
-module operator_B_44 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_1 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_B_32 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_B_43 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_42 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n1), .Y(Po));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U4 (.A(P), .B(P1), .Y(n1));
-endmodule
-
-module operator_B_26 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
 endmodule
 
 module operator_C_2 (G, G1, Go, P);
@@ -4489,74 +4590,196 @@ sg13g2_inv_2 U1 (.A(n2), .Y(Go));
 sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
 endmodule
 
-module operator_B_28 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_3 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U3 (.A(P), .B(P1), .Y(n1));
-sg13g2_inv_2 U4 (.A(n1), .Y(Po));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
 endmodule
 
-module operator_B_22 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_4 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_inv_2 U1 (.A(n4), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-sg13g2_inv_2 U3 (.A(n5), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n5));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
 endmodule
 
-module operator_B_25 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_5 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_6 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_7 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_8 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_9 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_10 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
 sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
 endmodule
 
-module operator_B_2 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_11 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U3 (.A(n1), .Y(Po));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
 endmodule
 
-module operator_A_8 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_C_12 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
 endmodule
 
-module operator_A_32 (A, B, G, P);
-input A, B;
-output G, P;
+module operator_C_13 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
 endmodule
 
-module operator_B_34 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_14 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_15 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_16 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_17 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_18 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_19 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_20 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_21 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
+endmodule
+
+module operator_C_22 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_23 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_24 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_25 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+endmodule
+
+module operator_C_26 (G, G1, Go, P);
+input G, G1, P;
+output Go;
+
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
 endmodule
 
 module operator_C_27 (G, G1, Go, P);
@@ -4570,199 +4793,44 @@ sg13g2_inv_2 U4 (.A(P), .Y(n2));
 sg13g2_inv_2 U5 (.A(G1), .Y(n3));
 endmodule
 
-module operator_B_9 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_28 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
 endmodule
 
-module operator_B_24 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_29 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n2));
 endmodule
 
-module operator_B_38 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_30 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
 endmodule
 
-module operator_B_21 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
+module operator_C_31 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
+sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
+sg13g2_inv_2 U2 (.A(n2), .Y(Go));
 endmodule
 
-module compressor42_7 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
+module operator_C_32 (G, G1, Go, P);
+input G, G1, P;
+output Go;
 
-sg13g2_nand2_2 U1 (.A(n8), .B(n31), .Y(cout));
-sg13g2_buf_2 U2 (.A(n30), .X(n8));
-sg13g2_o21ai_1 U3 (.A1(A), .A2(B), .B1(n30), .Y(n29));
-sg13g2_nand2_2 U4 (.A(n20), .B(n31), .Y(n10));
-sg13g2_inv_2 U5 (.A(C), .Y(n19));
-sg13g2_nand2_2 U6 (.A(n11), .B(cin), .Y(n25));
-sg13g2_nand2_2 U7 (.A(n11), .B(n12), .Y(n14));
-sg13g2_nand2_2 U8 (.A(n13), .B(n14), .Y(S));
-sg13g2_inv_2 U9 (.A(n24), .Y(n11));
-sg13g2_nand2_2 U10 (.A(n24), .B(cin), .Y(n13));
-sg13g2_inv_2 U11 (.A(cin), .Y(n12));
-sg13g2_xnor2_1 U12 (.A(n29), .B(n28), .Y(n24));
-sg13g2_nand2_2 U13 (.A(n15), .B(n16), .Y(n17));
-sg13g2_nand2_2 U14 (.A(n27), .B(n17), .Y(carry));
-sg13g2_inv_2 U15 (.A(n29), .Y(n15));
-sg13g2_inv_2 U16 (.A(n10), .Y(n16));
-sg13g2_inv_2 U17 (.A(n26), .Y(n27));
-sg13g2_nand2_2 U18 (.A(n18), .B(n19), .Y(n20));
-sg13g2_nand2_2 U19 (.A(n20), .B(n31), .Y(n28));
-sg13g2_inv_2 U20 (.A(D), .Y(n18));
-sg13g2_nand2_2 U21 (.A(D), .B(C), .Y(n31));
-sg13g2_nand2_2 U22 (.A(A), .B(B), .Y(n30));
-sg13g2_nand2_2 U23 (.A(n25), .B(n23), .Y(n26));
-sg13g2_nand2_2 U24 (.A(n21), .B(n22), .Y(n23));
-sg13g2_inv_2 U25 (.A(n31), .Y(n21));
-sg13g2_inv_2 U26 (.A(n8), .Y(n22));
-endmodule
-
-module full_adder_35 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module compressor42_19 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n27), .B(n26), .Y(cout));
-sg13g2_inv_2 U2 (.A(D), .Y(n15));
-sg13g2_xnor2_1 U3 (.A(n10), .B(cin), .Y(S));
-sg13g2_nand3_1 U4 (.A(n20), .B(n1), .C(n23), .Y(carry));
-sg13g2_nand2_2 U5 (.A(n14), .B(n26), .Y(n5));
-sg13g2_nand2_2 U6 (.A(n14), .B(n26), .Y(n6));
-sg13g2_nand2_2 U7 (.A(n12), .B(n13), .Y(n14));
-sg13g2_xnor2_1 U8 (.A(n5), .B(n24), .Y(n10));
-sg13g2_xnor2_1 U9 (.A(n25), .B(n24), .Y(n21));
-sg13g2_nand2_2 U10 (.A(n17), .B(n27), .Y(n11));
-sg13g2_inv_2 U11 (.A(A), .Y(n13));
-sg13g2_nand2_2 U12 (.A(n22), .B(cin), .Y(n23));
-sg13g2_nand2_2 U13 (.A(n14), .B(n26), .Y(n25));
-sg13g2_inv_2 U14 (.A(B), .Y(n12));
-sg13g2_inv_2 U15 (.A(n21), .Y(n22));
-sg13g2_nand2_2 U16 (.A(n15), .B(n16), .Y(n17));
-sg13g2_nand2_2 U17 (.A(n17), .B(n27), .Y(n24));
-sg13g2_inv_2 U18 (.A(C), .Y(n16));
-sg13g2_nand2_2 U19 (.A(n18), .B(n19), .Y(n20));
-sg13g2_inv_2 U20 (.A(n27), .Y(n18));
-sg13g2_inv_2 U21 (.A(n26), .Y(n19));
-sg13g2_nand2_2 U22 (.A(B), .B(A), .Y(n26));
-sg13g2_nand2_2 U23 (.A(C), .B(D), .Y(n27));
-sg13g2_or2_1 U24 (.A(n11), .B(n6), .X(n1));
-endmodule
-
-module half_adder_7 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_nand2_2 U1 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(carry));
-sg13g2_inv_2 U3 (.A(A), .Y(n3));
-sg13g2_xnor2_1 U4 (.A(n3), .B(B), .Y(S));
-endmodule
-
-module full_adder_7 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_xnor2_1 U1 (.A(n6), .B(cin), .Y(S));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_o21ai_1 U4 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module full_adder_14 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand3_1 U1 (.A(n9), .B(n8), .C(n2), .Y(n5));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n10));
-sg13g2_inv_2 U3 (.A(A), .Y(n7));
-sg13g2_inv_2 U4 (.A(cin), .Y(n2));
-sg13g2_inv_2 U5 (.A(B), .Y(n6));
-sg13g2_nand2_2 U6 (.A(n11), .B(cin), .Y(n4));
-sg13g2_nand2_2 U7 (.A(n5), .B(n4), .Y(S));
-sg13g2_nand2_2 U8 (.A(B), .B(A), .Y(n8));
-sg13g2_nand2_2 U9 (.A(n7), .B(n6), .Y(n9));
-sg13g2_nand2_2 U10 (.A(n9), .B(n8), .Y(n11));
-sg13g2_o21ai_1 U11 (.A1(n2), .A2(n11), .B1(n10), .Y(cout));
-endmodule
-
-module full_adder_10 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module full_adder_17 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_xnor2_1 U1 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_o21ai_1 U4 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_xnor2_1 U5 (.A(n6), .B(cin), .Y(S));
-endmodule
-
-module full_adder_43 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module full_adder_26 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+sg13g2_inv_2 U1 (.A(n2), .Y(Go));
+sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
 endmodule
 
 module booth_array (\double[0], \double[1], \double[2], \double[3], \double[4], \double[5], \double[6], \double[7], \multiplier[0], \multiplier[1], \multiplier[2], \multiplier[3], \multiplier[4], \multiplier[5], \multiplier[6], \multiplier[7], \multiplier[8], \multiplier[9], \multiplier[10], \multiplier[11], \multiplier[12], \multiplier[13], \multiplier[14], \multiplier[15], \negation[0], \negation[1], \negation[2], \negation[3], \negation[4], \negation[5], \negation[6], \negation[7], \zero[0], \zero[1], \zero[2], \zero[3], \zero[4], \zero[5], \zero[6], \zero[7]);
@@ -4921,208 +4989,43 @@ sg13g2_inv_2 U9 (.A(\codes[2]), .Y(n1));
 sg13g2_a21oi_2 U10 (.A1(\codes[1]), .A2(\codes[0]), .B1(n1), .Y(negation));
 endmodule
 
-module compressor42_0 (A, B, C, D, S, carry, cin, cout);
+module compressor42_11 (A, B, C, D, S, carry, cin, cout);
 input A, B, C, D, cin;
 output S, carry, cout;
 
-sg13g2_nand2_2 U1 (.A(n1), .B(n2), .Y(cout));
-sg13g2_xnor2_1 U2 (.A(n4), .B(n3), .Y(n9));
-sg13g2_inv_2 U3 (.A(n6), .Y(n5));
-sg13g2_o21ai_1 U4 (.A1(D), .A2(C), .B1(n1), .Y(n4));
-sg13g2_o21ai_1 U5 (.A1(A), .A2(B), .B1(n2), .Y(n3));
-sg13g2_nand2_2 U6 (.A(n8), .B(cin), .Y(n7));
-sg13g2_xnor2_1 U7 (.A(n9), .B(cin), .Y(S));
-sg13g2_buf_2 U8 (.A(n4), .X(n10));
-sg13g2_inv_2 U9 (.A(n9), .Y(n8));
-sg13g2_o21ai_1 U10 (.A1(n10), .A2(n11), .B1(n5), .Y(carry));
-sg13g2_o21ai_1 U11 (.A1(A), .A2(B), .B1(n2), .Y(n11));
-sg13g2_nand2_2 U12 (.A(B), .B(A), .Y(n2));
-sg13g2_o21ai_1 U13 (.A1(n1), .A2(n2), .B1(n7), .Y(n6));
-sg13g2_nand2_2 U14 (.A(C), .B(D), .Y(n1));
+sg13g2_nand2_2 U1 (.A(n18), .B(n17), .Y(cout));
+sg13g2_inv_2 U2 (.A(n13), .Y(n14));
+sg13g2_o21ai_1 U3 (.A1(n18), .A2(n17), .B1(n12), .Y(n13));
+sg13g2_nand2_2 U4 (.A(n11), .B(cin), .Y(n12));
+sg13g2_inv_2 U5 (.A(n10), .Y(n11));
+sg13g2_o21ai_1 U6 (.A1(D), .A2(C), .B1(n18), .Y(n15));
+sg13g2_xnor2_1 U7 (.A(n10), .B(cin), .Y(S));
+sg13g2_xnor2_1 U8 (.A(n15), .B(n16), .Y(n10));
+sg13g2_nand2_2 U9 (.A(A), .B(B), .Y(n17));
+sg13g2_o21ai_1 U10 (.A1(A), .A2(B), .B1(n17), .Y(n16));
+sg13g2_o21ai_1 U11 (.A1(n16), .A2(n15), .B1(n14), .Y(carry));
+sg13g2_nand2_2 U12 (.A(C), .B(D), .Y(n18));
 endmodule
 
-module full_adder_32 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_xnor2_1 U1 (.A(n6), .B(cin), .Y(S));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_o21ai_1 U4 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module compressor42_8 (A, B, C, D, S, carry, cin, cout);
+module compressor42_22 (A, B, C, D, S, carry, cin, cout);
 input A, B, C, D, cin;
 output S, carry, cout;
 
-sg13g2_nand2_2 U1 (.A(n14), .B(n24), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n15));
-sg13g2_xnor2_1 U3 (.A(n23), .B(n22), .Y(n20));
-sg13g2_nand3_1 U4 (.A(n8), .B(n1), .C(n21), .Y(carry));
-sg13g2_o21ai_1 U5 (.A1(A), .A2(B), .B1(n15), .Y(n2));
-sg13g2_inv_2 U6 (.A(n2), .Y(n6));
-sg13g2_nand2_2 U7 (.A(n19), .B(n24), .Y(n5));
-sg13g2_xnor2_1 U8 (.A(cin), .B(n20), .Y(S));
-sg13g2_nand2_2 U9 (.A(n6), .B(n13), .Y(n8));
-sg13g2_inv_2 U10 (.A(n20), .Y(n16));
-sg13g2_nand2_2 U11 (.A(n10), .B(n11), .Y(n12));
-sg13g2_nand2_2 U12 (.A(n12), .B(n15), .Y(n23));
-sg13g2_inv_2 U13 (.A(A), .Y(n10));
-sg13g2_inv_2 U14 (.A(B), .Y(n11));
-sg13g2_inv_2 U15 (.A(n5), .Y(n13));
-sg13g2_nand2_2 U16 (.A(A), .B(B), .Y(n14));
-sg13g2_nand2_2 U17 (.A(n17), .B(n18), .Y(n19));
-sg13g2_nand2_2 U18 (.A(D), .B(C), .Y(n24));
-sg13g2_inv_2 U19 (.A(C), .Y(n18));
-sg13g2_nand2_2 U20 (.A(n16), .B(cin), .Y(n21));
-sg13g2_nand2_2 U21 (.A(n19), .B(n24), .Y(n22));
-sg13g2_inv_2 U22 (.A(D), .Y(n17));
-sg13g2_or2_1 U23 (.A(n24), .B(n14), .X(n1));
-endmodule
-
-module compressor42_1 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n30), .B(n31), .Y(cout));
-sg13g2_inv_2 U2 (.A(C), .Y(n15));
-sg13g2_nand2_2 U3 (.A(C), .B(D), .Y(n31));
-sg13g2_nand2_2 U4 (.A(n19), .B(n30), .Y(n10));
-sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n30));
-sg13g2_nand2_2 U6 (.A(n11), .B(n12), .Y(n13));
-sg13g2_xnor2_1 U7 (.A(n23), .B(cin), .Y(S));
-sg13g2_nand2_2 U8 (.A(n27), .B(n13), .Y(carry));
-sg13g2_inv_2 U9 (.A(n10), .Y(n11));
-sg13g2_inv_2 U10 (.A(n28), .Y(n12));
-sg13g2_inv_2 U11 (.A(n26), .Y(n27));
-sg13g2_nand2_2 U12 (.A(n15), .B(n14), .Y(n16));
-sg13g2_nand2_2 U13 (.A(n16), .B(n31), .Y(n28));
-sg13g2_inv_2 U14 (.A(D), .Y(n14));
-sg13g2_nand2_2 U15 (.A(n25), .B(n22), .Y(n26));
-sg13g2_nand2_2 U16 (.A(n24), .B(cin), .Y(n25));
-sg13g2_xnor2_1 U17 (.A(n29), .B(n28), .Y(n23));
-sg13g2_nand2_2 U18 (.A(n18), .B(n17), .Y(n19));
-sg13g2_inv_2 U19 (.A(A), .Y(n18));
-sg13g2_nand2_2 U20 (.A(n19), .B(n30), .Y(n29));
-sg13g2_inv_2 U21 (.A(B), .Y(n17));
-sg13g2_inv_2 U22 (.A(n23), .Y(n24));
-sg13g2_nand2_2 U23 (.A(n20), .B(n21), .Y(n22));
-sg13g2_inv_2 U24 (.A(n31), .Y(n20));
-sg13g2_inv_2 U25 (.A(n30), .Y(n21));
-endmodule
-
-module full_adder_25 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(n2), .B(n4), .Y(n6));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n7));
-sg13g2_o21ai_1 U3 (.A1(n8), .A2(n4), .B1(n7), .Y(cout));
-sg13g2_inv_2 U4 (.A(n8), .Y(n2));
-sg13g2_nand2_2 U5 (.A(n8), .B(cin), .Y(n5));
-sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(S));
-sg13g2_inv_2 U7 (.A(cin), .Y(n4));
-sg13g2_xnor2_1 U8 (.A(B), .B(A), .Y(n8));
-endmodule
-
-module compressor42_12 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n23), .B(n22), .Y(cout));
-sg13g2_nand3_1 U2 (.A(n16), .B(n1), .C(n19), .Y(carry));
-sg13g2_nand2_2 U3 (.A(C), .B(D), .Y(n23));
-sg13g2_xnor2_1 U4 (.A(n21), .B(n20), .Y(n17));
-sg13g2_inv_2 U5 (.A(B), .Y(n5));
-sg13g2_inv_2 U6 (.A(C), .Y(n12));
-sg13g2_xnor2_1 U7 (.A(n17), .B(cin), .Y(S));
-sg13g2_nand2_2 U8 (.A(n5), .B(n6), .Y(n10));
-sg13g2_inv_2 U9 (.A(A), .Y(n6));
-sg13g2_nand2_2 U10 (.A(B), .B(A), .Y(n22));
-sg13g2_inv_2 U11 (.A(n17), .Y(n18));
-sg13g2_nand2_2 U12 (.A(n13), .B(n23), .Y(n20));
-sg13g2_inv_2 U13 (.A(D), .Y(n11));
-sg13g2_nand2_2 U14 (.A(n10), .B(n22), .Y(n21));
-sg13g2_nand2_2 U15 (.A(n11), .B(n12), .Y(n13));
-sg13g2_nand2_2 U16 (.A(n14), .B(n15), .Y(n16));
-sg13g2_inv_2 U17 (.A(n23), .Y(n14));
-sg13g2_inv_2 U18 (.A(n22), .Y(n15));
-sg13g2_nand2_2 U19 (.A(n18), .B(cin), .Y(n19));
-sg13g2_or2_1 U20 (.A(n21), .B(n20), .X(n1));
-endmodule
-
-module compressor42_17 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n11), .B(n23), .Y(cout));
-sg13g2_xnor2_1 U2 (.A(n21), .B(n22), .Y(n18));
-sg13g2_xnor2_1 U3 (.A(n18), .B(cin), .Y(S));
-sg13g2_nand3_1 U4 (.A(n17), .B(n1), .C(n20), .Y(carry));
-sg13g2_nand2_2 U5 (.A(n13), .B(n12), .Y(n5));
-sg13g2_nand2_2 U6 (.A(n5), .B(n23), .Y(n6));
-sg13g2_nand2_2 U7 (.A(D), .B(C), .Y(n24));
-sg13g2_o21ai_1 U8 (.A1(C), .A2(D), .B1(n24), .Y(n10));
-sg13g2_nand2_2 U9 (.A(B), .B(A), .Y(n23));
-sg13g2_nand2_2 U10 (.A(D), .B(C), .Y(n11));
-sg13g2_nand2_2 U11 (.A(n19), .B(cin), .Y(n20));
-sg13g2_inv_2 U12 (.A(n18), .Y(n19));
-sg13g2_inv_2 U13 (.A(B), .Y(n12));
-sg13g2_nand2_2 U14 (.A(n12), .B(n13), .Y(n14));
-sg13g2_nand2_2 U15 (.A(n14), .B(n23), .Y(n22));
-sg13g2_inv_2 U16 (.A(A), .Y(n13));
-sg13g2_nand2_2 U17 (.A(n15), .B(n16), .Y(n17));
-sg13g2_inv_2 U18 (.A(n23), .Y(n15));
-sg13g2_inv_2 U19 (.A(n11), .Y(n16));
-sg13g2_o21ai_1 U20 (.A1(C), .A2(D), .B1(n24), .Y(n21));
-sg13g2_or2_1 U21 (.A(n6), .B(n10), .X(n1));
-endmodule
-
-module full_adder_13 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_inv_2 U1 (.A(B), .Y(n5));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n9));
-sg13g2_inv_2 U3 (.A(cin), .Y(n10));
-sg13g2_nand2_2 U4 (.A(n7), .B(n8), .Y(n4));
-sg13g2_nand2_2 U5 (.A(B), .B(A), .Y(n7));
-sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(n8));
-sg13g2_nand2_2 U7 (.A(n7), .B(n8), .Y(n11));
-sg13g2_inv_2 U8 (.A(A), .Y(n6));
-sg13g2_o21ai_1 U9 (.A1(n11), .A2(n10), .B1(n9), .Y(cout));
-sg13g2_xnor2_1 U10 (.A(cin), .B(n4), .Y(S));
-endmodule
-
-module full_adder_31 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_xnor2_1 U1 (.A(n10), .B(cin), .Y(S));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
-sg13g2_inv_2 U3 (.A(cin), .Y(n9));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U5 (.A(n5), .B(n4), .Y(n7));
-sg13g2_nand2_2 U6 (.A(n6), .B(n7), .Y(n10));
-sg13g2_inv_2 U7 (.A(B), .Y(n4));
-sg13g2_inv_2 U8 (.A(A), .Y(n5));
-sg13g2_o21ai_1 U9 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
-endmodule
-
-module full_adder_18 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n8));
-sg13g2_inv_2 U3 (.A(cin), .Y(n9));
-sg13g2_nand2_2 U4 (.A(n4), .B(n5), .Y(n7));
-sg13g2_nand2_2 U5 (.A(n6), .B(n7), .Y(n10));
-sg13g2_inv_2 U6 (.A(B), .Y(n4));
-sg13g2_inv_2 U7 (.A(A), .Y(n5));
-sg13g2_xnor2_1 U8 (.A(n10), .B(cin), .Y(S));
-sg13g2_o21ai_1 U9 (.A1(n9), .A2(n10), .B1(n8), .Y(cout));
+sg13g2_nand2_2 U1 (.A(n19), .B(n20), .Y(cout));
+sg13g2_o21ai_1 U2 (.A1(n17), .A2(n18), .B1(n16), .Y(carry));
+sg13g2_inv_2 U3 (.A(n9), .Y(n13));
+sg13g2_o21ai_1 U4 (.A1(n20), .A2(n19), .B1(n14), .Y(n15));
+sg13g2_o21ai_1 U5 (.A1(B), .A2(A), .B1(n19), .Y(n18));
+sg13g2_nand2_2 U6 (.A(n13), .B(n10), .Y(n12));
+sg13g2_inv_2 U7 (.A(n15), .Y(n16));
+sg13g2_nand2_2 U8 (.A(n9), .B(cin), .Y(n11));
+sg13g2_xnor2_1 U9 (.A(n17), .B(n18), .Y(n9));
+sg13g2_nand2_2 U10 (.A(B), .B(A), .Y(n19));
+sg13g2_o21ai_1 U11 (.A1(D), .A2(C), .B1(n20), .Y(n17));
+sg13g2_nand2_2 U12 (.A(n13), .B(cin), .Y(n14));
+sg13g2_nand2_2 U13 (.A(n11), .B(n12), .Y(S));
+sg13g2_inv_2 U14 (.A(cin), .Y(n10));
+sg13g2_nand2_2 U15 (.A(C), .B(D), .Y(n20));
 endmodule
 
 module compressor42_14 (A, B, C, D, S, carry, cin, cout);
@@ -5158,63 +5061,462 @@ sg13g2_inv_2 U26 (.A(D), .Y(n21));
 sg13g2_nand2_2 U27 (.A(B), .B(n8), .Y(n28));
 endmodule
 
-module compressor42_22 (A, B, C, D, S, carry, cin, cout);
+module compressor42_12 (A, B, C, D, S, carry, cin, cout);
 input A, B, C, D, cin;
 output S, carry, cout;
 
-sg13g2_nand2_2 U1 (.A(n19), .B(n20), .Y(cout));
-sg13g2_o21ai_1 U2 (.A1(n17), .A2(n18), .B1(n16), .Y(carry));
-sg13g2_inv_2 U3 (.A(n9), .Y(n13));
-sg13g2_o21ai_1 U4 (.A1(n20), .A2(n19), .B1(n14), .Y(n15));
-sg13g2_o21ai_1 U5 (.A1(B), .A2(A), .B1(n19), .Y(n18));
-sg13g2_nand2_2 U6 (.A(n13), .B(n10), .Y(n12));
-sg13g2_inv_2 U7 (.A(n15), .Y(n16));
-sg13g2_nand2_2 U8 (.A(n9), .B(cin), .Y(n11));
-sg13g2_xnor2_1 U9 (.A(n17), .B(n18), .Y(n9));
-sg13g2_nand2_2 U10 (.A(B), .B(A), .Y(n19));
-sg13g2_o21ai_1 U11 (.A1(D), .A2(C), .B1(n20), .Y(n17));
-sg13g2_nand2_2 U12 (.A(n13), .B(cin), .Y(n14));
-sg13g2_nand2_2 U13 (.A(n11), .B(n12), .Y(S));
-sg13g2_inv_2 U14 (.A(cin), .Y(n10));
-sg13g2_nand2_2 U15 (.A(C), .B(D), .Y(n20));
+sg13g2_nand2_2 U1 (.A(n23), .B(n22), .Y(cout));
+sg13g2_nand3_1 U2 (.A(n16), .B(n1), .C(n19), .Y(carry));
+sg13g2_nand2_2 U3 (.A(C), .B(D), .Y(n23));
+sg13g2_xnor2_1 U4 (.A(n21), .B(n20), .Y(n17));
+sg13g2_inv_2 U5 (.A(B), .Y(n5));
+sg13g2_inv_2 U6 (.A(C), .Y(n12));
+sg13g2_xnor2_1 U7 (.A(n17), .B(cin), .Y(S));
+sg13g2_nand2_2 U8 (.A(n5), .B(n6), .Y(n10));
+sg13g2_inv_2 U9 (.A(A), .Y(n6));
+sg13g2_nand2_2 U10 (.A(B), .B(A), .Y(n22));
+sg13g2_inv_2 U11 (.A(n17), .Y(n18));
+sg13g2_nand2_2 U12 (.A(n13), .B(n23), .Y(n20));
+sg13g2_inv_2 U13 (.A(D), .Y(n11));
+sg13g2_nand2_2 U14 (.A(n10), .B(n22), .Y(n21));
+sg13g2_nand2_2 U15 (.A(n11), .B(n12), .Y(n13));
+sg13g2_nand2_2 U16 (.A(n14), .B(n15), .Y(n16));
+sg13g2_inv_2 U17 (.A(n23), .Y(n14));
+sg13g2_inv_2 U18 (.A(n22), .Y(n15));
+sg13g2_nand2_2 U19 (.A(n18), .B(cin), .Y(n19));
+sg13g2_or2_1 U20 (.A(n21), .B(n20), .X(n1));
 endmodule
 
-module full_adder_21 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
+module compressor42_1 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
 
-sg13g2_xnor2_1 U1 (.A(cin), .B(n2), .Y(S));
-sg13g2_nand2_2 U2 (.A(n9), .B(n6), .Y(n2));
-sg13g2_nand2_2 U3 (.A(n6), .B(n9), .Y(n10));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n9));
-sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n6));
-sg13g2_inv_2 U6 (.A(B), .Y(n4));
-sg13g2_inv_2 U7 (.A(A), .Y(n5));
-sg13g2_inv_2 U8 (.A(n10), .Y(n7));
-sg13g2_nand2_2 U9 (.A(n7), .B(cin), .Y(n8));
-sg13g2_nand2_2 U10 (.A(n8), .B(n9), .Y(cout));
+sg13g2_nand2_2 U1 (.A(n30), .B(n31), .Y(cout));
+sg13g2_inv_2 U2 (.A(C), .Y(n15));
+sg13g2_nand2_2 U3 (.A(C), .B(D), .Y(n31));
+sg13g2_nand2_2 U4 (.A(n19), .B(n30), .Y(n10));
+sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n30));
+sg13g2_nand2_2 U6 (.A(n11), .B(n12), .Y(n13));
+sg13g2_xnor2_1 U7 (.A(n23), .B(cin), .Y(S));
+sg13g2_nand2_2 U8 (.A(n27), .B(n13), .Y(carry));
+sg13g2_inv_2 U9 (.A(n10), .Y(n11));
+sg13g2_inv_2 U10 (.A(n28), .Y(n12));
+sg13g2_inv_2 U11 (.A(n26), .Y(n27));
+sg13g2_nand2_2 U12 (.A(n15), .B(n14), .Y(n16));
+sg13g2_nand2_2 U13 (.A(n16), .B(n31), .Y(n28));
+sg13g2_inv_2 U14 (.A(D), .Y(n14));
+sg13g2_nand2_2 U15 (.A(n25), .B(n22), .Y(n26));
+sg13g2_nand2_2 U16 (.A(n24), .B(cin), .Y(n25));
+sg13g2_xnor2_1 U17 (.A(n29), .B(n28), .Y(n23));
+sg13g2_nand2_2 U18 (.A(n18), .B(n17), .Y(n19));
+sg13g2_inv_2 U19 (.A(A), .Y(n18));
+sg13g2_nand2_2 U20 (.A(n19), .B(n30), .Y(n29));
+sg13g2_inv_2 U21 (.A(B), .Y(n17));
+sg13g2_inv_2 U22 (.A(n23), .Y(n24));
+sg13g2_nand2_2 U23 (.A(n20), .B(n21), .Y(n22));
+sg13g2_inv_2 U24 (.A(n31), .Y(n20));
+sg13g2_inv_2 U25 (.A(n30), .Y(n21));
 endmodule
 
-module full_adder_34 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
+module compressor42_10 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
 
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U1 (.A(n23), .B(n22), .Y(cout));
+sg13g2_nand3_1 U2 (.A(n19), .B(n10), .C(n16), .Y(carry));
+sg13g2_nand2_2 U3 (.A(n13), .B(n23), .Y(n20));
+sg13g2_nand2_2 U4 (.A(C), .B(D), .Y(n23));
+sg13g2_nand2_2 U5 (.A(n5), .B(n6), .Y(n10));
+sg13g2_inv_2 U6 (.A(n17), .Y(n18));
+sg13g2_xnor2_1 U7 (.A(n17), .B(cin), .Y(S));
+sg13g2_xnor2_1 U8 (.A(n21), .B(n20), .Y(n17));
+sg13g2_inv_2 U9 (.A(n23), .Y(n5));
+sg13g2_inv_2 U10 (.A(n22), .Y(n6));
+sg13g2_o21ai_1 U11 (.A1(B), .A2(A), .B1(n22), .Y(n21));
+sg13g2_nand2_2 U12 (.A(n18), .B(cin), .Y(n19));
+sg13g2_nand2_2 U13 (.A(n11), .B(n12), .Y(n13));
+sg13g2_inv_2 U14 (.A(D), .Y(n11));
+sg13g2_inv_2 U15 (.A(C), .Y(n12));
+sg13g2_nand2_2 U16 (.A(n14), .B(n15), .Y(n16));
+sg13g2_inv_2 U17 (.A(n21), .Y(n14));
+sg13g2_inv_2 U18 (.A(n20), .Y(n15));
+sg13g2_nand2_2 U19 (.A(B), .B(A), .Y(n22));
 endmodule
 
-module full_adder_37 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
+module compressor42_8 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
 
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U1 (.A(n14), .B(n24), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n15));
+sg13g2_xnor2_1 U3 (.A(n23), .B(n22), .Y(n20));
+sg13g2_nand3_1 U4 (.A(n8), .B(n1), .C(n21), .Y(carry));
+sg13g2_o21ai_1 U5 (.A1(A), .A2(B), .B1(n15), .Y(n2));
+sg13g2_inv_2 U6 (.A(n2), .Y(n6));
+sg13g2_nand2_2 U7 (.A(n19), .B(n24), .Y(n5));
+sg13g2_xnor2_1 U8 (.A(cin), .B(n20), .Y(S));
+sg13g2_nand2_2 U9 (.A(n6), .B(n13), .Y(n8));
+sg13g2_inv_2 U10 (.A(n20), .Y(n16));
+sg13g2_nand2_2 U11 (.A(n10), .B(n11), .Y(n12));
+sg13g2_nand2_2 U12 (.A(n12), .B(n15), .Y(n23));
+sg13g2_inv_2 U13 (.A(A), .Y(n10));
+sg13g2_inv_2 U14 (.A(B), .Y(n11));
+sg13g2_inv_2 U15 (.A(n5), .Y(n13));
+sg13g2_nand2_2 U16 (.A(A), .B(B), .Y(n14));
+sg13g2_nand2_2 U17 (.A(n17), .B(n18), .Y(n19));
+sg13g2_nand2_2 U18 (.A(D), .B(C), .Y(n24));
+sg13g2_inv_2 U19 (.A(C), .Y(n18));
+sg13g2_nand2_2 U20 (.A(n16), .B(cin), .Y(n21));
+sg13g2_nand2_2 U21 (.A(n19), .B(n24), .Y(n22));
+sg13g2_inv_2 U22 (.A(D), .Y(n17));
+sg13g2_or2_1 U23 (.A(n24), .B(n14), .X(n1));
+endmodule
+
+module compressor42_0 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n1), .B(n2), .Y(cout));
+sg13g2_xnor2_1 U2 (.A(n4), .B(n3), .Y(n9));
+sg13g2_inv_2 U3 (.A(n6), .Y(n5));
+sg13g2_o21ai_1 U4 (.A1(D), .A2(C), .B1(n1), .Y(n4));
+sg13g2_o21ai_1 U5 (.A1(A), .A2(B), .B1(n2), .Y(n3));
+sg13g2_nand2_2 U6 (.A(n8), .B(cin), .Y(n7));
+sg13g2_xnor2_1 U7 (.A(n9), .B(cin), .Y(S));
+sg13g2_buf_2 U8 (.A(n4), .X(n10));
+sg13g2_inv_2 U9 (.A(n9), .Y(n8));
+sg13g2_o21ai_1 U10 (.A1(n10), .A2(n11), .B1(n5), .Y(carry));
+sg13g2_o21ai_1 U11 (.A1(A), .A2(B), .B1(n2), .Y(n11));
+sg13g2_nand2_2 U12 (.A(B), .B(A), .Y(n2));
+sg13g2_o21ai_1 U13 (.A1(n1), .A2(n2), .B1(n7), .Y(n6));
+sg13g2_nand2_2 U14 (.A(C), .B(D), .Y(n1));
+endmodule
+
+module compressor42_17 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n11), .B(n23), .Y(cout));
+sg13g2_xnor2_1 U2 (.A(n21), .B(n22), .Y(n18));
+sg13g2_xnor2_1 U3 (.A(n18), .B(cin), .Y(S));
+sg13g2_nand3_1 U4 (.A(n17), .B(n1), .C(n20), .Y(carry));
+sg13g2_nand2_2 U5 (.A(n13), .B(n12), .Y(n5));
+sg13g2_nand2_2 U6 (.A(n5), .B(n23), .Y(n6));
+sg13g2_nand2_2 U7 (.A(D), .B(C), .Y(n24));
+sg13g2_o21ai_1 U8 (.A1(C), .A2(D), .B1(n24), .Y(n10));
+sg13g2_nand2_2 U9 (.A(B), .B(A), .Y(n23));
+sg13g2_nand2_2 U10 (.A(D), .B(C), .Y(n11));
+sg13g2_nand2_2 U11 (.A(n19), .B(cin), .Y(n20));
+sg13g2_inv_2 U12 (.A(n18), .Y(n19));
+sg13g2_inv_2 U13 (.A(B), .Y(n12));
+sg13g2_nand2_2 U14 (.A(n12), .B(n13), .Y(n14));
+sg13g2_nand2_2 U15 (.A(n14), .B(n23), .Y(n22));
+sg13g2_inv_2 U16 (.A(A), .Y(n13));
+sg13g2_nand2_2 U17 (.A(n15), .B(n16), .Y(n17));
+sg13g2_inv_2 U18 (.A(n23), .Y(n15));
+sg13g2_inv_2 U19 (.A(n11), .Y(n16));
+sg13g2_o21ai_1 U20 (.A1(C), .A2(D), .B1(n24), .Y(n21));
+sg13g2_or2_1 U21 (.A(n6), .B(n10), .X(n1));
+endmodule
+
+module compressor42_19 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n27), .B(n26), .Y(cout));
+sg13g2_inv_2 U2 (.A(D), .Y(n15));
+sg13g2_xnor2_1 U3 (.A(n10), .B(cin), .Y(S));
+sg13g2_nand3_1 U4 (.A(n20), .B(n1), .C(n23), .Y(carry));
+sg13g2_nand2_2 U5 (.A(n14), .B(n26), .Y(n5));
+sg13g2_nand2_2 U6 (.A(n14), .B(n26), .Y(n6));
+sg13g2_nand2_2 U7 (.A(n12), .B(n13), .Y(n14));
+sg13g2_xnor2_1 U8 (.A(n5), .B(n24), .Y(n10));
+sg13g2_xnor2_1 U9 (.A(n25), .B(n24), .Y(n21));
+sg13g2_nand2_2 U10 (.A(n17), .B(n27), .Y(n11));
+sg13g2_inv_2 U11 (.A(A), .Y(n13));
+sg13g2_nand2_2 U12 (.A(n22), .B(cin), .Y(n23));
+sg13g2_nand2_2 U13 (.A(n14), .B(n26), .Y(n25));
+sg13g2_inv_2 U14 (.A(B), .Y(n12));
+sg13g2_inv_2 U15 (.A(n21), .Y(n22));
+sg13g2_nand2_2 U16 (.A(n15), .B(n16), .Y(n17));
+sg13g2_nand2_2 U17 (.A(n17), .B(n27), .Y(n24));
+sg13g2_inv_2 U18 (.A(C), .Y(n16));
+sg13g2_nand2_2 U19 (.A(n18), .B(n19), .Y(n20));
+sg13g2_inv_2 U20 (.A(n27), .Y(n18));
+sg13g2_inv_2 U21 (.A(n26), .Y(n19));
+sg13g2_nand2_2 U22 (.A(B), .B(A), .Y(n26));
+sg13g2_nand2_2 U23 (.A(C), .B(D), .Y(n27));
+sg13g2_or2_1 U24 (.A(n11), .B(n6), .X(n1));
+endmodule
+
+module compressor42_16 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n28), .B(n27), .Y(cout));
+sg13g2_nand3_1 U2 (.A(n24), .B(n10), .C(n14), .Y(carry));
+sg13g2_inv_2 U3 (.A(n25), .Y(n11));
+sg13g2_nand2_2 U4 (.A(n23), .B(cin), .Y(n24));
+sg13g2_inv_2 U5 (.A(C), .Y(n19));
+sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(n10));
+sg13g2_inv_2 U7 (.A(n28), .Y(n5));
+sg13g2_inv_2 U8 (.A(n27), .Y(n6));
+sg13g2_inv_2 U9 (.A(D), .Y(n20));
+sg13g2_inv_2 U10 (.A(n26), .Y(n15));
+sg13g2_xnor2_1 U11 (.A(n22), .B(cin), .Y(S));
+sg13g2_nand2_2 U12 (.A(B), .B(A), .Y(n27));
+sg13g2_nand2_2 U13 (.A(n25), .B(n26), .Y(n12));
+sg13g2_nand2_2 U14 (.A(n15), .B(n11), .Y(n13));
+sg13g2_nand2_2 U15 (.A(n13), .B(n12), .Y(n22));
+sg13g2_inv_2 U16 (.A(n22), .Y(n23));
+sg13g2_nand2_2 U17 (.A(n21), .B(n28), .Y(n25));
+sg13g2_nand2_2 U18 (.A(n15), .B(n11), .Y(n14));
+sg13g2_nand2_2 U19 (.A(n16), .B(n17), .Y(n18));
+sg13g2_nand2_2 U20 (.A(n18), .B(n27), .Y(n26));
+sg13g2_inv_2 U21 (.A(B), .Y(n16));
+sg13g2_inv_2 U22 (.A(A), .Y(n17));
+sg13g2_nand2_2 U23 (.A(n19), .B(n20), .Y(n21));
+sg13g2_nand2_2 U24 (.A(D), .B(C), .Y(n28));
+endmodule
+
+module compressor42_7 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n8), .B(n31), .Y(cout));
+sg13g2_buf_2 U2 (.A(n30), .X(n8));
+sg13g2_o21ai_1 U3 (.A1(A), .A2(B), .B1(n30), .Y(n29));
+sg13g2_nand2_2 U4 (.A(n20), .B(n31), .Y(n10));
+sg13g2_inv_2 U5 (.A(C), .Y(n19));
+sg13g2_nand2_2 U6 (.A(n11), .B(cin), .Y(n25));
+sg13g2_nand2_2 U7 (.A(n11), .B(n12), .Y(n14));
+sg13g2_nand2_2 U8 (.A(n13), .B(n14), .Y(S));
+sg13g2_inv_2 U9 (.A(n24), .Y(n11));
+sg13g2_nand2_2 U10 (.A(n24), .B(cin), .Y(n13));
+sg13g2_inv_2 U11 (.A(cin), .Y(n12));
+sg13g2_xnor2_1 U12 (.A(n29), .B(n28), .Y(n24));
+sg13g2_nand2_2 U13 (.A(n15), .B(n16), .Y(n17));
+sg13g2_nand2_2 U14 (.A(n27), .B(n17), .Y(carry));
+sg13g2_inv_2 U15 (.A(n29), .Y(n15));
+sg13g2_inv_2 U16 (.A(n10), .Y(n16));
+sg13g2_inv_2 U17 (.A(n26), .Y(n27));
+sg13g2_nand2_2 U18 (.A(n18), .B(n19), .Y(n20));
+sg13g2_nand2_2 U19 (.A(n20), .B(n31), .Y(n28));
+sg13g2_inv_2 U20 (.A(D), .Y(n18));
+sg13g2_nand2_2 U21 (.A(D), .B(C), .Y(n31));
+sg13g2_nand2_2 U22 (.A(A), .B(B), .Y(n30));
+sg13g2_nand2_2 U23 (.A(n25), .B(n23), .Y(n26));
+sg13g2_nand2_2 U24 (.A(n21), .B(n22), .Y(n23));
+sg13g2_inv_2 U25 (.A(n31), .Y(n21));
+sg13g2_inv_2 U26 (.A(n8), .Y(n22));
+endmodule
+
+module compressor42_24 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n24), .B(n6), .Y(cout));
+sg13g2_inv_2 U2 (.A(n18), .Y(n19));
+sg13g2_nand2_2 U3 (.A(n13), .B(n14), .Y(n15));
+sg13g2_nand3_1 U4 (.A(n10), .B(n15), .C(n24), .Y(n12));
+sg13g2_inv_2 U5 (.A(n22), .Y(n10));
+sg13g2_nand3_1 U6 (.A(n17), .B(n1), .C(n20), .Y(carry));
+sg13g2_xnor2_1 U7 (.A(n18), .B(cin), .Y(S));
+sg13g2_inv_2 U8 (.A(n23), .Y(n5));
+sg13g2_inv_2 U9 (.A(n5), .Y(n6));
+sg13g2_nand2_2 U10 (.A(B), .B(A), .Y(n23));
+sg13g2_nand2_2 U11 (.A(n19), .B(cin), .Y(n20));
+sg13g2_o21ai_1 U12 (.A1(A), .A2(B), .B1(n23), .Y(n22));
+sg13g2_nand2_2 U13 (.A(D), .B(C), .Y(n24));
+sg13g2_nand2_2 U14 (.A(n22), .B(n21), .Y(n11));
+sg13g2_nand2_2 U15 (.A(n11), .B(n12), .Y(n18));
+sg13g2_nand2_2 U16 (.A(n15), .B(n24), .Y(n21));
+sg13g2_inv_2 U17 (.A(D), .Y(n13));
+sg13g2_inv_2 U18 (.A(C), .Y(n14));
+sg13g2_nand2_2 U19 (.A(n10), .B(n16), .Y(n17));
+sg13g2_inv_2 U20 (.A(n21), .Y(n16));
+sg13g2_nand2b_1 U21 (.A_N(n24), .B(n5), .Y(n1));
+endmodule
+
+module compressor42_15 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_inv_2 U1 (.A(D), .Y(n20));
+sg13g2_nand2_2 U2 (.A(n24), .B(n6), .Y(n11));
+sg13g2_nand2_2 U3 (.A(n22), .B(n29), .Y(n5));
+sg13g2_nand3_1 U4 (.A(n25), .B(n19), .C(n14), .Y(carry));
+sg13g2_nand2_2 U5 (.A(D), .B(C), .Y(n29));
+sg13g2_inv_2 U6 (.A(C), .Y(n21));
+sg13g2_nand2_2 U7 (.A(A), .B(B), .Y(n15));
+sg13g2_nand2_2 U8 (.A(n23), .B(cin), .Y(n10));
+sg13g2_nand2_2 U9 (.A(n10), .B(n11), .Y(S));
+sg13g2_inv_2 U10 (.A(cin), .Y(n6));
+sg13g2_o21ai_1 U11 (.A1(B), .A2(A), .B1(n15), .Y(n12));
+sg13g2_nand2_2 U12 (.A(n21), .B(n20), .Y(n22));
+sg13g2_nand2_2 U13 (.A(n29), .B(n15), .Y(cout));
+sg13g2_inv_2 U14 (.A(n29), .Y(n16));
+sg13g2_xnor2_1 U15 (.A(n27), .B(n26), .Y(n23));
+sg13g2_nand2_2 U16 (.A(n13), .B(n17), .Y(n14));
+sg13g2_inv_2 U17 (.A(n12), .Y(n13));
+sg13g2_nand2_2 U18 (.A(n24), .B(cin), .Y(n25));
+sg13g2_o21ai_1 U19 (.A1(B), .A2(A), .B1(n28), .Y(n27));
+sg13g2_inv_2 U20 (.A(n5), .Y(n17));
+sg13g2_inv_2 U21 (.A(n23), .Y(n24));
+sg13g2_nand2_2 U22 (.A(n16), .B(n18), .Y(n19));
+sg13g2_inv_2 U23 (.A(n15), .Y(n18));
+sg13g2_nand2_2 U24 (.A(n22), .B(n29), .Y(n26));
+sg13g2_nand2_2 U25 (.A(A), .B(B), .Y(n28));
+endmodule
+
+module compressor42_20 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(D), .B(C), .Y(n30));
+sg13g2_buf_2 U2 (.A(n30), .X(n10));
+sg13g2_inv_2 U3 (.A(D), .Y(n15));
+sg13g2_inv_2 U4 (.A(B), .Y(n19));
+sg13g2_inv_2 U5 (.A(A), .Y(n20));
+sg13g2_xnor2_1 U6 (.A(n12), .B(cin), .Y(S));
+sg13g2_inv_2 U7 (.A(n23), .Y(n11));
+sg13g2_xnor2_1 U8 (.A(n27), .B(n28), .Y(n22));
+sg13g2_buf_2 U9 (.A(n11), .X(n12));
+sg13g2_nand2_2 U10 (.A(n29), .B(n10), .Y(cout));
+sg13g2_inv_2 U11 (.A(n27), .Y(n13));
+sg13g2_o21ai_1 U12 (.A1(n10), .A2(n29), .B1(n24), .Y(n25));
+sg13g2_nand2_2 U13 (.A(B), .B(A), .Y(n29));
+sg13g2_nand2_2 U14 (.A(n14), .B(n15), .Y(n16));
+sg13g2_nand2_2 U15 (.A(n16), .B(n30), .Y(n27));
+sg13g2_inv_2 U16 (.A(C), .Y(n14));
+sg13g2_nand2_2 U17 (.A(n17), .B(n13), .Y(n18));
+sg13g2_nand2_2 U18 (.A(n26), .B(n18), .Y(carry));
+sg13g2_inv_2 U19 (.A(n28), .Y(n17));
+sg13g2_inv_2 U20 (.A(n25), .Y(n26));
+sg13g2_nand2_2 U21 (.A(n23), .B(cin), .Y(n24));
+sg13g2_inv_2 U22 (.A(n22), .Y(n23));
+sg13g2_nand2_2 U23 (.A(n19), .B(n20), .Y(n21));
+sg13g2_nand2_2 U24 (.A(n21), .B(n29), .Y(n28));
+endmodule
+
+module compressor42_21 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n20), .B(n19), .Y(cout));
+sg13g2_inv_2 U2 (.A(n13), .Y(n10));
+sg13g2_o21ai_1 U3 (.A1(B), .A2(A), .B1(n19), .Y(n18));
+sg13g2_xnor2_1 U4 (.A(n18), .B(n17), .Y(n12));
+sg13g2_xnor2_1 U5 (.A(n10), .B(cin), .Y(S));
+sg13g2_nand2_2 U6 (.A(D), .B(C), .Y(n20));
+sg13g2_o21ai_1 U7 (.A1(D), .A2(C), .B1(n20), .Y(n17));
+sg13g2_o21ai_1 U8 (.A1(n11), .A2(n17), .B1(n16), .Y(carry));
+sg13g2_inv_2 U9 (.A(n12), .Y(n13));
+sg13g2_buf_2 U10 (.A(n18), .X(n11));
+sg13g2_nand2_2 U11 (.A(B), .B(A), .Y(n19));
+sg13g2_inv_2 U12 (.A(n15), .Y(n16));
+sg13g2_o21ai_1 U13 (.A1(n19), .A2(n20), .B1(n14), .Y(n15));
+sg13g2_nand2_2 U14 (.A(n13), .B(cin), .Y(n14));
+endmodule
+
+module compressor42_18 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n5), .B(n23), .Y(cout));
+sg13g2_inv_2 U2 (.A(n12), .Y(n5));
+sg13g2_inv_2 U3 (.A(n24), .Y(n12));
+sg13g2_inv_2 U4 (.A(C), .Y(n16));
+sg13g2_nand2_2 U5 (.A(n17), .B(n24), .Y(n6));
+sg13g2_nor2_2 U6 (.A(n22), .B(n6), .Y(n10));
+sg13g2_inv_2 U7 (.A(n10), .Y(n11));
+sg13g2_o21ai_1 U8 (.A1(A), .A2(B), .B1(n23), .Y(n22));
+sg13g2_nand3_1 U9 (.A(n14), .B(n20), .C(n11), .Y(carry));
+sg13g2_nand2_2 U10 (.A(n19), .B(cin), .Y(n20));
+sg13g2_inv_2 U11 (.A(D), .Y(n15));
+sg13g2_xnor2_1 U12 (.A(n22), .B(n21), .Y(n18));
+sg13g2_nand2_2 U13 (.A(n15), .B(n16), .Y(n17));
+sg13g2_xnor2_1 U14 (.A(n18), .B(cin), .Y(S));
+sg13g2_inv_2 U15 (.A(n18), .Y(n19));
+sg13g2_inv_2 U16 (.A(n23), .Y(n13));
+sg13g2_nand2_2 U17 (.A(n12), .B(n13), .Y(n14));
+sg13g2_nand2_2 U18 (.A(B), .B(A), .Y(n23));
+sg13g2_nand2_2 U19 (.A(n17), .B(n24), .Y(n21));
+sg13g2_nand2_2 U20 (.A(D), .B(C), .Y(n24));
+endmodule
+
+module compressor42_9 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n17), .B(n16), .Y(cout));
+sg13g2_nand3_1 U2 (.A(n13), .B(n1), .C(n10), .Y(carry));
+sg13g2_o21ai_1 U3 (.A1(B), .A2(A), .B1(n16), .Y(n15));
+sg13g2_nand2_2 U4 (.A(n12), .B(cin), .Y(n13));
+sg13g2_xnor2_1 U5 (.A(n15), .B(n14), .Y(n11));
+sg13g2_inv_2 U6 (.A(n11), .Y(n12));
+sg13g2_xnor2_1 U7 (.A(n11), .B(cin), .Y(S));
+sg13g2_o21ai_1 U8 (.A1(D), .A2(C), .B1(n17), .Y(n14));
+sg13g2_nand2_2 U9 (.A(D), .B(C), .Y(n17));
+sg13g2_nand2_2 U10 (.A(n5), .B(n6), .Y(n10));
+sg13g2_inv_2 U11 (.A(n17), .Y(n5));
+sg13g2_inv_2 U12 (.A(n16), .Y(n6));
+sg13g2_nand2_2 U13 (.A(B), .B(A), .Y(n16));
+sg13g2_or2_1 U14 (.A(n15), .B(n14), .X(n1));
+endmodule
+
+module compressor42_23 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_xnor2_1 U1 (.A(n6), .B(n23), .Y(n5));
+sg13g2_inv_2 U2 (.A(n23), .Y(n18));
+sg13g2_inv_2 U3 (.A(B), .Y(n10));
+sg13g2_nand3_1 U4 (.A(n21), .B(n14), .C(n20), .Y(carry));
+sg13g2_nand2_2 U5 (.A(n17), .B(n25), .Y(n6));
+sg13g2_nand2_2 U6 (.A(n18), .B(n19), .Y(n20));
+sg13g2_inv_2 U7 (.A(C), .Y(n16));
+sg13g2_xnor2_1 U8 (.A(n5), .B(cin), .Y(S));
+sg13g2_nand2_2 U9 (.A(B), .B(A), .Y(n24));
+sg13g2_nand2_2 U10 (.A(n25), .B(n24), .Y(cout));
+sg13g2_nand2_2 U11 (.A(n8), .B(cin), .Y(n21));
+sg13g2_xnor2_1 U12 (.A(n18), .B(n22), .Y(n8));
+sg13g2_nand2_2 U13 (.A(n9), .B(n10), .Y(n11));
+sg13g2_nand2_2 U14 (.A(n11), .B(n24), .Y(n23));
+sg13g2_inv_2 U15 (.A(A), .Y(n9));
+sg13g2_nand2_2 U16 (.A(n15), .B(n16), .Y(n17));
+sg13g2_nand2_2 U17 (.A(n12), .B(n13), .Y(n14));
+sg13g2_inv_2 U18 (.A(n25), .Y(n12));
+sg13g2_inv_2 U19 (.A(n24), .Y(n13));
+sg13g2_nand2_2 U20 (.A(n17), .B(n25), .Y(n22));
+sg13g2_inv_2 U21 (.A(D), .Y(n15));
+sg13g2_inv_2 U22 (.A(n6), .Y(n19));
+sg13g2_nand2_2 U23 (.A(D), .B(C), .Y(n25));
+endmodule
+
+module compressor42_2 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n5), .B(n21), .Y(cout));
+sg13g2_buf_2 U2 (.A(n20), .X(n5));
+sg13g2_nand2_2 U3 (.A(n13), .B(n21), .Y(n6));
+sg13g2_nor2_2 U4 (.A(n21), .B(n5), .Y(n9));
+sg13g2_inv_2 U5 (.A(n9), .Y(n14));
+sg13g2_inv_2 U6 (.A(n15), .Y(n16));
+sg13g2_xnor2_1 U7 (.A(n15), .B(cin), .Y(S));
+sg13g2_nand3_1 U8 (.A(n1), .B(n14), .C(n17), .Y(carry));
+sg13g2_o21ai_1 U9 (.A1(B), .A2(A), .B1(n5), .Y(n10));
+sg13g2_inv_2 U10 (.A(D), .Y(n11));
+sg13g2_nand2_2 U11 (.A(n11), .B(n12), .Y(n13));
+sg13g2_nand2_2 U12 (.A(n13), .B(n21), .Y(n18));
+sg13g2_inv_2 U13 (.A(C), .Y(n12));
+sg13g2_nand2_2 U14 (.A(n16), .B(cin), .Y(n17));
+sg13g2_nand2_2 U15 (.A(D), .B(C), .Y(n21));
+sg13g2_xnor2_1 U16 (.A(n18), .B(n19), .Y(n15));
+sg13g2_o21ai_1 U17 (.A1(B), .A2(A), .B1(n20), .Y(n19));
+sg13g2_nand2_2 U18 (.A(A), .B(B), .Y(n20));
+sg13g2_or2_1 U19 (.A(n6), .B(n10), .X(n1));
 endmodule
 
 module compressor42_4 (A, B, C, D, S, carry, cin, cout);
@@ -5239,6 +5541,79 @@ sg13g2_inv_2 U15 (.A(n21), .Y(n12));
 sg13g2_inv_2 U16 (.A(n5), .Y(n13));
 sg13g2_nand2_2 U17 (.A(A), .B(B), .Y(n20));
 sg13g2_or2_1 U18 (.A(n19), .B(n18), .X(n1));
+endmodule
+
+module compressor42_5 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n16), .B(n15), .Y(cout));
+sg13g2_inv_2 U2 (.A(n10), .Y(n11));
+sg13g2_nor2_2 U3 (.A(n16), .B(n15), .Y(n5));
+sg13g2_inv_2 U4 (.A(n5), .Y(n6));
+sg13g2_nand2_2 U5 (.A(n11), .B(cin), .Y(n12));
+sg13g2_nand3_1 U6 (.A(n1), .B(n6), .C(n12), .Y(carry));
+sg13g2_xnor2_1 U7 (.A(n10), .B(cin), .Y(S));
+sg13g2_o21ai_1 U8 (.A1(C), .A2(D), .B1(n16), .Y(n13));
+sg13g2_nand2_2 U9 (.A(D), .B(C), .Y(n16));
+sg13g2_xnor2_1 U10 (.A(n13), .B(n14), .Y(n10));
+sg13g2_o21ai_1 U11 (.A1(B), .A2(A), .B1(n15), .Y(n14));
+sg13g2_nand2_2 U12 (.A(A), .B(B), .Y(n15));
+sg13g2_or2_1 U13 (.A(n14), .B(n13), .X(n1));
+endmodule
+
+module compressor42_6 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n28), .B(n29), .Y(cout));
+sg13g2_buf_2 U2 (.A(n28), .X(n10));
+sg13g2_o21ai_1 U3 (.A1(D), .A2(C), .B1(n29), .Y(n26));
+sg13g2_inv_2 U4 (.A(n24), .Y(n25));
+sg13g2_nand2_2 U5 (.A(n20), .B(n10), .Y(n11));
+sg13g2_nand2_2 U6 (.A(n19), .B(n18), .Y(n20));
+sg13g2_inv_2 U7 (.A(A), .Y(n19));
+sg13g2_nand2_2 U8 (.A(A), .B(B), .Y(n28));
+sg13g2_nand2_2 U9 (.A(n25), .B(n17), .Y(carry));
+sg13g2_xnor2_1 U10 (.A(n21), .B(cin), .Y(S));
+sg13g2_nand2_2 U11 (.A(n12), .B(n13), .Y(n14));
+sg13g2_nand2_2 U12 (.A(n23), .B(n14), .Y(n24));
+sg13g2_inv_2 U13 (.A(n29), .Y(n12));
+sg13g2_inv_2 U14 (.A(n10), .Y(n13));
+sg13g2_nand2_2 U15 (.A(C), .B(D), .Y(n29));
+sg13g2_xnor2_1 U16 (.A(n26), .B(n27), .Y(n21));
+sg13g2_nand2_2 U17 (.A(n22), .B(cin), .Y(n23));
+sg13g2_inv_2 U18 (.A(n21), .Y(n22));
+sg13g2_nand2_2 U19 (.A(n15), .B(n16), .Y(n17));
+sg13g2_inv_2 U20 (.A(n11), .Y(n15));
+sg13g2_inv_2 U21 (.A(n26), .Y(n16));
+sg13g2_nand2_2 U22 (.A(n20), .B(n28), .Y(n27));
+sg13g2_inv_2 U23 (.A(B), .Y(n18));
+endmodule
+
+module compressor42_3 (A, B, C, D, S, carry, cin, cout);
+input A, B, C, D, cin;
+output S, carry, cout;
+
+sg13g2_nand2_2 U1 (.A(n5), .B(n6), .Y(cout));
+sg13g2_inv_2 U2 (.A(n14), .Y(n5));
+sg13g2_buf_2 U3 (.A(n22), .X(n6));
+sg13g2_nand2_2 U4 (.A(n10), .B(n11), .Y(n12));
+sg13g2_nand3_1 U5 (.A(n15), .B(n1), .C(n18), .Y(carry));
+sg13g2_inv_2 U6 (.A(n6), .Y(n13));
+sg13g2_xnor2_1 U7 (.A(n16), .B(cin), .Y(S));
+sg13g2_inv_2 U8 (.A(D), .Y(n10));
+sg13g2_nand2_2 U9 (.A(D), .B(C), .Y(n22));
+sg13g2_inv_2 U10 (.A(C), .Y(n11));
+sg13g2_nand2_2 U11 (.A(n17), .B(cin), .Y(n18));
+sg13g2_nand2_2 U12 (.A(n12), .B(n22), .Y(n19));
+sg13g2_xnor2_1 U13 (.A(n19), .B(n20), .Y(n16));
+sg13g2_nand2_2 U14 (.A(n13), .B(n14), .Y(n15));
+sg13g2_inv_2 U15 (.A(n21), .Y(n14));
+sg13g2_inv_2 U16 (.A(n16), .Y(n17));
+sg13g2_o21ai_1 U17 (.A1(B), .A2(A), .B1(n21), .Y(n20));
+sg13g2_nand2_2 U18 (.A(A), .B(B), .Y(n21));
+sg13g2_or2_1 U19 (.A(n19), .B(n20), .X(n1));
 endmodule
 
 module compressor42_13 (A, B, C, D, S, carry, cin, cout);
@@ -5272,58 +5647,345 @@ sg13g2_nand2_2 U24 (.A(n22), .B(n21), .Y(S));
 sg13g2_inv_2 U25 (.A(cin), .Y(n20));
 endmodule
 
-module compressor42_3 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
+module full_adder_0 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
 
-sg13g2_nand2_2 U1 (.A(n5), .B(n6), .Y(cout));
-sg13g2_inv_2 U2 (.A(n14), .Y(n5));
-sg13g2_buf_2 U3 (.A(n22), .X(n6));
-sg13g2_nand2_2 U4 (.A(n10), .B(n11), .Y(n12));
-sg13g2_nand3_1 U5 (.A(n15), .B(n1), .C(n18), .Y(carry));
-sg13g2_inv_2 U6 (.A(n6), .Y(n13));
-sg13g2_xnor2_1 U7 (.A(n16), .B(cin), .Y(S));
-sg13g2_inv_2 U8 (.A(D), .Y(n10));
-sg13g2_nand2_2 U9 (.A(D), .B(C), .Y(n22));
-sg13g2_inv_2 U10 (.A(C), .Y(n11));
-sg13g2_nand2_2 U11 (.A(n17), .B(cin), .Y(n18));
-sg13g2_nand2_2 U12 (.A(n12), .B(n22), .Y(n19));
-sg13g2_xnor2_1 U13 (.A(n19), .B(n20), .Y(n16));
-sg13g2_nand2_2 U14 (.A(n13), .B(n14), .Y(n15));
-sg13g2_inv_2 U15 (.A(n21), .Y(n14));
-sg13g2_inv_2 U16 (.A(n16), .Y(n17));
-sg13g2_o21ai_1 U17 (.A1(B), .A2(A), .B1(n21), .Y(n20));
-sg13g2_nand2_2 U18 (.A(A), .B(B), .Y(n21));
-sg13g2_or2_1 U19 (.A(n19), .B(n20), .X(n1));
+sg13g2_o21ai_1 U1 (.A1(n1), .A2(n2), .B1(n3), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n3));
+sg13g2_inv_2 U3 (.A(cin), .Y(n2));
+sg13g2_xnor2_1 U4 (.A(n1), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n1));
 endmodule
 
-module compressor42_18 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
+module full_adder_1 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
 
-sg13g2_nand2_2 U1 (.A(n5), .B(n23), .Y(cout));
-sg13g2_inv_2 U2 (.A(n12), .Y(n5));
-sg13g2_inv_2 U3 (.A(n24), .Y(n12));
-sg13g2_inv_2 U4 (.A(C), .Y(n16));
-sg13g2_nand2_2 U5 (.A(n17), .B(n24), .Y(n6));
-sg13g2_nor2_2 U6 (.A(n22), .B(n6), .Y(n10));
-sg13g2_inv_2 U7 (.A(n10), .Y(n11));
-sg13g2_o21ai_1 U8 (.A1(A), .A2(B), .B1(n23), .Y(n22));
-sg13g2_nand3_1 U9 (.A(n14), .B(n20), .C(n11), .Y(carry));
-sg13g2_nand2_2 U10 (.A(n19), .B(cin), .Y(n20));
-sg13g2_inv_2 U11 (.A(D), .Y(n15));
-sg13g2_xnor2_1 U12 (.A(n22), .B(n21), .Y(n18));
-sg13g2_nand2_2 U13 (.A(n15), .B(n16), .Y(n17));
-sg13g2_xnor2_1 U14 (.A(n18), .B(cin), .Y(S));
-sg13g2_inv_2 U15 (.A(n18), .Y(n19));
-sg13g2_inv_2 U16 (.A(n23), .Y(n13));
-sg13g2_nand2_2 U17 (.A(n12), .B(n13), .Y(n14));
-sg13g2_nand2_2 U18 (.A(B), .B(A), .Y(n23));
-sg13g2_nand2_2 U19 (.A(n17), .B(n24), .Y(n21));
-sg13g2_nand2_2 U20 (.A(D), .B(C), .Y(n24));
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(B), .B(A), .Y(n6));
+sg13g2_xnor2_1 U5 (.A(cin), .B(n6), .Y(S));
 endmodule
 
-module full_adder_36 (A, B, S, cin, cout);
+module full_adder_2 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(n6), .B(cin), .Y(S));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_o21ai_1 U4 (.A1(n5), .A2(n6), .B1(n4), .Y(cout));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_3 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_inv_2 U1 (.A(n10), .Y(n4));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
+sg13g2_inv_2 U3 (.A(cin), .Y(n9));
+sg13g2_nand2_2 U4 (.A(n10), .B(cin), .Y(n6));
+sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n7));
+sg13g2_nand2_2 U6 (.A(n7), .B(n6), .Y(S));
+sg13g2_inv_2 U7 (.A(cin), .Y(n5));
+sg13g2_o21ai_1 U8 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
+sg13g2_xnor2_1 U9 (.A(B), .B(A), .Y(n10));
+endmodule
+
+module full_adder_4 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_inv_2 U1 (.A(n7), .Y(n1));
+sg13g2_inv_2 U2 (.A(n1), .Y(n3));
+sg13g2_inv_2 U3 (.A(cin), .Y(n4));
+sg13g2_xnor2_1 U4 (.A(cin), .B(n9), .Y(S));
+sg13g2_nand2_2 U5 (.A(n8), .B(n7), .Y(n9));
+sg13g2_nand2_2 U6 (.A(n6), .B(n5), .Y(n8));
+sg13g2_nand2_2 U7 (.A(n8), .B(n7), .Y(n10));
+sg13g2_inv_2 U8 (.A(A), .Y(n5));
+sg13g2_inv_2 U9 (.A(B), .Y(n6));
+sg13g2_nand2_2 U10 (.A(A), .B(B), .Y(n7));
+sg13g2_o21ai_1 U11 (.A1(n10), .A2(n4), .B1(n3), .Y(cout));
+endmodule
+
+module full_adder_5 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand2_2 U1 (.A(n6), .B(n7), .Y(n9));
+sg13g2_nand3_1 U2 (.A(n9), .B(n8), .C(n3), .Y(n5));
+sg13g2_nand2_2 U3 (.A(n6), .B(n7), .Y(n1));
+sg13g2_inv_2 U4 (.A(B), .Y(n6));
+sg13g2_nand2_2 U5 (.A(n2), .B(cin), .Y(n4));
+sg13g2_nand2_2 U6 (.A(n1), .B(n8), .Y(n2));
+sg13g2_o21ai_1 U7 (.A1(n2), .A2(n3), .B1(n8), .Y(cout));
+sg13g2_inv_2 U8 (.A(A), .Y(n7));
+sg13g2_nand2_2 U9 (.A(B), .B(A), .Y(n8));
+sg13g2_nand2_2 U10 (.A(n5), .B(n4), .Y(S));
+sg13g2_inv_2 U11 (.A(cin), .Y(n3));
+endmodule
+
+module full_adder_6 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand2_2 U1 (.A(n2), .B(n4), .Y(net11964));
+sg13g2_nand2_2 U2 (.A(n5), .B(A), .Y(n3));
+sg13g2_nand2_2 U3 (.A(net11964), .B(net11963), .Y(net12006));
+sg13g2_nand2_2 U4 (.A(net11964), .B(net11963), .Y(n1));
+sg13g2_inv_2 U5 (.A(B), .Y(n4));
+sg13g2_inv_2 U6 (.A(n4), .Y(n5));
+sg13g2_inv_2 U7 (.A(A), .Y(n2));
+sg13g2_nand2_2 U8 (.A(A), .B(B), .Y(net11963));
+sg13g2_nand2_2 U9 (.A(n1), .B(cin), .Y(net10277));
+sg13g2_inv_2 U10 (.A(n1), .Y(net10275));
+sg13g2_nand2_2 U11 (.A(net10278), .B(net10277), .Y(S));
+sg13g2_inv_2 U12 (.A(cin), .Y(net10276));
+sg13g2_nand2_2 U13 (.A(net10275), .B(net10276), .Y(net10278));
+sg13g2_o21ai_1 U14 (.A1(net10276), .A2(net12006), .B1(n3), .Y(cout));
+endmodule
+
+module full_adder_7 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(n6), .B(cin), .Y(S));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_o21ai_1 U4 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_8 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_9 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(n10), .B(cin), .Y(S));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
+sg13g2_inv_2 U3 (.A(cin), .Y(n9));
+sg13g2_inv_2 U4 (.A(B), .Y(n4));
+sg13g2_inv_2 U5 (.A(A), .Y(n5));
+sg13g2_o21ai_1 U6 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
+sg13g2_nand2_2 U7 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U8 (.A(n4), .B(n5), .Y(n7));
+sg13g2_nand2_2 U9 (.A(n6), .B(n7), .Y(n10));
+endmodule
+
+module full_adder_10 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_11 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand2_2 U1 (.A(n7), .B(n6), .Y(n4));
+sg13g2_nand2_2 U2 (.A(n13), .B(n4), .Y(n5));
+sg13g2_inv_2 U3 (.A(cin), .Y(n14));
+sg13g2_nand2_2 U4 (.A(A), .B(B), .Y(n13));
+sg13g2_nand2_2 U5 (.A(n6), .B(n7), .Y(n8));
+sg13g2_nand2_2 U6 (.A(n8), .B(n13), .Y(n15));
+sg13g2_inv_2 U7 (.A(B), .Y(n6));
+sg13g2_inv_2 U8 (.A(A), .Y(n7));
+sg13g2_nand2_2 U9 (.A(n5), .B(cin), .Y(n11));
+sg13g2_nand2_2 U10 (.A(n9), .B(n10), .Y(n12));
+sg13g2_nand2_2 U11 (.A(n11), .B(n12), .Y(S));
+sg13g2_inv_2 U12 (.A(n5), .Y(n9));
+sg13g2_inv_2 U13 (.A(cin), .Y(n10));
+sg13g2_o21ai_1 U14 (.A1(n15), .A2(n14), .B1(n13), .Y(cout));
+endmodule
+
+module full_adder_12 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand3_1 U1 (.A(n2), .B(net10321), .C(n5), .Y(n4));
+sg13g2_o21ai_1 U2 (.A1(n6), .A2(n2), .B1(n5), .Y(cout));
+sg13g2_nand2_2 U3 (.A(n1), .B(cin), .Y(n3));
+sg13g2_nand2_2 U4 (.A(n4), .B(n3), .Y(S));
+sg13g2_inv_2 U5 (.A(cin), .Y(n2));
+sg13g2_inv_2 U6 (.A(net10321), .Y(n6));
+sg13g2_inv_2 U7 (.A(B), .Y(net10318));
+sg13g2_nand2_2 U8 (.A(net10321), .B(n5), .Y(n1));
+sg13g2_nand2_2 U9 (.A(A), .B(B), .Y(n5));
+sg13g2_inv_2 U10 (.A(A), .Y(net10319));
+sg13g2_nand2_2 U11 (.A(net10318), .B(net10319), .Y(net10321));
+endmodule
+
+module full_adder_13 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_inv_2 U1 (.A(B), .Y(n5));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n9));
+sg13g2_inv_2 U3 (.A(cin), .Y(n10));
+sg13g2_nand2_2 U4 (.A(n7), .B(n8), .Y(n4));
+sg13g2_nand2_2 U5 (.A(B), .B(A), .Y(n7));
+sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(n8));
+sg13g2_nand2_2 U7 (.A(n7), .B(n8), .Y(n11));
+sg13g2_inv_2 U8 (.A(A), .Y(n6));
+sg13g2_o21ai_1 U9 (.A1(n11), .A2(n10), .B1(n9), .Y(cout));
+sg13g2_xnor2_1 U10 (.A(cin), .B(n4), .Y(S));
+endmodule
+
+module full_adder_14 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand3_1 U1 (.A(n9), .B(n8), .C(n2), .Y(n5));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n10));
+sg13g2_inv_2 U3 (.A(A), .Y(n7));
+sg13g2_inv_2 U4 (.A(cin), .Y(n2));
+sg13g2_inv_2 U5 (.A(B), .Y(n6));
+sg13g2_nand2_2 U6 (.A(n11), .B(cin), .Y(n4));
+sg13g2_nand2_2 U7 (.A(n5), .B(n4), .Y(S));
+sg13g2_nand2_2 U8 (.A(B), .B(A), .Y(n8));
+sg13g2_nand2_2 U9 (.A(n7), .B(n6), .Y(n9));
+sg13g2_nand2_2 U10 (.A(n9), .B(n8), .Y(n11));
+sg13g2_o21ai_1 U11 (.A1(n2), .A2(n11), .B1(n10), .Y(cout));
+endmodule
+
+module full_adder_15 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_inv_2 U1 (.A(n6), .Y(n4));
+sg13g2_xnor2_1 U2 (.A(cin), .B(n1), .Y(S));
+sg13g2_inv_2 U3 (.A(cin), .Y(n11));
+sg13g2_nand2_2 U4 (.A(n7), .B(n8), .Y(n1));
+sg13g2_inv_2 U5 (.A(B), .Y(n5));
+sg13g2_nand2_2 U6 (.A(n4), .B(B), .Y(n10));
+sg13g2_inv_2 U7 (.A(A), .Y(n6));
+sg13g2_nand2_2 U8 (.A(B), .B(A), .Y(n7));
+sg13g2_nand2_2 U9 (.A(n5), .B(n6), .Y(n8));
+sg13g2_nand2_2 U10 (.A(n8), .B(n7), .Y(n9));
+sg13g2_o21ai_1 U11 (.A1(n9), .A2(n11), .B1(n10), .Y(cout));
+endmodule
+
+module full_adder_16 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand2_2 U1 (.A(net10545), .B(net10546), .Y(n6));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n5));
+sg13g2_inv_2 U3 (.A(cin), .Y(n2));
+sg13g2_nand2_2 U4 (.A(n6), .B(net10547), .Y(S));
+sg13g2_inv_2 U5 (.A(cin), .Y(net10546));
+sg13g2_inv_2 U6 (.A(n4), .Y(net10545));
+sg13g2_nand2_2 U7 (.A(n4), .B(cin), .Y(net10547));
+sg13g2_xnor2_1 U8 (.A(B), .B(A), .Y(n4));
+sg13g2_o21ai_1 U9 (.A1(n2), .A2(n4), .B1(n5), .Y(cout));
+endmodule
+
+module full_adder_17 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_o21ai_1 U4 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_xnor2_1 U5 (.A(n6), .B(cin), .Y(S));
+endmodule
+
+module full_adder_18 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n8));
+sg13g2_inv_2 U3 (.A(cin), .Y(n9));
+sg13g2_nand2_2 U4 (.A(n4), .B(n5), .Y(n7));
+sg13g2_nand2_2 U5 (.A(n6), .B(n7), .Y(n10));
+sg13g2_inv_2 U6 (.A(B), .Y(n4));
+sg13g2_inv_2 U7 (.A(A), .Y(n5));
+sg13g2_xnor2_1 U8 (.A(n10), .B(cin), .Y(S));
+sg13g2_o21ai_1 U9 (.A1(n9), .A2(n10), .B1(n8), .Y(cout));
+endmodule
+
+module full_adder_19 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
+sg13g2_inv_2 U3 (.A(cin), .Y(n9));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n7));
+sg13g2_nand2_2 U6 (.A(n6), .B(n7), .Y(n10));
+sg13g2_inv_2 U7 (.A(B), .Y(n4));
+sg13g2_inv_2 U8 (.A(A), .Y(n5));
+sg13g2_xnor2_1 U9 (.A(n10), .B(cin), .Y(S));
+endmodule
+
+module full_adder_20 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand3_1 U1 (.A(n9), .B(n10), .C(n4), .Y(n6));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n11));
+sg13g2_inv_2 U3 (.A(cin), .Y(n12));
+sg13g2_nand2_2 U4 (.A(n13), .B(cin), .Y(n5));
+sg13g2_nand2_2 U5 (.A(n5), .B(n6), .Y(S));
+sg13g2_inv_2 U6 (.A(cin), .Y(n4));
+sg13g2_nand2_2 U7 (.A(B), .B(A), .Y(n9));
+sg13g2_nand2_2 U8 (.A(n7), .B(n8), .Y(n10));
+sg13g2_nand2_2 U9 (.A(n9), .B(n10), .Y(n13));
+sg13g2_inv_2 U10 (.A(B), .Y(n7));
+sg13g2_inv_2 U11 (.A(A), .Y(n8));
+sg13g2_o21ai_1 U12 (.A1(n13), .A2(n12), .B1(n11), .Y(cout));
+endmodule
+
+module full_adder_21 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(cin), .B(n2), .Y(S));
+sg13g2_nand2_2 U2 (.A(n9), .B(n6), .Y(n2));
+sg13g2_nand2_2 U3 (.A(n6), .B(n9), .Y(n10));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n9));
+sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n6));
+sg13g2_inv_2 U6 (.A(B), .Y(n4));
+sg13g2_inv_2 U7 (.A(A), .Y(n5));
+sg13g2_inv_2 U8 (.A(n10), .Y(n7));
+sg13g2_nand2_2 U9 (.A(n7), .B(cin), .Y(n8));
+sg13g2_nand2_2 U10 (.A(n8), .B(n9), .Y(cout));
+endmodule
+
+module full_adder_22 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n5), .A2(n6), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_23 (A, B, S, cin, cout);
 input A, B, cin;
 output S, cout;
 
@@ -5346,33 +6008,267 @@ sg13g2_xnor2_1 U5 (.A(n4), .B(n7), .Y(S));
 sg13g2_xnor2_1 U6 (.A(B), .B(A), .Y(n7));
 endmodule
 
-module compressor42_6 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
+module full_adder_25 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
 
-sg13g2_nand2_2 U1 (.A(n28), .B(n29), .Y(cout));
-sg13g2_buf_2 U2 (.A(n28), .X(n10));
-sg13g2_o21ai_1 U3 (.A1(D), .A2(C), .B1(n29), .Y(n26));
-sg13g2_inv_2 U4 (.A(n24), .Y(n25));
-sg13g2_nand2_2 U5 (.A(n20), .B(n10), .Y(n11));
-sg13g2_nand2_2 U6 (.A(n19), .B(n18), .Y(n20));
-sg13g2_inv_2 U7 (.A(A), .Y(n19));
-sg13g2_nand2_2 U8 (.A(A), .B(B), .Y(n28));
-sg13g2_nand2_2 U9 (.A(n25), .B(n17), .Y(carry));
-sg13g2_xnor2_1 U10 (.A(n21), .B(cin), .Y(S));
-sg13g2_nand2_2 U11 (.A(n12), .B(n13), .Y(n14));
-sg13g2_nand2_2 U12 (.A(n23), .B(n14), .Y(n24));
-sg13g2_inv_2 U13 (.A(n29), .Y(n12));
-sg13g2_inv_2 U14 (.A(n10), .Y(n13));
-sg13g2_nand2_2 U15 (.A(C), .B(D), .Y(n29));
-sg13g2_xnor2_1 U16 (.A(n26), .B(n27), .Y(n21));
-sg13g2_nand2_2 U17 (.A(n22), .B(cin), .Y(n23));
-sg13g2_inv_2 U18 (.A(n21), .Y(n22));
-sg13g2_nand2_2 U19 (.A(n15), .B(n16), .Y(n17));
-sg13g2_inv_2 U20 (.A(n11), .Y(n15));
-sg13g2_inv_2 U21 (.A(n26), .Y(n16));
-sg13g2_nand2_2 U22 (.A(n20), .B(n28), .Y(n27));
-sg13g2_inv_2 U23 (.A(B), .Y(n18));
+sg13g2_nand2_2 U1 (.A(n2), .B(n4), .Y(n6));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n7));
+sg13g2_o21ai_1 U3 (.A1(n8), .A2(n4), .B1(n7), .Y(cout));
+sg13g2_inv_2 U4 (.A(n8), .Y(n2));
+sg13g2_nand2_2 U5 (.A(n8), .B(cin), .Y(n5));
+sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(S));
+sg13g2_inv_2 U7 (.A(cin), .Y(n4));
+sg13g2_xnor2_1 U8 (.A(B), .B(A), .Y(n8));
+endmodule
+
+module full_adder_26 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_27 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_inv_2 U1 (.A(n8), .Y(n2));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n7));
+sg13g2_o21ai_1 U3 (.A1(n4), .A2(n8), .B1(n7), .Y(cout));
+sg13g2_nand2_2 U4 (.A(n8), .B(cin), .Y(n5));
+sg13g2_nand2_2 U5 (.A(n2), .B(n4), .Y(n6));
+sg13g2_nand2_2 U6 (.A(n5), .B(n6), .Y(S));
+sg13g2_inv_2 U7 (.A(cin), .Y(n4));
+sg13g2_xnor2_1 U8 (.A(B), .B(A), .Y(n8));
+endmodule
+
+module full_adder_28 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n7), .B1(n5), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n5));
+sg13g2_inv_2 U3 (.A(cin), .Y(n6));
+sg13g2_xnor2_1 U4 (.A(n7), .B(n4), .Y(S));
+sg13g2_xnor2_1 U5 (.A(A), .B(B), .Y(n7));
+sg13g2_inv_2 U6 (.A(n6), .Y(n4));
+endmodule
+
+module full_adder_29 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_inv_2 U1 (.A(cin), .Y(n3));
+sg13g2_nand2_2 U2 (.A(n7), .B(n6), .Y(n9));
+sg13g2_inv_2 U3 (.A(A), .Y(n7));
+sg13g2_nand2_2 U4 (.A(n10), .B(cin), .Y(n4));
+sg13g2_nand2_2 U5 (.A(n2), .B(n3), .Y(n5));
+sg13g2_nand2_2 U6 (.A(n5), .B(n4), .Y(S));
+sg13g2_inv_2 U7 (.A(n10), .Y(n2));
+sg13g2_o21ai_1 U8 (.A1(n10), .A2(n3), .B1(n8), .Y(cout));
+sg13g2_nand2_2 U9 (.A(A), .B(B), .Y(n8));
+sg13g2_nand2_2 U10 (.A(n8), .B(n9), .Y(n10));
+sg13g2_inv_2 U11 (.A(B), .Y(n6));
+endmodule
+
+module full_adder_30 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_31 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(n10), .B(cin), .Y(S));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
+sg13g2_inv_2 U3 (.A(cin), .Y(n9));
+sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U5 (.A(n5), .B(n4), .Y(n7));
+sg13g2_nand2_2 U6 (.A(n6), .B(n7), .Y(n10));
+sg13g2_inv_2 U7 (.A(B), .Y(n4));
+sg13g2_inv_2 U8 (.A(A), .Y(n5));
+sg13g2_o21ai_1 U9 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
+endmodule
+
+module full_adder_32 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_xnor2_1 U1 (.A(n6), .B(cin), .Y(S));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_o21ai_1 U4 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_33 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n2), .A2(n6), .B1(n5), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n5));
+sg13g2_o21ai_1 U3 (.A1(cin), .A2(n6), .B1(n4), .Y(S));
+sg13g2_xnor2_1 U4 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U5 (.A(n6), .B(cin), .Y(n4));
+sg13g2_inv_2 U6 (.A(cin), .Y(n2));
+endmodule
+
+module full_adder_34 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_35 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_36 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_37 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_38 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n7), .A2(n6), .B1(n5), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(n4), .Y(n5));
+sg13g2_inv_2 U3 (.A(cin), .Y(n6));
+sg13g2_xnor2_1 U4 (.A(n7), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(n4), .B(A), .Y(n7));
+sg13g2_buf_2 U6 (.A(B), .X(n4));
+endmodule
+
+module full_adder_39 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_40 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n6));
+sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n8));
+sg13g2_inv_2 U3 (.A(cin), .Y(n9));
+sg13g2_xnor2_1 U4 (.A(n10), .B(cin), .Y(S));
+sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n7));
+sg13g2_nand2_2 U6 (.A(n6), .B(n7), .Y(n10));
+sg13g2_inv_2 U7 (.A(B), .Y(n4));
+sg13g2_inv_2 U8 (.A(A), .Y(n5));
+sg13g2_o21ai_1 U9 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
+endmodule
+
+module full_adder_41 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_42 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_43 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module full_adder_44 (A, B, S, cin, cout);
+input A, B, cin;
+output S, cout;
+
+sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(cin), .Y(n5));
+sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
+sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
+endmodule
+
+module half_adder_0 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n1), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n1));
+sg13g2_xnor2_1 U3 (.A(n2), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n2));
+endmodule
+
+module half_adder_1 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
 endmodule
 
 module half_adder_2 (A, B, S, carry);
@@ -5388,48 +6284,735 @@ sg13g2_nand2_2 U6 (.A(n3), .B(A), .Y(n5));
 sg13g2_nand2_2 U7 (.A(n4), .B(n5), .Y(S));
 endmodule
 
-module compressor42_5 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
+module half_adder_3 (A, B, S, carry);
+input A, B;
+output S, carry;
 
-sg13g2_nand2_2 U1 (.A(n16), .B(n15), .Y(cout));
-sg13g2_inv_2 U2 (.A(n10), .Y(n11));
-sg13g2_nor2_2 U3 (.A(n16), .B(n15), .Y(n5));
-sg13g2_inv_2 U4 (.A(n5), .Y(n6));
-sg13g2_nand2_2 U5 (.A(n11), .B(cin), .Y(n12));
-sg13g2_nand3_1 U6 (.A(n1), .B(n6), .C(n12), .Y(carry));
-sg13g2_xnor2_1 U7 (.A(n10), .B(cin), .Y(S));
-sg13g2_o21ai_1 U8 (.A1(C), .A2(D), .B1(n16), .Y(n13));
-sg13g2_nand2_2 U9 (.A(D), .B(C), .Y(n16));
-sg13g2_xnor2_1 U10 (.A(n13), .B(n14), .Y(n10));
-sg13g2_o21ai_1 U11 (.A1(B), .A2(A), .B1(n15), .Y(n14));
-sg13g2_nand2_2 U12 (.A(A), .B(B), .Y(n15));
-sg13g2_or2_1 U13 (.A(n14), .B(n13), .X(n1));
+sg13g2_xnor2_1 U1 (.A(n3), .B(B), .Y(S));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U3 (.A(A), .Y(n3));
+sg13g2_inv_2 U4 (.A(n4), .Y(carry));
 endmodule
 
-module compressor42_2 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
+module half_adder_4 (A, B, S, carry);
+input A, B;
+output S, carry;
 
-sg13g2_nand2_2 U1 (.A(n5), .B(n21), .Y(cout));
-sg13g2_buf_2 U2 (.A(n20), .X(n5));
-sg13g2_nand2_2 U3 (.A(n13), .B(n21), .Y(n6));
-sg13g2_nor2_2 U4 (.A(n21), .B(n5), .Y(n9));
-sg13g2_inv_2 U5 (.A(n9), .Y(n14));
-sg13g2_inv_2 U6 (.A(n15), .Y(n16));
-sg13g2_xnor2_1 U7 (.A(n15), .B(cin), .Y(S));
-sg13g2_nand3_1 U8 (.A(n1), .B(n14), .C(n17), .Y(carry));
-sg13g2_o21ai_1 U9 (.A1(B), .A2(A), .B1(n5), .Y(n10));
-sg13g2_inv_2 U10 (.A(D), .Y(n11));
-sg13g2_nand2_2 U11 (.A(n11), .B(n12), .Y(n13));
-sg13g2_nand2_2 U12 (.A(n13), .B(n21), .Y(n18));
-sg13g2_inv_2 U13 (.A(C), .Y(n12));
-sg13g2_nand2_2 U14 (.A(n16), .B(cin), .Y(n17));
-sg13g2_nand2_2 U15 (.A(D), .B(C), .Y(n21));
-sg13g2_xnor2_1 U16 (.A(n18), .B(n19), .Y(n15));
-sg13g2_o21ai_1 U17 (.A1(B), .A2(A), .B1(n20), .Y(n19));
-sg13g2_nand2_2 U18 (.A(A), .B(B), .Y(n20));
-sg13g2_or2_1 U19 (.A(n6), .B(n10), .X(n1));
+sg13g2_inv_2 U1 (.A(A), .Y(n3));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(n4), .Y(carry));
+endmodule
+
+module half_adder_5 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_nand2_2 U1 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U2 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U3 (.A(A), .Y(n3));
+sg13g2_inv_2 U4 (.A(n4), .Y(carry));
+endmodule
+
+module half_adder_6 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(A), .Y(n6));
+sg13g2_nand2_2 U2 (.A(B), .B(n6), .Y(n4));
+sg13g2_nand2_2 U3 (.A(n3), .B(A), .Y(n5));
+sg13g2_nand2_2 U4 (.A(n4), .B(n5), .Y(S));
+sg13g2_inv_2 U5 (.A(B), .Y(n3));
+sg13g2_inv_2 U6 (.A(n7), .Y(carry));
+sg13g2_nand2_2 U7 (.A(B), .B(A), .Y(n7));
+endmodule
+
+module half_adder_7 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_nand2_2 U1 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U2 (.A(n4), .Y(carry));
+sg13g2_inv_2 U3 (.A(A), .Y(n3));
+sg13g2_xnor2_1 U4 (.A(n3), .B(B), .Y(S));
+endmodule
+
+module half_adder_8 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(A), .Y(n3));
+sg13g2_xnor2_1 U2 (.A(B), .B(n3), .Y(S));
+sg13g2_inv_2 U3 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U4 (.A(A), .B(B), .Y(n4));
+endmodule
+
+module half_adder_9 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_xnor2_1 U1 (.A(B), .B(n3), .Y(S));
+sg13g2_inv_2 U2 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U3 (.A(A), .B(B), .Y(n4));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_10 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_11 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_12 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_13 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_14 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_15 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module half_adder_16 (A, B, S, carry);
+input A, B;
+output S, carry;
+
+sg13g2_inv_2 U1 (.A(n4), .Y(carry));
+sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
+sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
+sg13g2_inv_2 U4 (.A(A), .Y(n3));
+endmodule
+
+module partial_product_gen_0 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_nand2_2 U2 (.A(n55), .B(n45), .Y(\pp[10]));
+sg13g2_nand2_2 U3 (.A(n53), .B(n43), .Y(n45));
+sg13g2_nand2_2 U4 (.A(n58), .B(n41), .Y(\pp[12]));
+sg13g2_o21ai_1 U5 (.A1(n7), .A2(n62), .B1(n9), .Y(\pp[8]));
+sg13g2_nand2_2 U6 (.A(n53), .B(n2), .Y(n9));
+sg13g2_nand2_2 U7 (.A(double), .B(n34), .Y(n8));
+sg13g2_inv_2 U8 (.A(n12), .Y(\pp[7]));
+sg13g2_inv_2 U9 (.A(n48), .Y(n47));
+sg13g2_nor2_2 U10 (.A(n5), .B(n7), .Y(n14));
+sg13g2_xnor2_1 U11 (.A(n63), .B(\md[7]), .Y(n7));
+sg13g2_inv_2 U12 (.A(n1), .Y(\pp[9]));
+sg13g2_a21oi_2 U13 (.A1(n3), .A2(n2), .B1(n4), .Y(n1));
+sg13g2_xnor2_1 U14 (.A(n61), .B(\md[6]), .Y(n13));
+sg13g2_inv_2 U15 (.A(n17), .Y(\pp[5]));
+sg13g2_a21oi_2 U16 (.A1(n18), .A2(n3), .B1(n19), .Y(n17));
+sg13g2_nor2_2 U17 (.A(n5), .B(n47), .Y(n19));
+sg13g2_xnor2_1 U18 (.A(n63), .B(\md[5]), .Y(n15));
+sg13g2_o21ai_1 U19 (.A1(n20), .A2(n62), .B1(n21), .Y(\pp[4]));
+sg13g2_nand2_2 U20 (.A(n53), .B(n18), .Y(n21));
+sg13g2_xnor2_1 U21 (.A(n60), .B(\md[4]), .Y(n18));
+sg13g2_inv_2 U22 (.A(n22), .Y(\pp[3]));
+sg13g2_a21oi_2 U23 (.A1(n23), .A2(n3), .B1(n24), .Y(n22));
+sg13g2_nor2_2 U24 (.A(n5), .B(n20), .Y(n24));
+sg13g2_xnor2_1 U25 (.A(n59), .B(\md[3]), .Y(n20));
+sg13g2_o21ai_1 U26 (.A1(n25), .A2(n62), .B1(n26), .Y(\pp[2]));
+sg13g2_nand2_2 U27 (.A(n53), .B(n23), .Y(n26));
+sg13g2_xnor2_1 U28 (.A(n60), .B(\md[2]), .Y(n23));
+sg13g2_inv_2 U29 (.A(n27), .Y(n25));
+sg13g2_o21ai_1 U30 (.A1(n28), .A2(n62), .B1(n29), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n53), .B(n27), .Y(n29));
+sg13g2_xnor2_1 U32 (.A(n60), .B(\md[1]), .Y(n27));
+sg13g2_a21oi_2 U33 (.A1(n3), .A2(n31), .B1(n32), .Y(n30));
+sg13g2_nand2_2 U34 (.A(n51), .B(n3), .Y(n52));
+sg13g2_nand2_2 U35 (.A(n48), .B(n3), .Y(n49));
+sg13g2_a21oi_2 U36 (.A1(n3), .A2(n13), .B1(n14), .Y(n12));
+sg13g2_xnor2_1 U37 (.A(n11), .B(\md[15]), .Y(n33));
+sg13g2_nor2_2 U38 (.A(n5), .B(n6), .Y(n4));
+sg13g2_nand2_2 U39 (.A(n13), .B(n53), .Y(n16));
+sg13g2_xnor2_1 U40 (.A(n63), .B(\md[9]), .Y(n6));
+sg13g2_nand2_2 U41 (.A(n16), .B(n49), .Y(\pp[6]));
+sg13g2_inv_2 U42 (.A(n15), .Y(n48));
+sg13g2_xnor2_1 U43 (.A(n60), .B(\md[8]), .Y(n2));
+sg13g2_xnor2_1 U44 (.A(negation), .B(\md[13]), .Y(n35));
+sg13g2_inv_2 U45 (.A(n30), .Y(\pp[15]));
+sg13g2_nand2_2 U46 (.A(n10), .B(n38), .Y(n41));
+sg13g2_xnor2_1 U47 (.A(n60), .B(\md[10]), .Y(n43));
+sg13g2_inv_2 U48 (.A(n42), .Y(\pp[11]));
+sg13g2_a21oi_2 U49 (.A1(n43), .A2(n3), .B1(n44), .Y(n42));
+sg13g2_nor2_2 U50 (.A(n5), .B(n40), .Y(n44));
+sg13g2_nand2_2 U51 (.A(n53), .B(n31), .Y(n36));
+sg13g2_xnor2_1 U52 (.A(n61), .B(\md[14]), .Y(n31));
+sg13g2_buf_2 U53 (.A(n64), .X(\pp[16]));
+sg13g2_nand2_2 U54 (.A(n56), .B(n34), .Y(n62));
+sg13g2_inv_2 U55 (.A(n37), .Y(\pp[13]));
+sg13g2_a21oi_2 U56 (.A1(n38), .A2(n3), .B1(n39), .Y(n37));
+sg13g2_nor2_2 U57 (.A(n5), .B(n35), .Y(n39));
+sg13g2_inv_2 U58 (.A(n10), .Y(n5));
+sg13g2_nand2_2 U59 (.A(n52), .B(n36), .Y(\pp[14]));
+sg13g2_o21ai_1 U60 (.A1(n28), .A2(n5), .B1(n46), .Y(\pp[0]));
+sg13g2_nand2_2 U61 (.A(n56), .B(n59), .Y(n46));
+sg13g2_inv_2 U62 (.A(n35), .Y(n51));
+sg13g2_xnor2_1 U63 (.A(n61), .B(\md[12]), .Y(n38));
+sg13g2_xnor2_1 U64 (.A(n59), .B(\md[0]), .Y(n28));
+sg13g2_nand2_2 U65 (.A(n57), .B(n3), .Y(n58));
+sg13g2_inv_2 U66 (.A(negation), .Y(n11));
+sg13g2_buf_2 U67 (.A(n10), .X(n53));
+sg13g2_nand2_2 U68 (.A(n54), .B(n3), .Y(n55));
+sg13g2_inv_2 U69 (.A(n6), .Y(n54));
+sg13g2_nor2_2 U70 (.A(n64), .B(n56), .Y(n32));
+sg13g2_buf_2 U71 (.A(double), .X(n56));
+sg13g2_xnor2_1 U72 (.A(n63), .B(\md[11]), .Y(n40));
+sg13g2_inv_2 U73 (.A(n40), .Y(n57));
+sg13g2_inv_2 U74 (.A(n60), .Y(n59));
+sg13g2_nand2_2 U75 (.A(n33), .B(n34), .Y(n64));
+sg13g2_buf_2 U76 (.A(n11), .X(n60));
+sg13g2_nor2_2 U77 (.A(double), .B(zero), .Y(n10));
+sg13g2_buf_2 U78 (.A(n11), .X(n61));
+sg13g2_inv_2 U79 (.A(zero), .Y(n34));
+sg13g2_buf_2 U80 (.A(negation), .X(n63));
+sg13g2_inv_2 U81 (.A(n8), .Y(n3));
+endmodule
+
+module partial_product_gen_1 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_xnor2_1 U2 (.A(negation), .B(\md[3]), .Y(n72));
+sg13g2_xnor2_1 U3 (.A(n81), .B(\md[2]), .Y(n69));
+sg13g2_inv_2 U4 (.A(n75), .Y(\pp[5]));
+sg13g2_o21ai_1 U5 (.A1(n85), .A2(n84), .B1(n83), .Y(\pp[8]));
+sg13g2_nand2_2 U6 (.A(n82), .B(n90), .Y(n83));
+sg13g2_a21oi_2 U7 (.A1(n55), .A2(n89), .B1(n54), .Y(n37));
+sg13g2_inv_2 U8 (.A(n80), .Y(\pp[7]));
+sg13g2_a21oi_2 U9 (.A1(n79), .A2(n89), .B1(n78), .Y(n80));
+sg13g2_nor2_2 U10 (.A(n87), .B(n85), .Y(n78));
+sg13g2_xnor2_1 U11 (.A(negation), .B(\md[7]), .Y(n85));
+sg13g2_o21ai_1 U12 (.A1(n77), .A2(n84), .B1(n76), .Y(\pp[6]));
+sg13g2_nand2_2 U13 (.A(n82), .B(n79), .Y(n76));
+sg13g2_xnor2_1 U14 (.A(n81), .B(\md[6]), .Y(n79));
+sg13g2_inv_2 U15 (.A(n37), .Y(\pp[13]));
+sg13g2_a21oi_2 U16 (.A1(n74), .A2(n89), .B1(n73), .Y(n75));
+sg13g2_nor2_2 U17 (.A(n87), .B(n77), .Y(n73));
+sg13g2_xnor2_1 U18 (.A(negation), .B(\md[5]), .Y(n77));
+sg13g2_o21ai_1 U19 (.A1(n72), .A2(n84), .B1(n71), .Y(\pp[4]));
+sg13g2_nand2_2 U20 (.A(n82), .B(n74), .Y(n71));
+sg13g2_xnor2_1 U21 (.A(n81), .B(\md[4]), .Y(n74));
+sg13g2_inv_2 U22 (.A(n70), .Y(\pp[3]));
+sg13g2_a21oi_2 U23 (.A1(n69), .A2(n89), .B1(n68), .Y(n70));
+sg13g2_inv_2 U24 (.A(n84), .Y(n89));
+sg13g2_nor2_2 U25 (.A(n87), .B(n72), .Y(n68));
+sg13g2_nor2_2 U26 (.A(n87), .B(n86), .Y(n88));
+sg13g2_nand2_2 U27 (.A(n82), .B(n69), .Y(n66));
+sg13g2_xnor2_1 U28 (.A(negation), .B(\md[9]), .Y(n86));
+sg13g2_inv_2 U29 (.A(n65), .Y(n67));
+sg13g2_o21ai_1 U30 (.A1(n64), .A2(n84), .B1(n63), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n82), .B(n65), .Y(n63));
+sg13g2_xnor2_1 U32 (.A(n81), .B(\md[1]), .Y(n65));
+sg13g2_inv_2 U33 (.A(n62), .Y(\pp[15]));
+sg13g2_a21oi_2 U34 (.A1(n61), .A2(n89), .B1(n60), .Y(n62));
+sg13g2_nor2_2 U35 (.A(\pp[16]), .B(double), .Y(n60));
+sg13g2_nand2_2 U36 (.A(n59), .B(n58), .Y(\pp[16]));
+sg13g2_xnor2_1 U37 (.A(n81), .B(\md[15]), .Y(n59));
+sg13g2_o21ai_1 U38 (.A1(n57), .A2(n84), .B1(n56), .Y(\pp[14]));
+sg13g2_nand2_2 U39 (.A(n82), .B(n61), .Y(n56));
+sg13g2_xnor2_1 U40 (.A(n81), .B(\md[14]), .Y(n61));
+sg13g2_inv_2 U41 (.A(negation), .Y(n81));
+sg13g2_o21ai_1 U42 (.A1(n67), .A2(n84), .B1(n66), .Y(\pp[2]));
+sg13g2_nor2_2 U43 (.A(n87), .B(n57), .Y(n54));
+sg13g2_xnor2_1 U44 (.A(negation), .B(\md[13]), .Y(n57));
+sg13g2_o21ai_1 U45 (.A1(n53), .A2(n84), .B1(n52), .Y(\pp[12]));
+sg13g2_nand2_2 U46 (.A(n82), .B(n55), .Y(n52));
+sg13g2_xnor2_1 U47 (.A(n81), .B(\md[12]), .Y(n55));
+sg13g2_inv_2 U48 (.A(n51), .Y(\pp[11]));
+sg13g2_a21oi_2 U49 (.A1(n50), .A2(n89), .B1(n49), .Y(n51));
+sg13g2_nor2_2 U50 (.A(n87), .B(n53), .Y(n49));
+sg13g2_xnor2_1 U51 (.A(negation), .B(\md[11]), .Y(n53));
+sg13g2_xnor2_1 U52 (.A(n81), .B(\md[8]), .Y(n90));
+sg13g2_o21ai_1 U53 (.A1(n86), .A2(n84), .B1(n48), .Y(\pp[10]));
+sg13g2_nand2_2 U54 (.A(n82), .B(n50), .Y(n48));
+sg13g2_xnor2_1 U55 (.A(n81), .B(\md[10]), .Y(n50));
+sg13g2_inv_2 U56 (.A(n91), .Y(\pp[9]));
+sg13g2_a21oi_2 U57 (.A1(n90), .A2(n89), .B1(n88), .Y(n91));
+sg13g2_nand2_2 U58 (.A(double), .B(n58), .Y(n84));
+sg13g2_inv_2 U59 (.A(zero), .Y(n58));
+sg13g2_o21ai_1 U60 (.A1(n64), .A2(n87), .B1(n47), .Y(\pp[0]));
+sg13g2_nand2_2 U61 (.A(double), .B(negation), .Y(n47));
+sg13g2_inv_2 U62 (.A(n82), .Y(n87));
+sg13g2_nor2_2 U63 (.A(double), .B(zero), .Y(n82));
+sg13g2_xnor2_1 U64 (.A(negation), .B(\md[0]), .Y(n64));
+endmodule
+
+module partial_product_gen_2 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_inv_2 U2 (.A(negation), .Y(n88));
+sg13g2_xnor2_1 U3 (.A(n88), .B(\md[4]), .Y(n81));
+sg13g2_xnor2_1 U4 (.A(negation), .B(\md[13]), .Y(n65));
+sg13g2_a21oi_2 U5 (.A1(n96), .A2(n76), .B1(n75), .Y(n77));
+sg13g2_nand2_2 U6 (.A(n97), .B(n89), .Y(n90));
+sg13g2_a21oi_2 U7 (.A1(n69), .A2(n96), .B1(n68), .Y(n30));
+sg13g2_inv_2 U8 (.A(n30), .Y(\pp[15]));
+sg13g2_a21oi_2 U9 (.A1(n86), .A2(n96), .B1(n85), .Y(n87));
+sg13g2_nor2_2 U10 (.A(n94), .B(n92), .Y(n85));
+sg13g2_xnor2_1 U11 (.A(negation), .B(\md[7]), .Y(n92));
+sg13g2_o21ai_1 U12 (.A1(n84), .A2(n47), .B1(n83), .Y(\pp[6]));
+sg13g2_nand2_2 U13 (.A(n89), .B(n86), .Y(n83));
+sg13g2_xnor2_1 U14 (.A(n88), .B(\md[6]), .Y(n86));
+sg13g2_o21ai_1 U15 (.A1(n94), .A2(n71), .B1(n54), .Y(\pp[0]));
+sg13g2_a21oi_2 U16 (.A1(n81), .A2(n96), .B1(n80), .Y(n82));
+sg13g2_nor2_2 U17 (.A(n94), .B(n84), .Y(n80));
+sg13g2_xnor2_1 U18 (.A(negation), .B(\md[5]), .Y(n84));
+sg13g2_nand2_2 U19 (.A(n67), .B(n66), .Y(\pp[16]));
+sg13g2_nand2_2 U20 (.A(n89), .B(n81), .Y(n78));
+sg13g2_o21ai_1 U21 (.A1(n60), .A2(n47), .B1(n59), .Y(\pp[12]));
+sg13g2_inv_2 U22 (.A(n77), .Y(\pp[3]));
+sg13g2_o21ai_1 U23 (.A1(n92), .A2(n47), .B1(n90), .Y(\pp[8]));
+sg13g2_nor2_2 U24 (.A(n60), .B(n94), .Y(n56));
+sg13g2_inv_2 U25 (.A(n47), .Y(n49));
+sg13g2_nand2_2 U26 (.A(n48), .B(n49), .Y(n50));
+sg13g2_nand2_2 U27 (.A(n89), .B(n76), .Y(n73));
+sg13g2_o21ai_1 U28 (.A1(n74), .A2(n47), .B1(n73), .Y(\pp[2]));
+sg13g2_inv_2 U29 (.A(n72), .Y(n74));
+sg13g2_o21ai_1 U30 (.A1(n71), .A2(n47), .B1(n70), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n89), .B(n72), .Y(n70));
+sg13g2_xnor2_1 U32 (.A(n88), .B(\md[1]), .Y(n72));
+sg13g2_inv_2 U33 (.A(n82), .Y(\pp[5]));
+sg13g2_xnor2_1 U34 (.A(n88), .B(\md[2]), .Y(n76));
+sg13g2_nor2_2 U35 (.A(n94), .B(n79), .Y(n75));
+sg13g2_inv_2 U36 (.A(n98), .Y(\pp[9]));
+sg13g2_xnor2_1 U37 (.A(n88), .B(\md[15]), .Y(n67));
+sg13g2_o21ai_1 U38 (.A1(n65), .A2(n47), .B1(n64), .Y(\pp[14]));
+sg13g2_nand2_2 U39 (.A(n89), .B(n69), .Y(n64));
+sg13g2_xnor2_1 U40 (.A(n88), .B(\md[14]), .Y(n69));
+sg13g2_inv_2 U41 (.A(n93), .Y(n48));
+sg13g2_a21oi_2 U42 (.A1(n62), .A2(n96), .B1(n61), .Y(n63));
+sg13g2_nor2_2 U43 (.A(n94), .B(n65), .Y(n61));
+sg13g2_xnor2_1 U44 (.A(negation), .B(\md[9]), .Y(n93));
+sg13g2_nor2_2 U45 (.A(\pp[16]), .B(double), .Y(n68));
+sg13g2_nand2_2 U46 (.A(n89), .B(n62), .Y(n59));
+sg13g2_xnor2_1 U47 (.A(n88), .B(\md[12]), .Y(n62));
+sg13g2_o21ai_1 U48 (.A1(n79), .A2(n47), .B1(n78), .Y(\pp[4]));
+sg13g2_a21oi_2 U49 (.A1(n97), .A2(n96), .B1(n95), .Y(n98));
+sg13g2_nor2_2 U50 (.A(n94), .B(n93), .Y(n95));
+sg13g2_inv_2 U51 (.A(n63), .Y(\pp[13]));
+sg13g2_inv_2 U52 (.A(n58), .Y(\pp[11]));
+sg13g2_a21oi_2 U53 (.A1(n57), .A2(n96), .B1(n56), .Y(n58));
+sg13g2_nand2_2 U54 (.A(n89), .B(n57), .Y(n55));
+sg13g2_xnor2_1 U55 (.A(negation), .B(\md[11]), .Y(n60));
+sg13g2_xnor2_1 U56 (.A(n88), .B(\md[8]), .Y(n97));
+sg13g2_nand2_2 U57 (.A(double), .B(n66), .Y(n47));
+sg13g2_nand2_2 U58 (.A(n50), .B(n55), .Y(\pp[10]));
+sg13g2_nand2_2 U59 (.A(n88), .B(\md[10]), .Y(n52));
+sg13g2_nand2_2 U60 (.A(negation), .B(n51), .Y(n53));
+sg13g2_nand2_2 U61 (.A(double), .B(negation), .Y(n54));
+sg13g2_nand2_2 U62 (.A(n52), .B(n53), .Y(n57));
+sg13g2_inv_2 U63 (.A(\md[10]), .Y(n51));
+sg13g2_xnor2_1 U64 (.A(negation), .B(\md[0]), .Y(n71));
+sg13g2_xnor2_1 U65 (.A(negation), .B(\md[3]), .Y(n79));
+sg13g2_inv_2 U66 (.A(n87), .Y(\pp[7]));
+sg13g2_nor2_2 U67 (.A(double), .B(zero), .Y(n89));
+sg13g2_inv_2 U68 (.A(zero), .Y(n66));
+sg13g2_inv_2 U69 (.A(n91), .Y(n96));
+sg13g2_nand2_2 U70 (.A(double), .B(n66), .Y(n91));
+sg13g2_inv_2 U71 (.A(n89), .Y(n94));
+endmodule
+
+module partial_product_gen_3 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_inv_2 U2 (.A(zero), .Y(n58));
+sg13g2_a21oi_2 U3 (.A1(n89), .A2(n61), .B1(n60), .Y(n62));
+sg13g2_nor2_2 U4 (.A(\pp[16]), .B(double), .Y(n60));
+sg13g2_nand2_2 U5 (.A(n82), .B(n50), .Y(n48));
+sg13g2_nand2_2 U6 (.A(n82), .B(n90), .Y(n83));
+sg13g2_inv_2 U7 (.A(n91), .Y(\pp[9]));
+sg13g2_a21oi_2 U8 (.A1(n89), .A2(n90), .B1(n88), .Y(n91));
+sg13g2_a21oi_2 U9 (.A1(n79), .A2(n89), .B1(n78), .Y(n80));
+sg13g2_nor2_2 U10 (.A(n87), .B(n85), .Y(n78));
+sg13g2_xnor2_1 U11 (.A(negation), .B(\md[7]), .Y(n85));
+sg13g2_o21ai_1 U12 (.A1(n77), .A2(n84), .B1(n76), .Y(\pp[6]));
+sg13g2_nand2_2 U13 (.A(n82), .B(n79), .Y(n76));
+sg13g2_xnor2_1 U14 (.A(n81), .B(\md[6]), .Y(n79));
+sg13g2_inv_2 U15 (.A(n75), .Y(\pp[5]));
+sg13g2_a21oi_2 U16 (.A1(n74), .A2(n89), .B1(n73), .Y(n75));
+sg13g2_inv_2 U17 (.A(n80), .Y(\pp[7]));
+sg13g2_inv_2 U18 (.A(n70), .Y(\pp[3]));
+sg13g2_o21ai_1 U19 (.A1(n72), .A2(n84), .B1(n71), .Y(\pp[4]));
+sg13g2_a21oi_2 U20 (.A1(n89), .A2(n55), .B1(n54), .Y(n37));
+sg13g2_inv_2 U21 (.A(n37), .Y(\pp[13]));
+sg13g2_nand2_2 U22 (.A(n82), .B(n74), .Y(n71));
+sg13g2_a21oi_2 U23 (.A1(n69), .A2(n89), .B1(n68), .Y(n70));
+sg13g2_nor2_2 U24 (.A(n87), .B(n72), .Y(n68));
+sg13g2_o21ai_1 U25 (.A1(n85), .A2(n84), .B1(n83), .Y(\pp[8]));
+sg13g2_inv_2 U26 (.A(negation), .Y(n81));
+sg13g2_nand2_2 U27 (.A(n82), .B(n69), .Y(n66));
+sg13g2_xnor2_1 U28 (.A(n81), .B(\md[2]), .Y(n69));
+sg13g2_inv_2 U29 (.A(n65), .Y(n67));
+sg13g2_o21ai_1 U30 (.A1(n64), .A2(n84), .B1(n63), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n82), .B(n65), .Y(n63));
+sg13g2_xnor2_1 U32 (.A(n81), .B(\md[1]), .Y(n65));
+sg13g2_nand2_2 U33 (.A(n55), .B(n82), .Y(n52));
+sg13g2_xnor2_1 U34 (.A(n81), .B(\md[4]), .Y(n74));
+sg13g2_xnor2_1 U35 (.A(negation), .B(\md[3]), .Y(n72));
+sg13g2_nand2_2 U36 (.A(n59), .B(n58), .Y(\pp[16]));
+sg13g2_xnor2_1 U37 (.A(n81), .B(\md[15]), .Y(n59));
+sg13g2_o21ai_1 U38 (.A1(n57), .A2(n84), .B1(n56), .Y(\pp[14]));
+sg13g2_nand2_2 U39 (.A(n82), .B(n61), .Y(n56));
+sg13g2_xnor2_1 U40 (.A(n81), .B(\md[14]), .Y(n61));
+sg13g2_inv_2 U41 (.A(n51), .Y(\pp[11]));
+sg13g2_o21ai_1 U42 (.A1(n53), .A2(n84), .B1(n52), .Y(\pp[12]));
+sg13g2_xnor2_1 U43 (.A(n81), .B(\md[8]), .Y(n90));
+sg13g2_nor2_2 U44 (.A(n87), .B(n86), .Y(n88));
+sg13g2_a21oi_2 U45 (.A1(n50), .A2(n89), .B1(n49), .Y(n51));
+sg13g2_xnor2_1 U46 (.A(n81), .B(\md[10]), .Y(n50));
+sg13g2_nor2_2 U47 (.A(n87), .B(n57), .Y(n54));
+sg13g2_xnor2_1 U48 (.A(negation), .B(\md[13]), .Y(n57));
+sg13g2_nor2_2 U49 (.A(n53), .B(n87), .Y(n49));
+sg13g2_xnor2_1 U50 (.A(negation), .B(\md[11]), .Y(n53));
+sg13g2_xnor2_1 U51 (.A(n81), .B(\md[12]), .Y(n55));
+sg13g2_inv_2 U52 (.A(n62), .Y(\pp[15]));
+sg13g2_nor2_2 U53 (.A(n87), .B(n77), .Y(n73));
+sg13g2_xnor2_1 U54 (.A(negation), .B(\md[5]), .Y(n77));
+sg13g2_o21ai_1 U55 (.A1(n86), .A2(n84), .B1(n48), .Y(\pp[10]));
+sg13g2_o21ai_1 U56 (.A1(n67), .A2(n84), .B1(n66), .Y(\pp[2]));
+sg13g2_inv_2 U57 (.A(n84), .Y(n89));
+sg13g2_xnor2_1 U58 (.A(negation), .B(\md[9]), .Y(n86));
+sg13g2_nor2_2 U59 (.A(double), .B(zero), .Y(n82));
+sg13g2_o21ai_1 U60 (.A1(n64), .A2(n87), .B1(n47), .Y(\pp[0]));
+sg13g2_nand2_2 U61 (.A(double), .B(negation), .Y(n47));
+sg13g2_nand2_2 U62 (.A(double), .B(n58), .Y(n84));
+sg13g2_inv_2 U63 (.A(n82), .Y(n87));
+sg13g2_xnor2_1 U64 (.A(negation), .B(\md[0]), .Y(n64));
+endmodule
+
+module partial_product_gen_4 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_inv_2 U2 (.A(n104), .Y(n109));
+sg13g2_xnor2_1 U3 (.A(n57), .B(\md[13]), .Y(n78));
+sg13g2_a21oi_2 U4 (.A1(n109), .A2(n70), .B1(n69), .Y(n71));
+sg13g2_nand2_2 U5 (.A(n80), .B(n79), .Y(\pp[16]));
+sg13g2_nand2_2 U6 (.A(n55), .B(n110), .Y(n103));
+sg13g2_nand2_2 U7 (.A(n47), .B(n48), .Y(n49));
+sg13g2_o21ai_1 U8 (.A1(n11), .A2(n105), .B1(n103), .Y(\pp[8]));
+sg13g2_a21oi_2 U9 (.A1(n109), .A2(n100), .B1(n99), .Y(n101));
+sg13g2_nor2_2 U10 (.A(n107), .B(n105), .Y(n99));
+sg13g2_xnor2_1 U11 (.A(n57), .B(\md[7]), .Y(n105));
+sg13g2_o21ai_1 U12 (.A1(n98), .A2(n56), .B1(n97), .Y(\pp[6]));
+sg13g2_nand2_2 U13 (.A(n55), .B(n100), .Y(n97));
+sg13g2_xnor2_1 U14 (.A(n66), .B(\md[6]), .Y(n100));
+sg13g2_inv_2 U15 (.A(n96), .Y(\pp[5]));
+sg13g2_a21oi_2 U16 (.A1(n109), .A2(n95), .B1(n94), .Y(n96));
+sg13g2_nor2_2 U17 (.A(n107), .B(n98), .Y(n94));
+sg13g2_xnor2_1 U18 (.A(n57), .B(\md[5]), .Y(n98));
+sg13g2_o21ai_1 U19 (.A1(n93), .A2(n56), .B1(n92), .Y(\pp[4]));
+sg13g2_nand2_2 U20 (.A(n55), .B(n95), .Y(n92));
+sg13g2_xnor2_1 U21 (.A(n66), .B(\md[4]), .Y(n95));
+sg13g2_inv_2 U22 (.A(n91), .Y(\pp[3]));
+sg13g2_a21oi_2 U23 (.A1(n109), .A2(n90), .B1(n89), .Y(n91));
+sg13g2_nor2_2 U24 (.A(n107), .B(n93), .Y(n89));
+sg13g2_xnor2_1 U25 (.A(n57), .B(\md[3]), .Y(n93));
+sg13g2_o21ai_1 U26 (.A1(n88), .A2(n11), .B1(n87), .Y(\pp[2]));
+sg13g2_nand2_2 U27 (.A(n55), .B(n90), .Y(n87));
+sg13g2_xnor2_1 U28 (.A(n66), .B(\md[2]), .Y(n90));
+sg13g2_inv_2 U29 (.A(n86), .Y(n88));
+sg13g2_o21ai_1 U30 (.A1(n85), .A2(n56), .B1(n84), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n55), .B(n86), .Y(n84));
+sg13g2_nor2_2 U32 (.A(n107), .B(n106), .Y(n108));
+sg13g2_inv_2 U33 (.A(n58), .Y(n106));
+sg13g2_inv_2 U34 (.A(n56), .Y(n48));
+sg13g2_inv_2 U35 (.A(n76), .Y(\pp[13]));
+sg13g2_inv_2 U36 (.A(n101), .Y(\pp[7]));
+sg13g2_inv_2 U37 (.A(n109), .Y(n11));
+sg13g2_a21oi_2 U38 (.A1(n82), .A2(n109), .B1(n81), .Y(n83));
+sg13g2_xnor2_1 U39 (.A(n65), .B(\md[10]), .Y(n70));
+sg13g2_nand2_2 U40 (.A(n82), .B(n55), .Y(n77));
+sg13g2_a21oi_2 U41 (.A1(n75), .A2(n109), .B1(n74), .Y(n76));
+sg13g2_nor2_2 U42 (.A(n107), .B(n78), .Y(n74));
+sg13g2_inv_2 U43 (.A(n83), .Y(\pp[15]));
+sg13g2_nor2_2 U44 (.A(\pp[16]), .B(n54), .Y(n81));
+sg13g2_nand2_2 U45 (.A(n60), .B(n61), .Y(n80));
+sg13g2_nand2_2 U46 (.A(n66), .B(\md[15]), .Y(n60));
+sg13g2_nand2_2 U47 (.A(n49), .B(n72), .Y(\pp[12]));
+sg13g2_inv_2 U48 (.A(n73), .Y(n47));
+sg13g2_nand2_2 U49 (.A(double), .B(n79), .Y(n104));
+sg13g2_inv_2 U50 (.A(n111), .Y(\pp[9]));
+sg13g2_xnor2_1 U51 (.A(negation), .B(\md[11]), .Y(n73));
+sg13g2_xnor2_1 U52 (.A(n66), .B(\md[1]), .Y(n86));
+sg13g2_nand2_2 U53 (.A(n62), .B(\md[8]), .Y(n51));
+sg13g2_nand2_2 U54 (.A(n64), .B(n50), .Y(n52));
+sg13g2_nand2_2 U55 (.A(n51), .B(n52), .Y(n110));
+sg13g2_inv_2 U56 (.A(\md[8]), .Y(n50));
+sg13g2_a21oi_2 U57 (.A1(n110), .A2(n109), .B1(n108), .Y(n111));
+sg13g2_inv_2 U58 (.A(double), .Y(n53));
+sg13g2_inv_2 U59 (.A(n53), .Y(n54));
+sg13g2_o21ai_1 U60 (.A1(n85), .A2(n107), .B1(n67), .Y(\pp[0]));
+sg13g2_nand2_2 U61 (.A(n54), .B(n57), .Y(n67));
+sg13g2_nand2_2 U62 (.A(n58), .B(n48), .Y(n63));
+sg13g2_nand2_2 U63 (.A(n102), .B(n70), .Y(n68));
+sg13g2_xnor2_1 U64 (.A(n57), .B(\md[0]), .Y(n85));
+sg13g2_nand2_2 U65 (.A(double), .B(n79), .Y(n56));
+sg13g2_xnor2_1 U66 (.A(n65), .B(\md[12]), .Y(n75));
+sg13g2_inv_2 U67 (.A(n71), .Y(\pp[11]));
+sg13g2_inv_2 U68 (.A(n107), .Y(n55));
+sg13g2_inv_2 U69 (.A(negation), .Y(n62));
+sg13g2_o21ai_1 U70 (.A1(n78), .A2(n56), .B1(n77), .Y(\pp[14]));
+sg13g2_buf_2 U71 (.A(negation), .X(n57));
+sg13g2_nand2_2 U72 (.A(n75), .B(n102), .Y(n72));
+sg13g2_xnor2_1 U73 (.A(n66), .B(\md[14]), .Y(n82));
+sg13g2_inv_2 U74 (.A(n64), .Y(n66));
+sg13g2_nor2_2 U75 (.A(n73), .B(n107), .Y(n69));
+sg13g2_xnor2_1 U76 (.A(n62), .B(\md[9]), .Y(n58));
+sg13g2_nand2_2 U77 (.A(n57), .B(n59), .Y(n61));
+sg13g2_inv_2 U78 (.A(\md[15]), .Y(n59));
+sg13g2_nand2_2 U79 (.A(n63), .B(n68), .Y(\pp[10]));
+sg13g2_inv_2 U80 (.A(n62), .Y(n64));
+sg13g2_inv_2 U81 (.A(n64), .Y(n65));
+sg13g2_inv_2 U82 (.A(n102), .Y(n107));
+sg13g2_nor2_2 U83 (.A(double), .B(zero), .Y(n102));
+sg13g2_inv_2 U84 (.A(zero), .Y(n79));
+endmodule
+
+module partial_product_gen_5 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_nand2_2 U2 (.A(n48), .B(n89), .Y(n87));
+sg13g2_inv_2 U3 (.A(n89), .Y(n51));
+sg13g2_inv_2 U4 (.A(n125), .Y(n3));
+sg13g2_inv_2 U5 (.A(n3), .Y(\pp[16]));
+sg13g2_inv_2 U6 (.A(n92), .Y(n39));
+sg13g2_inv_2 U7 (.A(n39), .Y(n47));
+sg13g2_inv_2 U8 (.A(zero), .Y(n92));
+sg13g2_inv_2 U9 (.A(n113), .Y(n63));
+sg13g2_nand2_2 U10 (.A(n116), .B(n113), .Y(n110));
+sg13g2_nor2_2 U11 (.A(double), .B(zero), .Y(n48));
+sg13g2_o21ai_1 U12 (.A1(n119), .A2(n66), .B1(n117), .Y(\pp[8]));
+sg13g2_a21oi_2 U13 (.A1(n108), .A2(n79), .B1(n107), .Y(n109));
+sg13g2_nor2_2 U14 (.A(n62), .B(n111), .Y(n107));
+sg13g2_inv_2 U15 (.A(\md[14]), .Y(n60));
+sg13g2_a21oi_2 U16 (.A1(n85), .A2(n79), .B1(n84), .Y(n86));
+sg13g2_inv_2 U17 (.A(\md[0]), .Y(n59));
+sg13g2_nor2_2 U18 (.A(n121), .B(n91), .Y(n49));
+sg13g2_nand2_2 U19 (.A(n79), .B(n65), .Y(n80));
+sg13g2_inv_2 U20 (.A(n49), .Y(n50));
+sg13g2_o21ai_1 U21 (.A1(n51), .A2(n52), .B1(n50), .Y(\pp[13]));
+sg13g2_inv_2 U22 (.A(n79), .Y(n52));
+sg13g2_nor2_2 U23 (.A(n62), .B(n106), .Y(n102));
+sg13g2_inv_2 U24 (.A(n65), .Y(n106));
+sg13g2_inv_2 U25 (.A(n79), .Y(n77));
+sg13g2_nand2_2 U26 (.A(n93), .B(n47), .Y(n125));
+sg13g2_nand2_2 U27 (.A(n61), .B(n103), .Y(n100));
+sg13g2_inv_2 U28 (.A(n114), .Y(\pp[7]));
+sg13g2_inv_2 U29 (.A(n99), .Y(n101));
+sg13g2_o21ai_1 U30 (.A1(n66), .A2(n98), .B1(n97), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n61), .B(n99), .Y(n97));
+sg13g2_xnor2_1 U32 (.A(n115), .B(\md[1]), .Y(n99));
+sg13g2_nor2_2 U33 (.A(n125), .B(n75), .Y(n94));
+sg13g2_nand2_2 U34 (.A(n61), .B(n123), .Y(n117));
+sg13g2_xnor2_1 U35 (.A(n115), .B(\md[12]), .Y(n89));
+sg13g2_nand2_2 U36 (.A(n55), .B(n56), .Y(n58));
+sg13g2_inv_2 U37 (.A(n55), .Y(n53));
+sg13g2_inv_2 U38 (.A(negation), .Y(n55));
+sg13g2_nand2_2 U39 (.A(n53), .B(\md[7]), .Y(n73));
+sg13g2_inv_2 U40 (.A(n53), .Y(n71));
+sg13g2_xnor2_1 U41 (.A(n81), .B(n60), .Y(n95));
+sg13g2_inv_2 U42 (.A(n115), .Y(n81));
+sg13g2_nor2_2 U43 (.A(n119), .B(n62), .Y(n112));
+sg13g2_o21ai_1 U44 (.A1(n98), .A2(n62), .B1(n82), .Y(\pp[0]));
+sg13g2_xnor2_1 U45 (.A(n115), .B(n59), .Y(n98));
+sg13g2_xnor2_1 U46 (.A(n115), .B(\md[4]), .Y(n108));
+sg13g2_inv_2 U47 (.A(n124), .Y(\pp[9]));
+sg13g2_a21oi_2 U48 (.A1(n123), .A2(n79), .B1(n122), .Y(n124));
+sg13g2_nor2_2 U49 (.A(n63), .B(n77), .Y(n64));
+sg13g2_inv_2 U50 (.A(\md[8]), .Y(n54));
+sg13g2_xnor2_1 U51 (.A(n53), .B(n54), .Y(n123));
+sg13g2_inv_2 U52 (.A(n62), .Y(n61));
+sg13g2_nor2_2 U53 (.A(n76), .B(n77), .Y(n78));
+sg13g2_nand2_2 U54 (.A(n116), .B(n85), .Y(n83));
+sg13g2_inv_2 U55 (.A(n104), .Y(\pp[3]));
+sg13g2_xnor2_1 U56 (.A(n115), .B(\md[6]), .Y(n113));
+sg13g2_nand2_2 U57 (.A(n61), .B(n95), .Y(n90));
+sg13g2_inv_2 U58 (.A(n86), .Y(\pp[11]));
+sg13g2_nand2_2 U59 (.A(negation), .B(\md[9]), .Y(n57));
+sg13g2_nand2_2 U60 (.A(n57), .B(n58), .Y(n120));
+sg13g2_nand2_2 U61 (.A(n75), .B(negation), .Y(n82));
+sg13g2_inv_2 U62 (.A(\md[9]), .Y(n56));
+sg13g2_o21ai_1 U63 (.A1(n120), .A2(n77), .B1(n83), .Y(\pp[10]));
+sg13g2_inv_2 U64 (.A(n118), .Y(n79));
+sg13g2_nor2_2 U65 (.A(n121), .B(n88), .Y(n84));
+sg13g2_nand2_2 U66 (.A(n61), .B(n108), .Y(n105));
+sg13g2_a21oi_2 U67 (.A1(n95), .A2(n79), .B1(n94), .Y(n96));
+sg13g2_nand2_2 U68 (.A(n105), .B(n80), .Y(\pp[4]));
+sg13g2_o21ai_1 U69 (.A1(n77), .A2(n88), .B1(n87), .Y(\pp[12]));
+sg13g2_o21ai_1 U70 (.A1(n91), .A2(n66), .B1(n90), .Y(\pp[14]));
+sg13g2_xnor2_1 U71 (.A(negation), .B(\md[13]), .Y(n91));
+sg13g2_inv_2 U72 (.A(n48), .Y(n62));
+sg13g2_nor2_2 U73 (.A(n102), .B(n78), .Y(n104));
+sg13g2_nor2_2 U74 (.A(n112), .B(n64), .Y(n114));
+sg13g2_xnor2_1 U75 (.A(n115), .B(\md[3]), .Y(n65));
+sg13g2_nor2_2 U76 (.A(n121), .B(n120), .Y(n122));
+sg13g2_buf_2 U77 (.A(n118), .X(n66));
+sg13g2_xnor2_1 U78 (.A(n115), .B(\md[15]), .Y(n93));
+sg13g2_inv_2 U79 (.A(n103), .Y(n76));
+sg13g2_nand2_2 U80 (.A(n115), .B(\md[10]), .Y(n69));
+sg13g2_nand2_2 U81 (.A(n81), .B(n68), .Y(n70));
+sg13g2_nand2_2 U82 (.A(n69), .B(n70), .Y(n85));
+sg13g2_inv_2 U83 (.A(\md[10]), .Y(n68));
+sg13g2_xnor2_1 U84 (.A(n115), .B(\md[2]), .Y(n103));
+sg13g2_nand2_2 U85 (.A(n71), .B(n72), .Y(n74));
+sg13g2_nand2_2 U86 (.A(n73), .B(n74), .Y(n119));
+sg13g2_inv_2 U87 (.A(\md[7]), .Y(n72));
+sg13g2_inv_2 U88 (.A(n109), .Y(\pp[5]));
+sg13g2_o21ai_1 U89 (.A1(n111), .A2(n66), .B1(n110), .Y(\pp[6]));
+sg13g2_buf_2 U90 (.A(double), .X(n75));
+sg13g2_inv_2 U91 (.A(n96), .Y(\pp[15]));
+sg13g2_xnor2_1 U92 (.A(negation), .B(\md[11]), .Y(n88));
+sg13g2_xnor2_1 U93 (.A(n81), .B(\md[5]), .Y(n111));
+sg13g2_o21ai_1 U94 (.A1(n101), .A2(n66), .B1(n100), .Y(\pp[2]));
+sg13g2_inv_2 U95 (.A(negation), .Y(n115));
+sg13g2_nand2_2 U96 (.A(n92), .B(double), .Y(n118));
+sg13g2_inv_2 U97 (.A(n116), .Y(n121));
+sg13g2_nor2_2 U98 (.A(double), .B(zero), .Y(n116));
+endmodule
+
+module partial_product_gen_6 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
+input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
+output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
+
+sg13g2_inv_2 U2 (.A(n116), .Y(n25));
+sg13g2_nand2_2 U3 (.A(negation), .B(n50), .Y(n52));
+sg13g2_nand2_2 U4 (.A(negation), .B(n47), .Y(n49));
+sg13g2_nand2_2 U5 (.A(n73), .B(n101), .Y(n98));
+sg13g2_inv_2 U6 (.A(n72), .Y(n73));
+sg13g2_inv_2 U7 (.A(n89), .Y(n54));
+sg13g2_inv_2 U8 (.A(n77), .Y(n58));
+sg13g2_xnor2_1 U9 (.A(n108), .B(\md[10]), .Y(n77));
+sg13g2_o21ai_1 U10 (.A1(n104), .A2(n69), .B1(n103), .Y(\pp[6]));
+sg13g2_inv_2 U11 (.A(n60), .Y(n93));
+sg13g2_a21oi_2 U12 (.A1(n116), .A2(n101), .B1(n100), .Y(n102));
+sg13g2_nor2_2 U13 (.A(n71), .B(\pp[16]), .Y(n88));
+sg13g2_nand2_2 U14 (.A(n71), .B(n68), .Y(n74));
+sg13g2_inv_2 U15 (.A(n70), .Y(n71));
+sg13g2_nor2_2 U16 (.A(n114), .B(n113), .Y(n115));
+sg13g2_a21oi_2 U17 (.A1(n116), .A2(n96), .B1(n95), .Y(n97));
+sg13g2_nor2_2 U18 (.A(n114), .B(n99), .Y(n95));
+sg13g2_inv_2 U19 (.A(zero), .Y(n86));
+sg13g2_inv_2 U20 (.A(n111), .Y(n116));
+sg13g2_inv_2 U21 (.A(n116), .Y(n53));
+sg13g2_inv_2 U22 (.A(n97), .Y(\pp[3]));
+sg13g2_inv_2 U23 (.A(negation), .Y(n108));
+sg13g2_xnor2_1 U24 (.A(negation), .B(\md[5]), .Y(n104));
+sg13g2_nand2_2 U25 (.A(n108), .B(\md[15]), .Y(n48));
+sg13g2_nand2_2 U26 (.A(n48), .B(n49), .Y(n87));
+sg13g2_inv_2 U27 (.A(\md[15]), .Y(n47));
+sg13g2_xnor2_1 U28 (.A(n108), .B(\md[12]), .Y(n82));
+sg13g2_nor2_2 U29 (.A(n114), .B(n104), .Y(n100));
+sg13g2_o21ai_1 U30 (.A1(n92), .A2(n69), .B1(n91), .Y(\pp[1]));
+sg13g2_nand2_2 U31 (.A(n73), .B(n93), .Y(n91));
+sg13g2_inv_2 U32 (.A(n73), .Y(n114));
+sg13g2_inv_2 U33 (.A(n85), .Y(n65));
+sg13g2_o21ai_1 U34 (.A1(n80), .A2(n53), .B1(n79), .Y(\pp[12]));
+sg13g2_nand2_2 U35 (.A(n108), .B(\md[8]), .Y(n51));
+sg13g2_nand2_2 U36 (.A(n51), .B(n52), .Y(n117));
+sg13g2_inv_2 U37 (.A(\md[8]), .Y(n50));
+sg13g2_nor2_2 U38 (.A(n114), .B(n112), .Y(n105));
+sg13g2_nand2_2 U39 (.A(n73), .B(n96), .Y(n94));
+sg13g2_inv_2 U40 (.A(n82), .Y(n56));
+sg13g2_a21oi_2 U41 (.A1(n106), .A2(n116), .B1(n105), .Y(n107));
+sg13g2_inv_2 U42 (.A(n102), .Y(\pp[5]));
+sg13g2_nor2_2 U43 (.A(n25), .B(n54), .Y(n55));
+sg13g2_nor2_2 U44 (.A(n55), .B(n88), .Y(n90));
+sg13g2_xnor2_1 U45 (.A(n108), .B(\md[2]), .Y(n96));
+sg13g2_nand2_2 U46 (.A(n73), .B(n82), .Y(n79));
+sg13g2_nor2_2 U47 (.A(n56), .B(n25), .Y(n57));
+sg13g2_nor2_2 U48 (.A(n81), .B(n57), .Y(n83));
+sg13g2_inv_2 U49 (.A(n83), .Y(\pp[13]));
+sg13g2_o21ai_1 U50 (.A1(n69), .A2(n113), .B1(n75), .Y(\pp[10]));
+sg13g2_nor2_2 U51 (.A(n58), .B(n53), .Y(n59));
+sg13g2_nor2_2 U52 (.A(n59), .B(n76), .Y(n78));
+sg13g2_nor2_2 U53 (.A(n114), .B(n80), .Y(n76));
+sg13g2_nand2_2 U54 (.A(n73), .B(n77), .Y(n75));
+sg13g2_inv_2 U55 (.A(n90), .Y(\pp[15]));
+sg13g2_inv_2 U56 (.A(n118), .Y(\pp[9]));
+sg13g2_xnor2_1 U57 (.A(negation), .B(\md[11]), .Y(n80));
+sg13g2_a21oi_2 U58 (.A1(n117), .A2(n116), .B1(n115), .Y(n118));
+sg13g2_xnor2_1 U59 (.A(n61), .B(\md[1]), .Y(n60));
+sg13g2_o21ai_1 U60 (.A1(n92), .A2(n114), .B1(n74), .Y(\pp[0]));
+sg13g2_inv_2 U61 (.A(n108), .Y(n61));
+sg13g2_nor2_2 U62 (.A(n114), .B(n85), .Y(n81));
+sg13g2_xnor2_1 U63 (.A(n108), .B(\md[4]), .Y(n101));
+sg13g2_xnor2_1 U64 (.A(n61), .B(\md[0]), .Y(n92));
+sg13g2_xnor2_1 U65 (.A(n68), .B(\md[7]), .Y(n112));
+sg13g2_o21ai_1 U66 (.A1(n99), .A2(n69), .B1(n98), .Y(\pp[4]));
+sg13g2_xnor2_1 U67 (.A(n61), .B(\md[3]), .Y(n99));
+sg13g2_nand2_2 U68 (.A(n73), .B(n106), .Y(n103));
+sg13g2_inv_2 U69 (.A(n109), .Y(n72));
+sg13g2_o21ai_1 U70 (.A1(n60), .A2(n69), .B1(n94), .Y(\pp[2]));
+sg13g2_inv_2 U71 (.A(n78), .Y(\pp[11]));
+sg13g2_nand2_2 U72 (.A(n86), .B(n87), .Y(\pp[16]));
+sg13g2_nand2_2 U73 (.A(n68), .B(\md[13]), .Y(n63));
+sg13g2_nand2_2 U74 (.A(n108), .B(n62), .Y(n64));
+sg13g2_nand2_2 U75 (.A(n63), .B(n64), .Y(n85));
+sg13g2_inv_2 U76 (.A(\md[13]), .Y(n62));
+sg13g2_o21ai_1 U77 (.A1(n112), .A2(n69), .B1(n110), .Y(\pp[8]));
+sg13g2_nand2_2 U78 (.A(n73), .B(n117), .Y(n110));
+sg13g2_inv_2 U79 (.A(n107), .Y(\pp[7]));
+sg13g2_xnor2_1 U80 (.A(n108), .B(\md[14]), .Y(n89));
+sg13g2_nand2_2 U81 (.A(n65), .B(n66), .Y(n67));
+sg13g2_nand2_2 U82 (.A(n67), .B(n84), .Y(\pp[14]));
+sg13g2_inv_2 U83 (.A(n69), .Y(n66));
+sg13g2_nand2_2 U84 (.A(n73), .B(n89), .Y(n84));
+sg13g2_xnor2_1 U85 (.A(n108), .B(\md[6]), .Y(n106));
+sg13g2_buf_2 U86 (.A(negation), .X(n68));
+sg13g2_xnor2_1 U87 (.A(negation), .B(\md[9]), .Y(n113));
+sg13g2_buf_2 U88 (.A(n111), .X(n69));
+sg13g2_inv_2 U89 (.A(double), .Y(n70));
+sg13g2_nand2_2 U90 (.A(n86), .B(double), .Y(n111));
+sg13g2_nor2_2 U91 (.A(double), .B(zero), .Y(n109));
 endmodule
 
 module partial_product_gen_7 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
@@ -5521,1588 +7104,5 @@ sg13g2_nand2_2 U83 (.A(n65), .B(n66), .Y(n71));
 sg13g2_inv_2 U84 (.A(n11), .Y(net9683));
 sg13g2_inv_2 U85 (.A(\md[12]), .Y(n64));
 sg13g2_nand2_2 U86 (.A(double), .B(n75), .Y(n8));
-endmodule
-
-module full_adder_9 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_xnor2_1 U1 (.A(n10), .B(cin), .Y(S));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
-sg13g2_inv_2 U3 (.A(cin), .Y(n9));
-sg13g2_inv_2 U4 (.A(B), .Y(n4));
-sg13g2_inv_2 U5 (.A(A), .Y(n5));
-sg13g2_o21ai_1 U6 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
-sg13g2_nand2_2 U7 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U8 (.A(n4), .B(n5), .Y(n7));
-sg13g2_nand2_2 U9 (.A(n6), .B(n7), .Y(n10));
-endmodule
-
-module full_adder_33 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n2), .A2(n6), .B1(n5), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n5));
-sg13g2_o21ai_1 U3 (.A1(cin), .A2(n6), .B1(n4), .Y(S));
-sg13g2_xnor2_1 U4 (.A(B), .B(A), .Y(n6));
-sg13g2_nand2_2 U5 (.A(n6), .B(cin), .Y(n4));
-sg13g2_inv_2 U6 (.A(cin), .Y(n2));
-endmodule
-
-module partial_product_gen_0 (\md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16], double, negation, zero);
-input \md[0], \md[1], \md[2], \md[3], \md[4], \md[5], \md[6], \md[7], \md[8], \md[9], \md[10], \md[11], \md[12], \md[13], \md[14], \md[15], double, negation, zero;
-output \pp[0], \pp[1], \pp[2], \pp[3], \pp[4], \pp[5], \pp[6], \pp[7], \pp[8], \pp[9], \pp[10], \pp[11], \pp[12], \pp[13], \pp[14], \pp[15], \pp[16];
-
-sg13g2_nand2_2 U2 (.A(n55), .B(n45), .Y(\pp[10]));
-sg13g2_nand2_2 U3 (.A(n53), .B(n43), .Y(n45));
-sg13g2_nand2_2 U4 (.A(n58), .B(n41), .Y(\pp[12]));
-sg13g2_o21ai_1 U5 (.A1(n7), .A2(n62), .B1(n9), .Y(\pp[8]));
-sg13g2_nand2_2 U6 (.A(n53), .B(n2), .Y(n9));
-sg13g2_nand2_2 U7 (.A(double), .B(n34), .Y(n8));
-sg13g2_inv_2 U8 (.A(n12), .Y(\pp[7]));
-sg13g2_inv_2 U9 (.A(n48), .Y(n47));
-sg13g2_nor2_2 U10 (.A(n5), .B(n7), .Y(n14));
-sg13g2_xnor2_1 U11 (.A(n63), .B(\md[7]), .Y(n7));
-sg13g2_inv_2 U12 (.A(n1), .Y(\pp[9]));
-sg13g2_a21oi_2 U13 (.A1(n3), .A2(n2), .B1(n4), .Y(n1));
-sg13g2_xnor2_1 U14 (.A(n61), .B(\md[6]), .Y(n13));
-sg13g2_inv_2 U15 (.A(n17), .Y(\pp[5]));
-sg13g2_a21oi_2 U16 (.A1(n18), .A2(n3), .B1(n19), .Y(n17));
-sg13g2_nor2_2 U17 (.A(n5), .B(n47), .Y(n19));
-sg13g2_xnor2_1 U18 (.A(n63), .B(\md[5]), .Y(n15));
-sg13g2_o21ai_1 U19 (.A1(n20), .A2(n62), .B1(n21), .Y(\pp[4]));
-sg13g2_nand2_2 U20 (.A(n53), .B(n18), .Y(n21));
-sg13g2_xnor2_1 U21 (.A(n60), .B(\md[4]), .Y(n18));
-sg13g2_inv_2 U22 (.A(n22), .Y(\pp[3]));
-sg13g2_a21oi_2 U23 (.A1(n23), .A2(n3), .B1(n24), .Y(n22));
-sg13g2_nor2_2 U24 (.A(n5), .B(n20), .Y(n24));
-sg13g2_xnor2_1 U25 (.A(n59), .B(\md[3]), .Y(n20));
-sg13g2_o21ai_1 U26 (.A1(n25), .A2(n62), .B1(n26), .Y(\pp[2]));
-sg13g2_nand2_2 U27 (.A(n53), .B(n23), .Y(n26));
-sg13g2_xnor2_1 U28 (.A(n60), .B(\md[2]), .Y(n23));
-sg13g2_inv_2 U29 (.A(n27), .Y(n25));
-sg13g2_o21ai_1 U30 (.A1(n28), .A2(n62), .B1(n29), .Y(\pp[1]));
-sg13g2_nand2_2 U31 (.A(n53), .B(n27), .Y(n29));
-sg13g2_xnor2_1 U32 (.A(n60), .B(\md[1]), .Y(n27));
-sg13g2_a21oi_2 U33 (.A1(n3), .A2(n31), .B1(n32), .Y(n30));
-sg13g2_nand2_2 U34 (.A(n51), .B(n3), .Y(n52));
-sg13g2_nand2_2 U35 (.A(n48), .B(n3), .Y(n49));
-sg13g2_a21oi_2 U36 (.A1(n3), .A2(n13), .B1(n14), .Y(n12));
-sg13g2_xnor2_1 U37 (.A(n11), .B(\md[15]), .Y(n33));
-sg13g2_nor2_2 U38 (.A(n5), .B(n6), .Y(n4));
-sg13g2_nand2_2 U39 (.A(n13), .B(n53), .Y(n16));
-sg13g2_xnor2_1 U40 (.A(n63), .B(\md[9]), .Y(n6));
-sg13g2_nand2_2 U41 (.A(n16), .B(n49), .Y(\pp[6]));
-sg13g2_inv_2 U42 (.A(n15), .Y(n48));
-sg13g2_xnor2_1 U43 (.A(n60), .B(\md[8]), .Y(n2));
-sg13g2_xnor2_1 U44 (.A(negation), .B(\md[13]), .Y(n35));
-sg13g2_inv_2 U45 (.A(n30), .Y(\pp[15]));
-sg13g2_nand2_2 U46 (.A(n10), .B(n38), .Y(n41));
-sg13g2_xnor2_1 U47 (.A(n60), .B(\md[10]), .Y(n43));
-sg13g2_inv_2 U48 (.A(n42), .Y(\pp[11]));
-sg13g2_a21oi_2 U49 (.A1(n43), .A2(n3), .B1(n44), .Y(n42));
-sg13g2_nor2_2 U50 (.A(n5), .B(n40), .Y(n44));
-sg13g2_nand2_2 U51 (.A(n53), .B(n31), .Y(n36));
-sg13g2_xnor2_1 U52 (.A(n61), .B(\md[14]), .Y(n31));
-sg13g2_buf_2 U53 (.A(n64), .X(\pp[16]));
-sg13g2_nand2_2 U54 (.A(n56), .B(n34), .Y(n62));
-sg13g2_inv_2 U55 (.A(n37), .Y(\pp[13]));
-sg13g2_a21oi_2 U56 (.A1(n38), .A2(n3), .B1(n39), .Y(n37));
-sg13g2_nor2_2 U57 (.A(n5), .B(n35), .Y(n39));
-sg13g2_inv_2 U58 (.A(n10), .Y(n5));
-sg13g2_nand2_2 U59 (.A(n52), .B(n36), .Y(\pp[14]));
-sg13g2_o21ai_1 U60 (.A1(n28), .A2(n5), .B1(n46), .Y(\pp[0]));
-sg13g2_nand2_2 U61 (.A(n56), .B(n59), .Y(n46));
-sg13g2_inv_2 U62 (.A(n35), .Y(n51));
-sg13g2_xnor2_1 U63 (.A(n61), .B(\md[12]), .Y(n38));
-sg13g2_xnor2_1 U64 (.A(n59), .B(\md[0]), .Y(n28));
-sg13g2_nand2_2 U65 (.A(n57), .B(n3), .Y(n58));
-sg13g2_inv_2 U66 (.A(negation), .Y(n11));
-sg13g2_buf_2 U67 (.A(n10), .X(n53));
-sg13g2_nand2_2 U68 (.A(n54), .B(n3), .Y(n55));
-sg13g2_inv_2 U69 (.A(n6), .Y(n54));
-sg13g2_nor2_2 U70 (.A(n64), .B(n56), .Y(n32));
-sg13g2_buf_2 U71 (.A(double), .X(n56));
-sg13g2_xnor2_1 U72 (.A(n63), .B(\md[11]), .Y(n40));
-sg13g2_inv_2 U73 (.A(n40), .Y(n57));
-sg13g2_inv_2 U74 (.A(n60), .Y(n59));
-sg13g2_nand2_2 U75 (.A(n33), .B(n34), .Y(n64));
-sg13g2_buf_2 U76 (.A(n11), .X(n60));
-sg13g2_nor2_2 U77 (.A(double), .B(zero), .Y(n10));
-sg13g2_buf_2 U78 (.A(n11), .X(n61));
-sg13g2_inv_2 U79 (.A(zero), .Y(n34));
-sg13g2_buf_2 U80 (.A(negation), .X(n63));
-sg13g2_inv_2 U81 (.A(n8), .Y(n3));
-endmodule
-
-module compressor42_9 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_nand2_2 U1 (.A(n17), .B(n16), .Y(cout));
-sg13g2_nand3_1 U2 (.A(n13), .B(n1), .C(n10), .Y(carry));
-sg13g2_o21ai_1 U3 (.A1(B), .A2(A), .B1(n16), .Y(n15));
-sg13g2_nand2_2 U4 (.A(n12), .B(cin), .Y(n13));
-sg13g2_xnor2_1 U5 (.A(n15), .B(n14), .Y(n11));
-sg13g2_inv_2 U6 (.A(n11), .Y(n12));
-sg13g2_xnor2_1 U7 (.A(n11), .B(cin), .Y(S));
-sg13g2_o21ai_1 U8 (.A1(D), .A2(C), .B1(n17), .Y(n14));
-sg13g2_nand2_2 U9 (.A(D), .B(C), .Y(n17));
-sg13g2_nand2_2 U10 (.A(n5), .B(n6), .Y(n10));
-sg13g2_inv_2 U11 (.A(n17), .Y(n5));
-sg13g2_inv_2 U12 (.A(n16), .Y(n6));
-sg13g2_nand2_2 U13 (.A(B), .B(A), .Y(n16));
-sg13g2_or2_1 U14 (.A(n15), .B(n14), .X(n1));
-endmodule
-
-module compressor42_23 (A, B, C, D, S, carry, cin, cout);
-input A, B, C, D, cin;
-output S, carry, cout;
-
-sg13g2_xnor2_1 U1 (.A(n6), .B(n23), .Y(n5));
-sg13g2_inv_2 U2 (.A(n23), .Y(n18));
-sg13g2_inv_2 U3 (.A(B), .Y(n10));
-sg13g2_nand3_1 U4 (.A(n21), .B(n14), .C(n20), .Y(carry));
-sg13g2_nand2_2 U5 (.A(n17), .B(n25), .Y(n6));
-sg13g2_nand2_2 U6 (.A(n18), .B(n19), .Y(n20));
-sg13g2_inv_2 U7 (.A(C), .Y(n16));
-sg13g2_xnor2_1 U8 (.A(n5), .B(cin), .Y(S));
-sg13g2_nand2_2 U9 (.A(B), .B(A), .Y(n24));
-sg13g2_nand2_2 U10 (.A(n25), .B(n24), .Y(cout));
-sg13g2_nand2_2 U11 (.A(n8), .B(cin), .Y(n21));
-sg13g2_xnor2_1 U12 (.A(n18), .B(n22), .Y(n8));
-sg13g2_nand2_2 U13 (.A(n9), .B(n10), .Y(n11));
-sg13g2_nand2_2 U14 (.A(n11), .B(n24), .Y(n23));
-sg13g2_inv_2 U15 (.A(A), .Y(n9));
-sg13g2_nand2_2 U16 (.A(n15), .B(n16), .Y(n17));
-sg13g2_nand2_2 U17 (.A(n12), .B(n13), .Y(n14));
-sg13g2_inv_2 U18 (.A(n25), .Y(n12));
-sg13g2_inv_2 U19 (.A(n24), .Y(n13));
-sg13g2_nand2_2 U20 (.A(n17), .B(n25), .Y(n22));
-sg13g2_inv_2 U21 (.A(D), .Y(n15));
-sg13g2_inv_2 U22 (.A(n6), .Y(n19));
-sg13g2_nand2_2 U23 (.A(D), .B(C), .Y(n25));
-endmodule
-
-module full_adder_23 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module half_adder_1 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(carry));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(A), .Y(n3));
-endmodule
-
-module full_adder_22 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n5), .A2(n6), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module half_adder_5 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_nand2_2 U1 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U2 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U3 (.A(A), .Y(n3));
-sg13g2_inv_2 U4 (.A(n4), .Y(carry));
-endmodule
-
-module full_adder_30 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module half_adder_4 (A, B, S, carry);
-input A, B;
-output S, carry;
-
-sg13g2_inv_2 U1 (.A(A), .Y(n3));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_xnor2_1 U3 (.A(n3), .B(B), .Y(S));
-sg13g2_inv_2 U4 (.A(n4), .Y(carry));
-endmodule
-
-module full_adder_3 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_inv_2 U1 (.A(n10), .Y(n4));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n8));
-sg13g2_inv_2 U3 (.A(cin), .Y(n9));
-sg13g2_nand2_2 U4 (.A(n10), .B(cin), .Y(n6));
-sg13g2_nand2_2 U5 (.A(n4), .B(n5), .Y(n7));
-sg13g2_nand2_2 U6 (.A(n7), .B(n6), .Y(S));
-sg13g2_inv_2 U7 (.A(cin), .Y(n5));
-sg13g2_o21ai_1 U8 (.A1(n10), .A2(n9), .B1(n8), .Y(cout));
-sg13g2_xnor2_1 U9 (.A(B), .B(A), .Y(n10));
-endmodule
-
-module full_adder_29 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_inv_2 U1 (.A(cin), .Y(n3));
-sg13g2_nand2_2 U2 (.A(n7), .B(n6), .Y(n9));
-sg13g2_inv_2 U3 (.A(A), .Y(n7));
-sg13g2_nand2_2 U4 (.A(n10), .B(cin), .Y(n4));
-sg13g2_nand2_2 U5 (.A(n2), .B(n3), .Y(n5));
-sg13g2_nand2_2 U6 (.A(n5), .B(n4), .Y(S));
-sg13g2_inv_2 U7 (.A(n10), .Y(n2));
-sg13g2_o21ai_1 U8 (.A1(n10), .A2(n3), .B1(n8), .Y(cout));
-sg13g2_nand2_2 U9 (.A(A), .B(B), .Y(n8));
-sg13g2_nand2_2 U10 (.A(n8), .B(n9), .Y(n10));
-sg13g2_inv_2 U11 (.A(B), .Y(n6));
-endmodule
-
-module full_adder_20 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand3_1 U1 (.A(n9), .B(n10), .C(n4), .Y(n6));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n11));
-sg13g2_inv_2 U3 (.A(cin), .Y(n12));
-sg13g2_nand2_2 U4 (.A(n13), .B(cin), .Y(n5));
-sg13g2_nand2_2 U5 (.A(n5), .B(n6), .Y(S));
-sg13g2_inv_2 U6 (.A(cin), .Y(n4));
-sg13g2_nand2_2 U7 (.A(B), .B(A), .Y(n9));
-sg13g2_nand2_2 U8 (.A(n7), .B(n8), .Y(n10));
-sg13g2_nand2_2 U9 (.A(n9), .B(n10), .Y(n13));
-sg13g2_inv_2 U10 (.A(B), .Y(n7));
-sg13g2_inv_2 U11 (.A(A), .Y(n8));
-sg13g2_o21ai_1 U12 (.A1(n13), .A2(n12), .B1(n11), .Y(cout));
-endmodule
-
-module full_adder_11 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_nand2_2 U1 (.A(n7), .B(n6), .Y(n4));
-sg13g2_nand2_2 U2 (.A(n13), .B(n4), .Y(n5));
-sg13g2_inv_2 U3 (.A(cin), .Y(n14));
-sg13g2_nand2_2 U4 (.A(A), .B(B), .Y(n13));
-sg13g2_nand2_2 U5 (.A(n6), .B(n7), .Y(n8));
-sg13g2_nand2_2 U6 (.A(n8), .B(n13), .Y(n15));
-sg13g2_inv_2 U7 (.A(B), .Y(n6));
-sg13g2_inv_2 U8 (.A(A), .Y(n7));
-sg13g2_nand2_2 U9 (.A(n5), .B(cin), .Y(n11));
-sg13g2_nand2_2 U10 (.A(n9), .B(n10), .Y(n12));
-sg13g2_nand2_2 U11 (.A(n11), .B(n12), .Y(S));
-sg13g2_inv_2 U12 (.A(n5), .Y(n9));
-sg13g2_inv_2 U13 (.A(cin), .Y(n10));
-sg13g2_o21ai_1 U14 (.A1(n15), .A2(n14), .B1(n13), .Y(cout));
-endmodule
-
-module full_adder_2 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_xnor2_1 U1 (.A(n6), .B(cin), .Y(S));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_o21ai_1 U4 (.A1(n5), .A2(n6), .B1(n4), .Y(cout));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module full_adder_8 (A, B, S, cin, cout);
-input A, B, cin;
-output S, cout;
-
-sg13g2_o21ai_1 U1 (.A1(n6), .A2(n5), .B1(n4), .Y(cout));
-sg13g2_nand2_2 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(cin), .Y(n5));
-sg13g2_xnor2_1 U4 (.A(n6), .B(cin), .Y(S));
-sg13g2_xnor2_1 U5 (.A(B), .B(A), .Y(n6));
-endmodule
-
-module adder_32bit_0 (\i_a[0], \i_a[1], \i_a[2], \i_a[3], \i_a[4], \i_a[5], \i_a[6], \i_a[7], \i_a[8], \i_a[9], \i_a[10], \i_a[11], \i_a[12], \i_a[13], \i_a[14], \i_a[15], \i_a[16], \i_a[17], \i_a[18], \i_a[19], \i_a[20], \i_a[21], \i_a[22], \i_a[23], \i_a[24], \i_a[25], \i_a[26], \i_a[27], \i_a[28], \i_a[29], \i_a[30], \i_a[31], \i_b[0], \i_b[1], \i_b[2], \i_b[3], \i_b[4], \i_b[5], \i_b[6], \i_b[7], \i_b[8], \i_b[9], \i_b[10], \i_b[11], \i_b[12], \i_b[13], \i_b[14], \i_b[15], \i_b[16], \i_b[17], \i_b[18], \i_b[19], \i_b[20], \i_b[21], \i_b[22], \i_b[23], \i_b[24], \i_b[25], \i_b[26], \i_b[27], \i_b[28], \i_b[29], \i_b[30], \i_b[31], \o_s[0], \o_s[1], \o_s[2], \o_s[3], \o_s[4], \o_s[5], \o_s[6], \o_s[7], \o_s[8], \o_s[9], \o_s[10], \o_s[11], \o_s[12], \o_s[13], \o_s[14], \o_s[15], \o_s[16], \o_s[17], \o_s[18], \o_s[19], \o_s[20], \o_s[21], \o_s[22], \o_s[23], \o_s[24], \o_s[25], \o_s[26], \o_s[27], \o_s[28], \o_s[29], \o_s[30], \o_s[31], i_c, o_c);
-input \i_a[0], \i_a[1], \i_a[2], \i_a[3], \i_a[4], \i_a[5], \i_a[6], \i_a[7], \i_a[8], \i_a[9], \i_a[10], \i_a[11], \i_a[12], \i_a[13], \i_a[14], \i_a[15], \i_a[16], \i_a[17], \i_a[18], \i_a[19], \i_a[20], \i_a[21], \i_a[22], \i_a[23], \i_a[24], \i_a[25], \i_a[26], \i_a[27], \i_a[28], \i_a[29], \i_a[30], \i_a[31], \i_b[0], \i_b[1], \i_b[2], \i_b[3], \i_b[4], \i_b[5], \i_b[6], \i_b[7], \i_b[8], \i_b[9], \i_b[10], \i_b[11], \i_b[12], \i_b[13], \i_b[14], \i_b[15], \i_b[16], \i_b[17], \i_b[18], \i_b[19], \i_b[20], \i_b[21], \i_b[22], \i_b[23], \i_b[24], \i_b[25], \i_b[26], \i_b[27], \i_b[28], \i_b[29], \i_b[30], \i_b[31], i_c;
-output \o_s[0], \o_s[1], \o_s[2], \o_s[3], \o_s[4], \o_s[5], \o_s[6], \o_s[7], \o_s[8], \o_s[9], \o_s[10], \o_s[11], \o_s[12], \o_s[13], \o_s[14], \o_s[15], \o_s[16], \o_s[17], \o_s[18], \o_s[19], \o_s[20], \o_s[21], \o_s[22], \o_s[23], \o_s[24], \o_s[25], \o_s[26], \o_s[27], \o_s[28], \o_s[29], \o_s[30], \o_s[31], o_c;
-
-sg13g2_inv_2 U1 (.A(n1), .Y(\o_s[9]));
-sg13g2_xnor2_1 U2 (.A(P0_9), .B(G4_4), .Y(n1));
-sg13g2_inv_2 U3 (.A(n14), .Y(\o_s[26]));
-sg13g2_xnor2_1 U4 (.A(P0_8), .B(G6_7), .Y(n2));
-sg13g2_inv_2 U5 (.A(n3), .Y(\o_s[7]));
-sg13g2_xnor2_1 U6 (.A(P0_7), .B(G3_3), .Y(n3));
-sg13g2_inv_2 U7 (.A(n13), .Y(\o_s[27]));
-sg13g2_xnor2_1 U8 (.A(P0_6), .B(G6_5), .Y(n4));
-sg13g2_inv_2 U9 (.A(n5), .Y(\o_s[5]));
-sg13g2_xnor2_1 U10 (.A(P0_5), .B(G3_2), .Y(n5));
-sg13g2_inv_2 U11 (.A(n6), .Y(\o_s[4]));
-sg13g2_xnor2_1 U12 (.A(P0_4), .B(G6_3), .Y(n6));
-sg13g2_inv_2 U13 (.A(n7), .Y(\o_s[3]));
-sg13g2_xnor2_1 U14 (.A(P0_3), .B(G2_1), .Y(n7));
-sg13g2_xnor2_1 U15 (.A(P0_27), .B(G5_13), .Y(n13));
-sg13g2_inv_2 U16 (.A(n27), .Y(\o_s[14]));
-sg13g2_xnor2_1 U17 (.A(P0_14), .B(G6_13), .Y(n27));
-sg13g2_xnor2_1 U18 (.A(P0_15), .B(G4_7), .Y(n26));
-sg13g2_inv_2 U19 (.A(n10), .Y(\o_s[2]));
-sg13g2_xnor2_1 U20 (.A(P0_2), .B(G6_1), .Y(n10));
-sg13g2_inv_2 U21 (.A(P0_31), .Y(n35));
-sg13g2_xnor2_1 U22 (.A(P0_20), .B(G6_19), .Y(n20));
-sg13g2_o21ai_1 U23 (.A1(G6_15), .A2(P0_16), .B1(n36), .Y(n25));
-sg13g2_xnor2_1 U24 (.A(n35), .B(G5_15), .Y(\o_s[31]));
-sg13g2_inv_2 U25 (.A(n12), .Y(\o_s[28]));
-sg13g2_xnor2_1 U26 (.A(P0_30), .B(\G6[29]), .Y(n9));
-sg13g2_xnor2_1 U27 (.A(P0_12), .B(G6_11), .Y(n29));
-sg13g2_inv_2 U28 (.A(n19), .Y(\o_s[21]));
-sg13g2_inv_2 U29 (.A(n15), .Y(\o_s[25]));
-sg13g2_xnor2_1 U30 (.A(P0_25), .B(G5_12), .Y(n15));
-sg13g2_xnor2_1 U31 (.A(P0_21), .B(G5_10), .Y(n19));
-sg13g2_xnor2_1 U32 (.A(P0_24), .B(G6_23), .Y(n16));
-sg13g2_inv_2 U33 (.A(n17), .Y(\o_s[23]));
-sg13g2_xnor2_1 U34 (.A(P0_23), .B(G5_11), .Y(n17));
-sg13g2_inv_2 U35 (.A(G1_0), .Y(n8));
-sg13g2_inv_2 U36 (.A(n8), .Y(n33));
-sg13g2_inv_2 U37 (.A(n11), .Y(\o_s[29]));
-sg13g2_xnor2_1 U38 (.A(G5_14), .B(P0_29), .Y(n11));
-sg13g2_inv_2 U39 (.A(n20), .Y(\o_s[20]));
-sg13g2_nand2_2 U40 (.A(G6_15), .B(P0_16), .Y(n36));
-sg13g2_inv_2 U41 (.A(n21), .Y(\o_s[1]));
-sg13g2_xnor2_1 U42 (.A(n38), .B(n33), .Y(n21));
-sg13g2_inv_2 U43 (.A(n22), .Y(\o_s[19]));
-sg13g2_xnor2_1 U44 (.A(P0_19), .B(G5_9), .Y(n22));
-sg13g2_inv_2 U45 (.A(n25), .Y(\o_s[16]));
-sg13g2_inv_2 U46 (.A(n23), .Y(\o_s[18]));
-sg13g2_inv_2 U47 (.A(n24), .Y(\o_s[17]));
-sg13g2_xnor2_1 U48 (.A(P0_17), .B(G5_8), .Y(n24));
-sg13g2_inv_2 U49 (.A(n2), .Y(\o_s[8]));
-sg13g2_inv_2 U50 (.A(n29), .Y(\o_s[12]));
-sg13g2_inv_2 U51 (.A(n26), .Y(\o_s[15]));
-sg13g2_xnor2_1 U52 (.A(P0_22), .B(G6_21), .Y(n18));
-sg13g2_xnor2_1 U53 (.A(P0_28), .B(G6_27), .Y(n12));
-sg13g2_inv_2 U54 (.A(n16), .Y(\o_s[24]));
-sg13g2_inv_2 U55 (.A(n28), .Y(\o_s[13]));
-sg13g2_xnor2_1 U56 (.A(P0_13), .B(G4_6), .Y(n28));
-sg13g2_xnor2_1 U57 (.A(P0_26), .B(G6_25), .Y(n14));
-sg13g2_inv_2 U58 (.A(n9), .Y(\o_s[30]));
-sg13g2_inv_2 U59 (.A(n30), .Y(\o_s[11]));
-sg13g2_xnor2_1 U60 (.A(P0_11), .B(G4_5), .Y(n30));
-sg13g2_xnor2_1 U61 (.A(P0_18), .B(G6_17), .Y(n23));
-sg13g2_inv_2 U62 (.A(n31), .Y(\o_s[10]));
-sg13g2_inv_2 U63 (.A(n32), .Y(\o_s[0]));
-sg13g2_xnor2_1 U64 (.A(i_c), .B(P0_0), .Y(n32));
-sg13g2_xnor2_1 U65 (.A(P0_10), .B(G6_9), .Y(n31));
-sg13g2_inv_2 U66 (.A(P0_1), .Y(n37));
-sg13g2_inv_2 U67 (.A(n37), .Y(n38));
-sg13g2_inv_2 U68 (.A(n4), .Y(\o_s[6]));
-sg13g2_inv_2 U69 (.A(n18), .Y(\o_s[22]));
-operator_A_0 operator_A_0(.A(\i_a[0]), .B(\i_b[0]), .G(G0_0), .P(P0_0));
-operator_A_63 operator_A_1(.A(\i_a[1]), .B(\i_b[1]), .G(G0_1), .P(P0_1));
-operator_A_62 operator_A_2(.A(\i_a[2]), .B(\i_b[2]), .G(G0_2), .P(P0_2));
-operator_A_61 operator_A_3(.A(\i_a[3]), .B(\i_b[3]), .G(G0_3), .P(P0_3));
-operator_A_60 operator_A_4(.A(\i_a[4]), .B(\i_b[4]), .G(G0_4), .P(P0_4));
-operator_A_59 operator_A_5(.A(\i_a[5]), .B(\i_b[5]), .G(G0_5), .P(P0_5));
-operator_A_58 operator_A_6(.A(\i_a[6]), .B(\i_b[6]), .G(G0_6), .P(P0_6));
-operator_A_57 operator_A_7(.A(\i_a[7]), .B(\i_b[7]), .G(G0_7), .P(P0_7));
-operator_A_56 operator_A_8(.A(\i_a[8]), .B(\i_b[8]), .G(G0_8), .P(P0_8));
-operator_A_55 operator_A_9(.A(\i_a[9]), .B(\i_b[9]), .G(G0_9), .P(P0_9));
-operator_A_54 operator_A_10(.A(\i_a[10]), .B(\i_b[10]), .G(G0_10), .P(P0_10));
-operator_A_53 operator_A_11(.A(\i_a[11]), .B(\i_b[11]), .G(G0_11), .P(P0_11));
-operator_A_52 operator_A_12(.A(\i_a[12]), .B(\i_b[12]), .G(G0_12), .P(P0_12));
-operator_A_51 operator_A_13(.A(\i_a[13]), .B(\i_b[13]), .G(G0_13), .P(P0_13));
-operator_A_50 operator_A_14(.A(\i_a[14]), .B(\i_b[14]), .G(G0_14), .P(P0_14));
-operator_A_49 operator_A_15(.A(\i_a[15]), .B(\i_b[15]), .G(G0_15), .P(P0_15));
-operator_A_48 operator_A_16(.A(\i_a[16]), .B(\i_b[16]), .G(G0_16), .P(P0_16));
-operator_A_47 operator_A_17(.A(\i_a[17]), .B(\i_b[17]), .G(G0_17), .P(P0_17));
-operator_A_46 operator_A_18(.A(\i_a[18]), .B(\i_b[18]), .G(G0_18), .P(P0_18));
-operator_A_45 operator_A_19(.A(\i_a[19]), .B(\i_b[19]), .G(G0_19), .P(P0_19));
-operator_A_44 operator_A_20(.A(\i_a[20]), .B(\i_b[20]), .G(G0_20), .P(P0_20));
-operator_A_43 operator_A_21(.A(\i_a[21]), .B(\i_b[21]), .G(G0_21), .P(P0_21));
-operator_A_42 operator_A_22(.A(\i_a[22]), .B(\i_b[22]), .G(G0_22), .P(P0_22));
-operator_A_41 operator_A_23(.A(\i_a[23]), .B(\i_b[23]), .G(G0_23), .P(P0_23));
-operator_A_40 operator_A_24(.A(\i_a[24]), .B(\i_b[24]), .G(G0_24), .P(P0_24));
-operator_A_39 operator_A_25(.A(\i_a[25]), .B(\i_b[25]), .G(G0_25), .P(P0_25));
-operator_A_38 operator_A_26(.A(\i_a[26]), .B(\i_b[26]), .G(G0_26), .P(P0_26));
-operator_A_37 operator_A_27(.A(\i_a[27]), .B(\i_b[27]), .G(G0_27), .P(P0_27));
-operator_A_36 operator_A_28(.A(\i_a[28]), .B(\i_b[28]), .G(G0_28), .P(P0_28));
-operator_A_35 operator_A_29(.A(\i_a[29]), .B(\i_b[29]), .G(G0_29), .P(P0_29));
-operator_A_34 operator_A_30(.A(\i_a[30]), .B(\i_b[30]), .G(G0_30), .P(P0_30));
-operator_A_33 operator_A_31(.A(\i_a[31]), .B(\i_b[31]), .G(G0_31), .P(P0_31));
-operator_B_0 operator_B_stage_1_1(.G(G0_2), .G1(G0_1), .Go(G1_1), .P(P0_2), .P1(P0_1), .Po(P1_1));
-operator_B_96 operator_B_stage_1_3(.G(G0_6), .G1(G0_5), .Go(G1_3), .P(P0_6), .P1(P0_5), .Po(P1_3));
-operator_B_85 operator_B_stage_1_14(.G(G0_28), .G1(G0_27), .Go(G1_14), .P(P0_28), .P1(P0_27), .Po(P1_14));
-operator_B_90 operator_B_stage_1_9(.G(G0_18), .G1(G0_17), .Go(G1_9), .P(P0_18), .P1(P0_17), .Po(P1_9));
-operator_B_89 operator_B_stage_1_10(.G(G0_20), .G1(G0_19), .Go(G1_10), .P(P0_20), .P1(P0_19), .Po(P1_10));
-operator_B_91 operator_B_stage_1_8(.G(G0_16), .G1(G0_15), .Go(G1_8), .P(P0_16), .P1(P0_15), .Po(P1_8));
-operator_B_87 operator_B_stage_1_12(.G(G0_24), .G1(G0_23), .Go(G1_12), .P(P0_24), .P1(P0_23), .Po(P1_12));
-operator_B_92 operator_B_stage_1_7(.G(G0_14), .G1(G0_13), .Go(G1_7), .P(P0_14), .P1(P0_13), .Po(P1_7));
-operator_B_93 operator_B_stage_1_6(.G(G0_12), .G1(G0_11), .Go(G1_6), .P(P0_12), .P1(P0_11), .Po(P1_6));
-operator_B_95 operator_B_stage_1_4(.G(G0_8), .G1(G0_7), .Go(G1_4), .P(P0_8), .P1(P0_7), .Po(P1_4));
-operator_B_97 operator_B_stage_1_2(.G(G0_4), .G1(G0_3), .Go(G1_2), .P(P0_4), .P1(P0_3), .Po(P1_2));
-operator_B_86 operator_B_stage_1_13(.G(G0_26), .G1(G0_25), .Go(G1_13), .P(P0_26), .P1(P0_25), .Po(P1_13));
-operator_B_94 operator_B_stage_1_5(.G(G0_10), .G1(G0_9), .Go(G1_5), .P(P0_10), .P1(P0_9), .Po(P1_5));
-operator_B_84 operator_B_stage_1_15(.G(G0_30), .G1(G0_29), .Go(G1_15), .P(P0_30), .P1(P0_29), .Po(P1_15));
-operator_B_88 operator_B_stage_1_11(.G(G0_22), .G1(G0_21), .Go(G1_11), .P(P0_22), .P1(P0_21), .Po(P1_11));
-operator_B_80 operator_B_stage_2_5(.G(G1_5), .G1(G1_4), .Go(G2_5), .P(P1_5), .P1(P1_4), .Po(P2_5));
-operator_B_79 operator_B_stage_2_6(.G(G1_6), .G1(G1_5), .Go(G2_6), .P(P1_6), .P1(P1_5), .Po(P2_6));
-operator_B_82 operator_B_stage_2_3(.G(G1_3), .G1(G1_2), .Go(G2_3), .P(P1_3), .P1(P1_2), .Po(P2_3));
-operator_B_75 operator_B_stage_2_10(.G(G1_10), .G1(G1_9), .Go(G2_10), .P(P1_10), .P1(P1_9), .Po(P2_10));
-operator_B_81 operator_B_stage_2_4(.G(G1_4), .G1(G1_3), .Go(G2_4), .P(P1_4), .P1(P1_3), .Po(P2_4));
-operator_B_72 operator_B_stage_2_13(.G(G1_13), .G1(G1_12), .Go(G2_13), .P(P1_13), .P1(P1_12), .Po(P2_13));
-operator_B_78 operator_B_stage_2_7(.G(G1_7), .G1(G1_6), .Go(G2_7), .P(P1_7), .P1(P1_6), .Po(P2_7));
-operator_B_76 operator_B_stage_2_9(.G(G1_9), .G1(G1_8), .Go(G2_9), .P(P1_9), .P1(P1_8), .Po(P2_9));
-operator_B_70 operator_B_stage_2_15(.G(G1_15), .G1(G1_14), .Go(G2_15), .P(P1_15), .P1(P1_14), .Po(P2_15));
-operator_B_73 operator_B_stage_2_12(.G(G1_12), .G1(G1_11), .Go(G2_12), .P(P1_12), .P1(P1_11), .Po(P2_12));
-operator_B_83 operator_B_stage_2_2(.G(G1_2), .G1(G1_1), .Go(G2_2), .P(P1_2), .P1(P1_1), .Po(P2_2));
-operator_B_74 operator_B_stage_2_11(.G(G1_11), .G1(G1_10), .Go(G2_11), .P(P1_11), .P1(P1_10), .Po(P2_11));
-operator_B_71 operator_B_stage_2_14(.G(G1_14), .G1(G1_13), .Go(G2_14), .P(P1_14), .P1(P1_13), .Po(P2_14));
-operator_B_77 operator_B_stage_2_8(.G(G1_8), .G1(G1_7), .Go(G2_8), .P(P1_8), .P1(P1_7), .Po(P2_8));
-operator_B_61 operator_B_stage_3_12(.G(G2_12), .G1(G2_10), .Go(G3_12), .P(P2_12), .P1(P2_10), .Po(P3_12));
-operator_B_62 operator_B_stage_3_11(.G(G2_11), .G1(G2_9), .Go(G3_11), .P(P2_11), .P1(P2_9), .Po(P3_11));
-operator_B_67 operator_B_stage_3_6(.G(G2_6), .G1(G2_4), .Go(G3_6), .P(P2_6), .P1(P2_4), .Po(P3_6));
-operator_B_63 operator_B_stage_3_10(.G(G2_10), .G1(G2_8), .Go(G3_10), .P(P2_10), .P1(P2_8), .Po(P3_10));
-operator_B_64 operator_B_stage_3_9(.G(G2_9), .G1(G2_7), .Go(G3_9), .P(P2_9), .P1(P2_7), .Po(P3_9));
-operator_B_65 operator_B_stage_3_8(.G(G2_8), .G1(G2_6), .Go(G3_8), .P(P2_8), .P1(P2_6), .Po(P3_8));
-operator_B_58 operator_B_stage_3_15(.G(G2_15), .G1(G2_13), .Go(G3_15), .P(P2_15), .P1(P2_13), .Po(P3_15));
-operator_B_66 operator_B_stage_3_7(.G(G2_7), .G1(G2_5), .Go(G3_7), .P(P2_7), .P1(P2_5), .Po(P3_7));
-operator_B_68 operator_B_stage_3_5(.G(G2_5), .G1(G2_3), .Go(G3_5), .P(P2_5), .P1(P2_3), .Po(P3_5));
-operator_B_59 operator_B_stage_3_14(.G(G2_14), .G1(G2_12), .Go(G3_14), .P(P2_14), .P1(P2_12), .Po(P3_14));
-operator_B_69 operator_B_stage_3_4(.G(G2_4), .G1(G2_2), .Go(G3_4), .P(P2_4), .P1(P2_2), .Po(P3_4));
-operator_B_60 operator_B_stage_3_13(.G(G2_13), .G1(G2_11), .Go(G3_13), .P(P2_13), .P1(P2_11), .Po(P3_13));
-operator_B_51 operator_B_stage_4_14(.G(G3_14), .G1(G3_10), .Go(G4_14), .P(P3_14), .P1(P3_10), .Po(P4_14));
-operator_B_54 operator_B_stage_4_11(.G(G3_11), .G1(G3_7), .Go(G4_11), .P(P3_11), .P1(P3_7), .Po(P4_11));
-operator_B_53 operator_B_stage_4_12(.G(G3_12), .G1(G3_8), .Go(G4_12), .P(P3_12), .P1(P3_8), .Po(P4_12));
-operator_B_55 operator_B_stage_4_10(.G(G3_10), .G1(G3_6), .Go(G4_10), .P(P3_10), .P1(P3_6), .Po(P4_10));
-operator_B_57 operator_B_stage_4_8(.G(G3_8), .G1(G3_4), .Go(G4_8), .P(P3_8), .P1(P3_4), .Po(P4_8));
-operator_B_50 operator_B_stage_4_15(.G(G3_15), .G1(G3_11), .Go(G4_15), .P(P3_15), .P1(P3_11), .Po(P4_15));
-operator_B_56 operator_B_stage_4_9(.G(G3_9), .G1(G3_5), .Go(G4_9), .P(P3_9), .P1(P3_5), .Po(P4_9));
-operator_B_52 operator_B_stage_4_13(.G(G3_13), .G1(G3_9), .Go(G4_13), .P(P3_13), .P1(P3_9), .Po(P4_13));
-operator_C_0 operator_C_stage_1_0(.G(G0_0), .G1(i_c), .Go(G1_0), .P(P0_0));
-operator_C_63 operator_C_stage_2_1(.G(G1_1), .G1(G1_0), .Go(G2_1), .P(P1_1));
-operator_C_61 operator_C_stage_3_3(.G(G2_3), .G1(G2_1), .Go(G3_3), .P(P2_3));
-operator_C_62 operator_C_stage_3_2(.G(G2_2), .G1(G1_0), .Go(G3_2), .P(P2_2));
-operator_C_58 operator_C_stage_4_6(.G(G3_6), .G1(G3_2), .Go(G4_6), .P(P3_6));
-operator_C_57 operator_C_stage_4_7(.G(G3_7), .G1(G3_3), .Go(G4_7), .P(P3_7));
-operator_C_59 operator_C_stage_4_5(.G(G3_5), .G1(G2_1), .Go(G4_5), .P(P3_5));
-operator_C_60 operator_C_stage_4_4(.G(G3_4), .G1(n33), .Go(G4_4), .P(P3_4));
-operator_C_50 operator_C_stage_5_14(.G(G4_14), .G1(G4_6), .Go(G5_14), .P(P4_14));
-operator_C_49 operator_C_stage_5_15(.G(G4_15), .G1(G4_7), .Go(G5_15), .P(P4_15));
-operator_C_55 operator_C_stage_5_9(.G(G4_9), .G1(G2_1), .Go(G5_9), .P(P4_9));
-operator_C_56 operator_C_stage_5_8(.G(G4_8), .G1(n33), .Go(G5_8), .P(P4_8));
-operator_C_51 operator_C_stage_5_13(.G(G4_13), .G1(G4_5), .Go(G5_13), .P(P4_13));
-operator_C_53 operator_C_stage_5_11(.G(G4_11), .G1(G3_3), .Go(G5_11), .P(P4_11));
-operator_C_52 operator_C_stage_5_12(.G(G4_12), .G1(G4_4), .Go(G5_12), .P(P4_12));
-operator_C_54 operator_C_stage_5_10(.G(G4_10), .G1(G3_2), .Go(G5_10), .P(P4_10));
-operator_C_34 operator_C_stage_6_14(.G(G0_29), .G1(G5_14), .Go(\G6[29]), .P(P0_29));
-operator_C_42 operator_C_stage_6_6(.G(G0_13), .G1(G4_6), .Go(G6_13), .P(P0_13));
-operator_C_40 operator_C_stage_6_8(.G(G0_17), .G1(G5_8), .Go(G6_17), .P(P0_17));
-operator_C_39 operator_C_stage_6_9(.G(G0_19), .G1(G5_9), .Go(G6_19), .P(P0_19));
-operator_C_35 operator_C_stage_6_13(.G(G0_27), .G1(G5_13), .Go(G6_27), .P(P0_27));
-operator_C_36 operator_C_stage_6_12(.G(G0_25), .G1(G5_12), .Go(G6_25), .P(P0_25));
-operator_C_37 operator_C_stage_6_11(.G(G0_23), .G1(G5_11), .Go(G6_23), .P(P0_23));
-operator_C_48 operator_C_stage_6_0(.G(G0_1), .G1(G1_0), .Go(G6_1), .P(n38));
-operator_C_47 operator_C_stage_6_1(.G(G0_3), .G1(G2_1), .Go(G6_3), .P(P0_3));
-operator_C_38 operator_C_stage_6_10(.G(G0_21), .G1(G5_10), .Go(G6_21), .P(P0_21));
-operator_C_45 operator_C_stage_6_3(.G(G0_7), .G1(G3_3), .Go(G6_7), .P(P0_7));
-operator_C_33 operator_C_stage_6_15(.G(G0_31), .G1(G5_15), .Go(o_c), .P(P0_31));
-operator_C_46 operator_C_stage_6_2(.G(G0_5), .G1(G3_2), .Go(G6_5), .P(P0_5));
-operator_C_44 operator_C_stage_6_4(.G(G0_9), .G1(G4_4), .Go(G6_9), .P(P0_9));
-operator_C_43 operator_C_stage_6_5(.G(G0_11), .G1(G4_5), .Go(G6_11), .P(P0_11));
-operator_C_41 operator_C_stage_6_7(.G(G0_15), .G1(G4_7), .Go(G6_15), .P(P0_15));
-endmodule
-
-module operator_C_39 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_41 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-endmodule
-
-module operator_C_43 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_44 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_46 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_33 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_45 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_38 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_47 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_48 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_56 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_50 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_37 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_52 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_54 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n5), .Y(Go));
-sg13g2_nor2_2 U2 (.A(n4), .B(G), .Y(n5));
-sg13g2_nor2_2 U3 (.A(n2), .B(n3), .Y(n4));
-sg13g2_inv_2 U4 (.A(P), .Y(n2));
-sg13g2_inv_2 U5 (.A(G1), .Y(n3));
-endmodule
-
-module operator_C_58 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_C_61 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_63 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_36 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_53 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_0 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(Go));
-endmodule
-
-module operator_B_56 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_50 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_C_57 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_53 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_54 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_64 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_B_65 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_C_55 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_C_49 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_66 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_B_68 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_C_35 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_B_60 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_61 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_62 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n5), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n5));
-sg13g2_inv_2 U3 (.A(n4), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-endmodule
-
-module operator_A_58 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_69 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_61 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_59 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_33 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_52 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_36 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_55 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_38 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_C_60 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_A_41 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_76 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_inv_2 U2 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_43 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_nand2_2 U2 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
-endmodule
-
-module operator_B_72 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_A_60 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_inv_2 U2 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_85 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_63 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_56 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_48 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_51 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(G));
-sg13g2_inv_2 U3 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
-endmodule
-
-module operator_C_42 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_52 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_53 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_0 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(Po));
-sg13g2_inv_2 U3 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_96 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_49 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_35 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_44 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_79 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_nand2_2 U1 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(Po));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_59 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_78 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n1));
-sg13g2_inv_2 U3 (.A(n1), .Y(Po));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_37 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_50 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_88 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_90 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P), .B(P1), .Y(n4));
-endmodule
-
-module operator_A_39 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_47 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_nand2_2 U1 (.A(B), .B(A), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(G));
-sg13g2_inv_2 U3 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U4 (.A(A), .B(B), .Y(n4));
-endmodule
-
-module operator_B_84 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_C_62 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_63 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Go));
-sg13g2_nor2_2 U2 (.A(n1), .B(n3), .Y(Po));
-sg13g2_inv_2 U3 (.A(P1), .Y(n1));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-sg13g2_inv_2 U5 (.A(P), .Y(n3));
-endmodule
-
-module operator_B_94 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_57 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_34 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(P));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_62 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_54 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_o21ai_1 U1 (.A1(A), .A2(B), .B1(n3), .Y(n1));
-sg13g2_inv_2 U2 (.A(n1), .Y(P));
-sg13g2_inv_2 U3 (.A(n4), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n4));
-sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n3));
-endmodule
-
-module operator_A_46 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(A), .Y(n3));
-sg13g2_nand2_2 U2 (.A(n5), .B(n6), .Y(n8));
-sg13g2_inv_2 U3 (.A(n7), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n7));
-sg13g2_nand2_2 U5 (.A(A), .B(B), .Y(n5));
-sg13g2_nand2_2 U6 (.A(n3), .B(n4), .Y(n6));
-sg13g2_inv_2 U7 (.A(B), .Y(n4));
-sg13g2_inv_2 U8 (.A(n8), .Y(P));
-endmodule
-
-module operator_A_45 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n4));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_C_40 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_A_42 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_55 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(G));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n4), .Y(P));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_67 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_A_57 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(P));
-sg13g2_xnor2_1 U2 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_B_82 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_80 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_89 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_C_51 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(n2), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-endmodule
-
-module operator_B_86 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_97 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_95 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_93 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-sg13g2_nand2_2 U3 (.A(P1), .B(P), .Y(n5));
-sg13g2_inv_2 U4 (.A(n5), .Y(Po));
-endmodule
-
-module operator_B_81 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_B_92 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_B_91 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_75 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Go));
-sg13g2_a21oi_2 U2 (.A1(G1), .A2(P), .B1(G), .Y(n4));
-sg13g2_inv_2 U3 (.A(n5), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n5));
-endmodule
-
-module operator_C_34 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_a21oi_2 U1 (.A1(P), .A2(G1), .B1(G), .Y(n2));
-sg13g2_inv_2 U2 (.A(n2), .Y(Go));
-endmodule
-
-module operator_B_77 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_a21oi_2 U1 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_inv_2 U3 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_71 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_74 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_51 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n3), .Y(Go));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n4), .Y(Po));
-endmodule
-
-module operator_A_40 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_xnor2_1 U1 (.A(A), .B(B), .Y(n4));
-sg13g2_inv_2 U2 (.A(n4), .Y(P));
-sg13g2_inv_2 U3 (.A(n3), .Y(G));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n3));
-endmodule
-
-module operator_A_0 (A, B, G, P);
-input A, B;
-output G, P;
-
-sg13g2_inv_2 U1 (.A(n1), .Y(P));
-sg13g2_inv_2 U2 (.A(n2), .Y(G));
-sg13g2_xnor2_1 U3 (.A(A), .B(B), .Y(n1));
-sg13g2_nand2_2 U4 (.A(B), .B(A), .Y(n2));
-endmodule
-
-module operator_B_83 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_inv_2 U4 (.A(n3), .Y(Go));
-endmodule
-
-module operator_C_59 (G, G1, Go, P);
-input G, G1, P;
-output Go;
-
-sg13g2_inv_2 U1 (.A(G1), .Y(n3));
-sg13g2_nor2_2 U2 (.A(n4), .B(G), .Y(n5));
-sg13g2_inv_2 U3 (.A(n5), .Y(Go));
-sg13g2_nor2_2 U4 (.A(n2), .B(n3), .Y(n4));
-sg13g2_inv_2 U5 (.A(P), .Y(n2));
-endmodule
-
-module operator_B_58 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_73 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-endmodule
-
-module operator_B_87 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_inv_2 U2 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U3 (.A1(G1), .A2(P), .B1(G), .Y(n3));
-sg13g2_nand2_2 U4 (.A(P1), .B(P), .Y(n4));
-endmodule
-
-module operator_B_70 (G, G1, Go, P, P1, Po);
-input G, G1, P, P1;
-output Go, Po;
-
-sg13g2_inv_2 U1 (.A(n4), .Y(Po));
-sg13g2_nand2_2 U2 (.A(P1), .B(P), .Y(n4));
-sg13g2_inv_2 U3 (.A(n3), .Y(Go));
-sg13g2_a21oi_2 U4 (.A1(G1), .A2(P), .B1(G), .Y(n3));
 endmodule
 
