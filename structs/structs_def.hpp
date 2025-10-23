@@ -30,22 +30,36 @@
 
 using namespace std;
 
-static bool natural_sorting(const std::string& a, const std::string& b) {
-  // Find numeric suffix
-  size_t i = 0;
-  while (i < a.size() && !isdigit(a[i])) i++;
-  size_t j = 0;
-  while (j < b.size() && !isdigit(b[j])) j++;
+// natural sorting comparator for strings (e.g., "pin2" < "pin10") 
+static bool natural_sorting(const string& a, const string& b) {
+  size_t i = 0, j = 0;
 
-  std::string prefixA = a.substr(0, i);
-  std::string prefixB = b.substr(0, j);
+  while (i < a.size() && j < b.size()) {
+      if (isdigit(a[i]) && isdigit(b[j])) {
+          size_t ia = i, jb = j;
+          while (ia < a.size() && isdigit(a[ia])) ia++;
+          while (jb < b.size() && isdigit(b[jb])) jb++;
 
-  if (prefixA != prefixB)
-      return prefixA < prefixB;
+          int numA = stoi(a.substr(i, ia - i));
+          int numB = stoi(b.substr(j, jb - j));
+          if (numA != numB)
+              return numA < numB;
 
-  int numA = (i < a.size()) ? std::stoi(a.substr(i)) : -1;
-  int numB = (j < b.size()) ? std::stoi(b.substr(j)) : -1;
-  return numA < numB;
+          i = ia;
+          j = jb;
+      } 
+      else {
+          char ca = tolower(a[i]);
+          char cb = tolower(b[j]);
+          if (ca != cb) {
+            return ca < cb;
+          }
+          ++i;
+          ++j;
+      }
+  }
+
+  return a.size() < b.size();
 }
 
 
@@ -705,7 +719,8 @@ public:
     cout << ");" << endl;
     
     i = 0;
-    if (mCells.size() > 0) {
+    // if there are ports on this module, print them
+    if (mPorts.size() > 0) {
       cout << "input ";
 
       for (const auto& [pname, pptr] : sorted_items(mPorts)) {
@@ -737,10 +752,12 @@ public:
       cptr->write_netlist();
     }
 
-    // --- Submodules as instances (sorted by instance name) ---
-    for (const auto& [mname, mptr] : sorted_items(mModules)) {
-    (void)mname;
-    mptr->print_as_instance(this);
+    // --- Submodules as instances (sorted by DefName) ---
+    for (const auto& [mname, mptr] :
+      sorted_items(mModules, [](const auto& a, const auto& b) {
+          return natural_sorting(a.second->mDefName, b.second->mDefName);
+      })) {
+     mptr->print_as_instance(this);
     }
 
     cout << "endmodule" << endl << endl;

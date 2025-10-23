@@ -1,4 +1,4 @@
-// Generated netlist by CADI API on Date: 2025-10-09 16:47:11 //
+// Generated netlist by CADI API on Date: 2025-10-23 15:02:01 //
 
 module c17 (N1, N2, N3, N6, N7, N22, N23);
 input N1, N2, N3, N6, N7;
