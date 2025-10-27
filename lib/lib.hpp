@@ -9,7 +9,7 @@
 //
 // File:    lib.hpp
 // Purpose: data structures for library info
-// Authors: Stavros Simoglou
+// Authors: Stavros Simoglou, Dimitris Tsalapatasu
 //
 #ifndef _LIB_HPP
 #define _LIB_HPP
@@ -83,11 +83,46 @@ inline const char *directionToString(DirectionType direction) {
     return "NONE";
   }
 }
+inline const char *timingTypeToString(TimingType type) {
+  switch (type) {
+  case COMBINATIONAL:
+    return "COMBINATIONAL";
+  case COMBINATIONAL_RISE:
+    return "COMBINATIONAL_RISE";
+  case COMBINATIONAL_FALL:
+    return "COMBINATIONAL_FALL";
+  case RISING_EDGE:
+    return "RISING_EDGE";
+  case FALLING_EDGE:
+    return "FALLING_EDGE";
+  default:
+    return "NONE";
+  }
+}
+
+inline const char *timingSenseToString(TimingSense sense) {
+  switch (sense) {
+  case POSITIVE_UNATE:
+    return "POSITIVE_UNATE";
+  case NEGATIVE_UNATE:
+    return "NEGATIVE_UNATE";
+  case NON_UNATE:
+    return "NON_UNATE";
+  default:
+    return "NONE";
+  }
+}
 class Lib;
 class LibCell;
 class LibArc;
 class LibPin;
 class LibTimingArc;
+
+typedef struct FF_GROUP {
+  LibPin *clocked_on_pin;
+  LibPin *preset_pin;
+  LibPin *clear_pin;
+} ff_group;  
 
 class LUT {
 public:
@@ -149,11 +184,16 @@ public:
   // copy constructor
   LibTimingArc(const LibTimingArc &rhs) { *this = rhs; }
 
+  void print();
+
   ~LibTimingArc() {
     for (auto LUT : m_LUTs) {
       delete LUT;
     }
   }
+
+  // getters
+  LibPin *getFromPin() { return m_from_pin; }
 private:
   LibPin     *m_from_pin; // related_pin
   LibPin     *m_to_pin;
@@ -169,26 +209,14 @@ typedef struct InputTimingInfo_s {
 } InputTimingInfo;
 
 typedef struct OutputTimingInfo_s {
-  vector<LibTimingArc> timing_arcs;
+  vector<LibTimingArc *> timing_arcs;
   string function;
 } OutputTimingInfo;
+
 
 typedef union TimingInfo_u {
   InputTimingInfo *in_tinfo;
   OutputTimingInfo *out_tinfo;
-  TimingInfo_u() {
-    in_tinfo = nullptr;
-    out_tinfo = nullptr;
-  }
-
-  ~TimingInfo_u() {
-    if (in_tinfo) {
-      delete in_tinfo;
-    }
-    if (out_tinfo) {
-      delete out_tinfo;
-    }
-  }
 } TimingInfo;
 
 class LibPin {
@@ -196,6 +224,7 @@ public:
   LibPin(LibCell *parent) {
     m_parent = parent;
     m_type = NONE;
+    m_t_info.in_tinfo = nullptr;
   }
 
   TimingInfo &initTimingInfo(DirectionType iotype) {
@@ -213,27 +242,36 @@ public:
     if (iotype == INPUT) {
 
       m_t_info.in_tinfo =
-          (InputTimingInfo *)calloc(1, sizeof(InputTimingInfo_s));
+          (InputTimingInfo *)calloc(1, sizeof(InputTimingInfo));
     } else { // likewise for OutputTimingInfo
       m_t_info.out_tinfo =
-          (OutputTimingInfo *)calloc(1, sizeof(OutputTimingInfo_s));
+          (OutputTimingInfo *)calloc(1, sizeof(OutputTimingInfo));
     }
+
     return m_t_info;
   }
 
-  TimingInfo &getTimingInfo() { return m_t_info; }
+  TimingInfo *getTimingInfo() { return &m_t_info; }
+  void clearOutputTimingInfo(OutputTimingInfo *o_tinfo) {
+    if (o_tinfo == nullptr) {
+      return;
+    }
+    for (auto arc : o_tinfo->timing_arcs) {
+      delete arc;
+    }
+  }
 
   void clearTimingInfo() {
     // clear if it exists
     if (m_type == INPUT) {
       if (m_t_info.in_tinfo) {
-        delete m_t_info.in_tinfo;
+        free(m_t_info.in_tinfo);
+        m_t_info.in_tinfo = nullptr;
       }
     } else {
-      if (m_t_info.out_tinfo) {
-        delete m_t_info.out_tinfo;
-      }
-        delete m_t_info.out_tinfo;
+      clearOutputTimingInfo(m_t_info.out_tinfo);
+      free(m_t_info.out_tinfo);
+      m_t_info.out_tinfo = nullptr;
     }
   }
   const string &getName() { return *m_name; }
@@ -249,7 +287,33 @@ public:
     lefFile << "END " << *m_name << endl << endl;
   }
 
-  void print() { cout << "\tPin: " << *m_name << endl; }
+  void printInputTimingInfo() {
+    cout << "\t\trise_capacitance_range: "
+         << m_t_info.in_tinfo->capacitance_min[RISE] << ", "
+         << m_t_info.in_tinfo->capacitance_max[RISE] << endl;
+    cout << "\t\tfall_capacitance_range: "
+         << m_t_info.in_tinfo->capacitance_min[FALL] << ", "
+         << m_t_info.in_tinfo->capacitance_max[FALL] << endl;
+  }
+  void printOutputTimingInfo() {
+    cout << "\t\tfunction: " << m_t_info.out_tinfo->function << endl;
+    for (auto arc : m_t_info.out_tinfo->timing_arcs) {
+      arc->print();
+    }
+  }
+
+  void print() {
+    cout << "\tPin: " << *m_name << endl;
+    cout << "\t\tdirection :" << directionToString(m_type) << endl;
+
+    if (m_type == INPUT) {
+      printInputTimingInfo();
+    } else {
+      printOutputTimingInfo();
+    }
+  }
+
+  DirectionType getType() { return m_type; }
 
 private:
   const string *m_name; // points to lib pin unordered_map inside lib cell class
@@ -262,10 +326,14 @@ class LibCell {
 public:
   LibCell(string name) {
     m_name = name;
+    m_ff_group = nullptr;
   }
   ~LibCell() {
     for (auto entry : m_pins) {
       delete entry.second;
+    }
+    if (m_ff_group) {
+      free(m_ff_group);
     }
   }
   void insertPin(LibPin *pin, string name) {
@@ -275,7 +343,12 @@ public:
     }
   }
   LibPin *getPin(string pin_name) {
-    return m_pins[pin_name];
+    auto item = m_pins.find(pin_name);
+    if (item == m_pins.end()) {
+      return nullptr;
+    } else {
+      return item->second;
+    }
   }
 
   string &getName() {
@@ -283,9 +356,25 @@ public:
   }
   void print() {
     cout << "Cell: " << m_name << endl;
+    if (m_ff_group) {
+      cout << " Cell Type: SEQUENTIAL" << endl;
+      cout << "\tFF Group Info: " << endl;
+      if (m_ff_group->clocked_on_pin) {
+        cout << "\t\tClocked On Pin: " << m_ff_group->clocked_on_pin->getName() << endl;
+      }
+      if (m_ff_group->preset_pin) {
+        cout << "\t\tPreset Pin: " << m_ff_group->preset_pin->getName() << endl;
+      }
+      if (m_ff_group->clear_pin) {
+        cout << "\t\tClear Pin: " << m_ff_group->clear_pin->getName() << endl;
+      }
+    }
+    else {
+      cout << " Cell Type: COMBINATIONAL" << endl;
+    }
     for (auto pin : m_pins) {
       pin.second->print();
-}
+    }
   }
   void write_lef_for_ASP(ofstream &lefFile) {
     lefFile << "MACRO " << m_name << endl;
@@ -294,6 +383,8 @@ public:
     }
     lefFile << "END " << m_name << endl << endl;
   }
+
+ff_group *m_ff_group;
 
 private:
   string m_name;

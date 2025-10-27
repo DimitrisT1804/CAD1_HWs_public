@@ -1,0 +1,100 @@
+{
+   tcl
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:tclregistercommands
+   ...
+}
+
+
+{
+   tcl
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:Tcl_FindExecutable
+   ...
+}
+
+{
+   tcl
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:Tcl_A*
+   ...
+}
+
+{
+   tcl
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:Tclp*
+   ...
+}
+
+{
+   tcl
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:Tcl_N*
+   ...
+}
+
+{
+   tcl
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:Tcl_L*
+   ...
+}
+
+{
+   asp
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:__wrap_*
+   ...
+}
+
+{
+   asp
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:_dl_*
+   ...
+}
+
+{
+   gtk
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:g_*
+   ...
+}
+
+{
+   readline
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:rl_*
+   ...
+}
+
+{
+   si2parse
+   Memcheck:Leak
+   match-leak-kinds: all
+   ...
+   fun:si2*
+   ...
+}
+

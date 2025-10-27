@@ -4,6 +4,7 @@
 #include <boost/algorithm/string/split.hpp>
 #include <tcl.h>
 #include "structs.hpp"
+#include "lib.hpp"
 
 #define SOLUTION
 
@@ -410,4 +411,32 @@ int create_data_structures() {
   fullname = NULL;
 
   return TCL_OK;
+}
+
+// get all arcs between specified from to pins. returns a vector of pointers to LibTimingArcs
+vector<LibTimingArc *> *getFromToTimingArcs(Pin *from_pin, Pin *to_pin) {
+  if (!from_pin || !to_pin) {
+    return nullptr;
+  }
+
+  LibPin *from_lpin = from_pin->getLibPin();
+  LibPin *to_lpin = to_pin->getLibPin();
+
+  assert(from_lpin->getType() == INPUT && "Error: 'from' pin has incorrect direction (expected INPUT). Program will exit.");
+  assert(to_lpin->getType() == OUTPUT && "Error: 'to' pin has incorrect direction (expected OUTPUT). Program will exit.");
+  
+
+  TimingInfo *t_info = to_lpin->getTimingInfo();
+
+  if (t_info->out_tinfo == nullptr) {
+    return nullptr;
+  }
+
+  vector<LibTimingArc *> *vec = new vector<LibTimingArc *>();
+  for (auto arc : t_info->out_tinfo->timing_arcs) {
+    if (arc->getFromPin() == from_lpin) {
+      (*vec).push_back(arc);
+    }
+  }
+  return vec;
 }

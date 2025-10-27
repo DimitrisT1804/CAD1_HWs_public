@@ -9,7 +9,7 @@
 //
 // File:    structs.hpp
 // Purpose: data structures for design representation
-// Authors: Stavros Simoglou
+// Authors: Stavros Simoglou, Dimitris Tsalapatas
 //
 #ifndef _STRUCTS_DEF_HPP
 #define _STRUCTS_DEF_HPP
@@ -465,6 +465,7 @@ public:
   string getName() { return mName; }
   Instance *getParent() { return mParent; }
   Net *getNet() { return mNet; }
+  LibPin *getLibPin() { return mLibpin; }
 
   void insertNet(Net *net) { mNet = net; }
 

@@ -16,7 +16,7 @@
 //
 // File:    cadI_project.cpp
 // Purpose: main CAD I project entry point
-// Authors: Stavros Simoglou
+// Authors: Stavros Simoglou, Dimitris Tsalapatas
 //
 #include <iostream>
 #include <structs.hpp>
