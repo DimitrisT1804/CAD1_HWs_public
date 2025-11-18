@@ -13,6 +13,8 @@ Port *getPortFromFullName(Module *, string);
 
 void unit_test_structs();
 int create_data_structures();
+void getLUTDataFromTimingArc(LibTimingArc *, LUTType, long double **, int *, long double **, int *, long double **);
+
 
 extern "C" {
   // name and fullname here points to ASP internal structures. do not free!

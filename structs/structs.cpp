@@ -440,3 +440,61 @@ vector<LibTimingArc *> *getFromToTimingArcs(Pin *from_pin, Pin *to_pin) {
   }
   return vec;
 }
+
+// return the input_slew, output_load, and values vectors of the LUT of the
+// specified arc and LUT type
+void getLUTDataFromTimingArc(LibTimingArc *arc, LUTType type,
+                             long double **input_slews, int *slews_size,
+                             long double **output_loads, int *loads_size,
+                             long double **values) {
+  // return if arc not specified
+  if (!arc) {
+    return;
+  }
+
+  // get LUT from arc. can we do better here?
+  LUT *lut = arc->getLUTByType(type);
+  if (!lut) {
+    return;
+  }
+
+  // get LUT data
+  LUTDataType *data = lut->getLUTData();
+  LUTTemplate *lut_template = lut->getTemplate();
+
+  // get var1 and var2
+  if (lut_template->getVar1() == INPUT_SLEW) {
+    if (data->index_info[0]) {
+      *input_slews = data->index_info[0];
+      *slews_size = data->dim_sizes[0];
+    } else {
+      *input_slews = lut_template->getIndex1()->data();
+      *slews_size = lut_template->getIndex1()->size();
+    }
+    if (data->index_info[1]) {
+      *output_loads = data->index_info[1];
+      *loads_size = data->dim_sizes[1];
+    } else {
+      *output_loads = lut_template->getIndex2()->data();
+      *loads_size = lut_template->getIndex2()->size();
+    }
+  } else {
+    if (data->index_info[0]) {
+      *output_loads = data->index_info[0];
+      *loads_size = data->dim_sizes[0];
+    } else {
+      *output_loads = lut_template->getIndex1()->data();
+      *loads_size = lut_template->getIndex1()->size();
+    }
+
+    if (data->index_info[1]) {
+      *input_slews = data->index_info[1];
+      *slews_size = data->dim_sizes[1];
+    } else {
+      *input_slews = lut_template->getIndex2()->data();
+      *slews_size = lut_template->getIndex2()->size();
+    }
+  }
+
+  *values = data->values;
+}

@@ -13,7 +13,6 @@
 //
 
 #include <lib.hpp>
-#include <cstring>
 
 using namespace std;
 
@@ -22,6 +21,10 @@ void LibTimingArc::print() {
   cout << "\t\t\t\trelated_pin: " << m_from_pin->getName() << endl;
   cout << "\t\t\t\ttiming_type: " << timingTypeToString(m_timing_type) << endl;
   cout << "\t\t\t\ttiming_sense: " << timingSenseToString(m_timing_sense) << endl;
+  cout << "\t\t\t\twhen: " << m_when << endl;
+  for (auto lut : m_LUTs) {
+    lut->print();
+  }
 }
 
 int parse_liberty(string libfile_path, Lib **library)
@@ -148,6 +151,81 @@ int parse_liberty(string libfile_path, Lib **library)
         si2drGroupIdT cell_group;
         while( !si2drObjectIsNull((cell_group=si2drIterNextGroup(cell_groups, &err)), &err)) {
             si2drStringT cell_group_type =  si2drGroupGetGroupType(cell_group, &err);
+
+            if (!strcmp(cell_group_type, "lu_table_template")) {
+              si2drNamesIdT cell_group_names =
+                  si2drGroupGetNames(cell_group, &err);
+              string cell_group_name =
+                  string((char *)si2drIterNextName(cell_group_names, &err));
+
+              si2drIterQuit(cell_group_names, &err);
+              // cout << "template " << cell_group_name << endl;
+              LUTTemplate *lut_template = new LUTTemplate(cell_group_name);
+
+              si2drAttrsIdT template_attrs =
+                  si2drGroupGetAttrs(cell_group, &err);
+              si2drAttrIdT template_attr;
+              while (!si2drObjectIsNull(
+                  (template_attr = si2drIterNextAttr(template_attrs, &err)),
+                  &err)) {
+                std::string template_attr_name =
+                    si2drAttrGetName(template_attr, &err);
+
+                if (template_attr_name == "variable_1") {
+                  std::string attr_str =
+                      si2drSimpleAttrGetStringValue(template_attr, &err);
+                  lut_template->setVar1(stringToLUTVariableType(attr_str));
+                  continue;
+                } else if (template_attr_name == "variable_2") {
+                  std::string attr_str =
+                      si2drSimpleAttrGetStringValue(template_attr, &err);
+                  lut_template->setVar2(stringToLUTVariableType(attr_str));
+                  continue;
+                } else if (template_attr_name == "index_1" ||
+                           template_attr_name == "index_2") {
+                  si2drValuesIdT index_values =
+                      si2drComplexAttrGetValues(template_attr, &err);
+
+                  vector<long double> *values;
+                  if (template_attr_name == "index_1") {
+                    values = lut_template->getIndex1();
+                  } else {
+                    values = lut_template->getIndex2();
+                  }
+                  // storage location for result
+                  si2drValueTypeT type;
+                  si2drInt32T int_val;
+                  si2drFloat64T double_val;
+                  si2drStringT string_val;
+                  si2drBooleanT bool_val;
+                  si2drExprT *expr;
+
+                  // now iterate through the index_values and push them to
+                  // vector
+                  si2drIterNextComplexValue(index_values, &type, &int_val,
+                                            &double_val, &string_val, &bool_val,
+                                            &expr, &err);
+                  vector<string> vals;
+                  boost::split(vals, string_val, boost::is_any_of(" "),
+                               boost::token_compress_off);
+
+                  for (auto val : vals) {
+                    values->push_back(stold(val));
+                  }
+                  si2drIterQuit(index_values, &err);
+                }
+
+                // skip unsupported variable types (non delay LUTs)
+                if (lut_template->getVar1() == (LUTVariableType)NONE ||
+                    lut_template->getVar2() == (LUTVariableType)NONE) {
+                  continue;
+                }
+
+
+                (*library)->insertTemplate(cell_group_name, lut_template);
+              }
+              si2drIterQuit(template_attrs, &err);
+            }
 
             // skip non "cell" group types
             if (strcmp(cell_group_type, "cell")) {
@@ -428,6 +506,8 @@ int parse_liberty(string libfile_path, Lib **library)
                 } else {
                   // get function
                   if (pin_attr_name == "function") {
+                    si2drStringT str = si2drSimpleAttrGetStringValue(pin_attr, &err);
+                    cout << "Pin function: " << str << endl;
                     t_info->out_tinfo->function =
                         si2drSimpleAttrGetStringValue(pin_attr, &err);
                   }
@@ -477,6 +557,8 @@ int parse_liberty(string libfile_path, Lib **library)
                   si2drAttrsIdT attrs = si2drGroupGetAttrs(arc_group, &err);
                   si2drAttrIdT attr;
 
+                  string when_str;
+
                   while (!si2drObjectIsNull(
                       (attr = si2drIterNextAttr(attrs, &err)), &err)) {
                     string name = si2drAttrGetName(attr, &err);
@@ -492,6 +574,9 @@ int parse_liberty(string libfile_path, Lib **library)
                                "timing_sense") { // look for timing_sense
                       timing_sense_str =
                           si2drSimpleAttrGetStringValue(attr, &err);
+                    } else if (name == "when") {
+                      when_str = 
+                          si2drSimpleAttrGetStringValue(attr, &err);
                     }
                   }
                   si2drIterQuit(attrs, &err);
@@ -504,6 +589,7 @@ int parse_liberty(string libfile_path, Lib **library)
 
                   arc->insertTimingType(stringToTimingType(timing_type_str));
                   arc->insertTimingSense(stringToTimingSense(timing_sense_str));
+                  arc->insertWhen(when_str);
 
                   // parse arc LUTs
                   si2drGroupsIdT table_groups =
@@ -519,6 +605,12 @@ int parse_liberty(string libfile_path, Lib **library)
 
                     si2drStringT table_group_type =
                         si2drGroupGetGroupType(table_group, &err);
+
+                    si2drNamesIdT table_group_names =
+                        si2drGroupGetNames(table_group, &err);
+                    si2drStringT template_name =
+                        si2drIterNextName(table_group_names, &err);
+                    si2drIterQuit(table_group_names, &err);
 
                     data = nullptr;
                     // store NLDM tables
@@ -538,7 +630,8 @@ int parse_liberty(string libfile_path, Lib **library)
 
                     // store NLDM table if found
                     if (data) {
-                      lut = new LUT(type, data);
+                      LUTTemplate *lut_template = (*library)->getTemplateByName(template_name);
+                      lut = new LUT(type, data, lut_template);
                       arc->insertLUT(lut);
                     }
                   }
@@ -572,6 +665,3 @@ int parse_liberty(string libfile_path, Lib **library)
     return(0);
 
 }
-
-//   return 1;
-// }

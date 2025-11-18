@@ -22,6 +22,9 @@
 #include <fstream>
 #include <assert.h>
 #include <si2dr_liberty.h>
+#include <cstring>
+#include <boost/algorithm/string/split.hpp>
+#include <boost/algorithm/string/classification.hpp>
 
 using namespace std;
 
@@ -40,7 +43,7 @@ typedef enum {COMBINATIONAL      = 1,
               FALLING_EDGE       = 5} TimingType;
 
 typedef enum {POSITIVE_UNATE = 1, NEGATIVE_UNATE = 2, NON_UNATE = 3} TimingSense;
-typedef enum {INPUT_SLEW = 0, OUTPUT_LOAD = 1} LUTVariableType;
+typedef enum {INPUT_SLEW = 1, OUTPUT_LOAD = 2} LUTVariableType;
 typedef liberty_value_data LUTDataType;
 inline TimingType stringToTimingType(string type_str) {
   if (type_str == "combinational") {
@@ -112,9 +115,46 @@ inline const char *timingSenseToString(TimingSense sense) {
     return "NONE";
   }
 }
+
+inline LUTVariableType stringToLUTVariableType(string var_type_str) {
+  if (var_type_str == "input_net_transition") {
+    return INPUT_SLEW;
+  } else if (var_type_str == "total_output_net_capacitance") {
+    return OUTPUT_LOAD;
+  } else {
+    return (LUTVariableType)NONE;
+  }
+}
+
+inline const char *LUTVariableTypeToString(LUTVariableType var_type) {
+  switch (var_type) {
+  case INPUT_SLEW:
+    return "input_net_transition";
+  case OUTPUT_LOAD:
+    return "total_output_net_capacitance";
+  default:
+    return "NONE";
+  }
+}
+
+inline const char *LUTTypeToString(LUTType type) {
+  switch (type) {
+  case CELL_RISE:
+    return "cell_rise";
+  case CELL_FALL:
+    return "cell_fall";
+  case RISE_TRANSITION:
+    return "rise_transition";
+  case FALL_TRANSITION:
+    return "fall_transition";
+  default:
+    return "NONE";
+  }
+}
+
+
 class Lib;
 class LibCell;
-class LibArc;
 class LibPin;
 class LibTimingArc;
 
@@ -124,11 +164,50 @@ typedef struct FF_GROUP {
   LibPin *clear_pin;
 } ff_group;  
 
+class LUTTemplate {
+  public:
+    LUTTemplate(string name) {
+      m_name = name;
+    }
+    string &getName() {
+      return m_name;
+    }
+  
+    void setVar1(LUTVariableType var) { m_variable1 = var; }
+    void setVar2(LUTVariableType var) { m_variable2 = var; }
+    vector<long double> *getIndex1() { return &m_index1; }
+    vector<long double> *getIndex2() { return &m_index2; }
+    LUTVariableType getVar1() { return m_variable1; }
+    LUTVariableType getVar2() { return m_variable2; }
+    void print() {
+      cout << "Template: " << m_name << endl;
+      cout << "Variable_1: " << LUTVariableTypeToString(m_variable1) << endl;
+      cout << "Variable_2: " << LUTVariableTypeToString(m_variable2) << endl;
+      cout << "Index_1: ";
+      for (auto val : m_index1) {
+        cout << val << ", ";
+      }
+      cout << endl << "Index_2: ";
+      for (auto val : m_index2) {
+        cout << val << ", ";
+      }
+      cout << endl;
+    }
+  
+  private:
+    LUTVariableType m_variable1;
+    LUTVariableType m_variable2;
+    vector<long double> m_index1; // long double is the default index type in lib parser
+    vector<long double> m_index2; // long double is the default index type in lib parser
+    string m_name;
+  };
+
 class LUT {
 public:
-  LUT(LUTType type, LUTDataType *data) {
+  LUT(LUTType type, LUTDataType *data, LUTTemplate *lut_template) {
     m_type = type;
     m_data = data;
+    m_lut_template = lut_template;
   }
 
   ~LUT() {
@@ -136,12 +215,17 @@ public:
       liberty_destroy_value_data(m_data);
     }
   }
-  LUTDataType *getLUTData() {
-    return m_data;
+  LUTDataType *getLUTData() { return m_data; }
+  LUTTemplate *getTemplate() { return m_lut_template; }
+  void print() {
+    cout << LUTTypeToString(m_type) << " " << m_lut_template->getName() << endl;
   }
+  LUTType getLUTType() { return m_type; }
+
 private:
   LUTType      m_type;
   LUTDataType *m_data;
+  LUTTemplate *m_lut_template;
 };
 
 
@@ -192,8 +276,19 @@ public:
     }
   }
 
+  LUT *getLUTByType(LUTType type) {
+    for (auto lut : m_LUTs) {
+      if (lut->getLUTType() == type) {
+        return lut;
+      }
+    }
+    return nullptr;
+  }
   // getters
   LibPin *getFromPin() { return m_from_pin; }
+
+  TimingType getTimingType() { return m_timing_type; }
+
 private:
   LibPin     *m_from_pin; // related_pin
   LibPin     *m_to_pin;
@@ -384,33 +479,15 @@ public:
     lefFile << "END " << m_name << endl << endl;
   }
 
-ff_group *m_ff_group;
+  map<string, LibPin *> &getPins() { return m_pins; }
+
+  ff_group *m_ff_group;
 
 private:
   string m_name;
   map<string, LibPin *> m_pins;
 };
 
-
-class LUTTemplate {
-public:
-  LUTTemplate() {
-
-  }
-  string &getName() {
-    return m_name;
-  }
-
-  void print() {
-    cout << "Template: " << m_name << endl;
-  }
-private:
-  LUTVariableType m_variable1;
-  LUTVariableType m_variable2;
-  vector<float> m_index1;
-  vector<float> m_index2;
-  string m_name;
-};
 
 class Lib {
 public:
@@ -427,35 +504,23 @@ public:
   void insertCell(LibCell *cell) {
     m_cells.insert({cell->getName(), cell});
   }
-  void insertTemplate(LUTTemplate *lut_template) {
-    m_templates.push_back(lut_template);
+  void insertTemplate(string name, LUTTemplate *lut_template) {
+    m_templates[name] = lut_template;
   }
-  LibCell *getCellByName(string &cell_name) {
+  LibCell *getCellByName(string cell_name) {
     return m_cells[cell_name];
   }
-  int getTemplateIndexByName(string &template_name) {
-    for (auto tmpl = m_templates.begin(); tmpl != m_templates.end(); ++tmpl) {
-      if ((*tmpl)->getName() == template_name) {
-        return (int) distance(m_templates.begin(), tmpl);
-      }
-    }
-    return -1;
-  }
-  LUTTemplate *getTemplateByName(string &template_name) {
-    int index = getTemplateIndexByName(template_name);
-    if (index != -1) {
-      return m_templates[index];
-    } else {
-      return nullptr;
-    }
+  LUTTemplate *getTemplateByName(string template_name) {
+    return m_templates[template_name];
   }
   void print() {
     cout << "Library: " << m_name << endl;
     cout << "Library Time Unit: " << m_time_unit << endl;
     cout << "Library Capacitance Unit: " << m_cap_unit << endl;
     for (auto templ : m_templates) {
-      templ->print();
+      templ.second->print();
     }
+
     for (auto cell : m_cells) {
       cell.second->print();
     }
@@ -469,7 +534,7 @@ public:
   }
 
 private:
-  vector<LUTTemplate *> m_templates;
+  map<string, LUTTemplate *> m_templates;
   unordered_map<string_view, LibCell *> m_cells;
   string m_name;
   float m_time_unit;

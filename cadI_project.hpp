@@ -21,5 +21,6 @@ extern void tclwrapeval(char *command);
 }
 
 extern int parse_liberty(string libfile_path, Lib **library);
+extern void getLUTDataFromTimingArc(LibTimingArc *arc, LUTType type, long double **input_slews, int *slews_size, long double **output_loads, int *loads_size, long double **values);
 
 #endif
